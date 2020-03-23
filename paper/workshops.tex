@@ -178,10 +178,10 @@ statistical training of graduate students in the environmental sciences and the
 potential for extracurricular workshops to fill in the gaps. Next, we outline 
 the design-based implementation research methodology used to design and 
 implement a suite of data science workshops tailored to environmental science 
-graduate students. Section \ref{sec:design} summarizes the first phase of 
+graduate students. Section \ref{sec:faculty} summarizes the first phase of 
 research, which outlined the computational skills faculty members identified as 
 necessary for graduate students to succeed in their independent research. Next, 
-Section \ref{secion:workshops} discusses how these identified skills were 
+Section \ref{sec:workshops} discusses how these identified skills were 
 interwoven into existing data science workshop materials for researchers in the 
 environmental sciences. Section \ref{sec:implement} summarizes the backgrounds 
 and experiences of the workshop attendees during the 2018-2019 academic year, 
@@ -427,82 +427,70 @@ offer the opportunity for a wide variety of researchers, not just students, to
 acquire the data science skills necessary for data-intensive research, 
 supporting the broader community of researchers. 
 
-% \quad Improving environmental science graduate students' access to ``powerful, 
-% effective learning opportunities'' \citep[p. 137]{penuel} necessitates 
-% understanding the skills required for these students to be successful in their 
-% research. As the direct supervisors of graduate students, environmental science 
-% faculty members are aware of the computing skills that are vital to researchers
-% in their respective fields. Through interviews with these faculty members, we
-% gain an understanding of the essential skills required of environmental science
-% graduate students, which allows us to tailor the Carpentries content to meet the
-% needs of this community. Furthermore, the process of iterating through multiple
-% offerings provides the opportunity to incorporate feedback and to revise the
-% lessons, yielding high-quality training to graduate student researchers in these
-% fields. 
+\section{Methodology}
 
-\section{Design-Based Implementation Research} 
+\quad Improving environmental science graduate students' access to ``powerful,
+effective learning opportunities'' \citep[p. 137]{penuel} necessitates
+understanding the skills required for these students to be successful in their
+research. Design-based implementation research (DBIR) \citep{confrey, penuel, 
+oneill} ``offers a model for the design and testing of innovations within the
+crucible of classrooms and other contexts for learning'' 
+\citep[p.\ 140]{penuel}. Rather than creating workshops covering content outside
+parties believe are important, DBIR uses collaboration with members of the
+community to develop ``evidence-based improvements'' (p.\ 143) to teaching 
+innovations---situating community members as ``co-designers of solutions to 
+problems'' \citep[p. 140]{penuel} rather than bystanders. This collaboration 
+is critical when developing resources for researchers in the broader scientific
+community, as the discipline of Statistics was developed to support research in
+other scientific disciplines to evaluate evidence obtained from data. 
 
-\quad Design-based implementation research (DBIR) ``offers a model for the 
-design and testing of innovations within the crucible of classrooms and other 
-contexts for learning'' (Cobb et al., \citeyear{confrey}; Fishman et al., 2013, 
-p. 140; O'Neill, \citeyear{oneill}). This model of research emphasizes the 
-iterative process of design and evaluation and is particularly well suited for 
-research that develops ``evidence-based improvements to innovations,'' where 
-evidence from the implementation informs changes made to these innovations for 
-learning. Similar to other forms of design research, DBIR ``uses research to 
-solve practical problems'' \citep[p. 143]{penuel}, but focuses on the 
-development and evaluation of ``usable tools for improving teaching and learning
-in specific subject matter domains and settings'' (\citeauthor{confrey}, 2003;
-Fisherman et al., p. 143). Additionally, the collaborative nature of design 
-research positions members of the community as ``co-designers of solutions to 
-problems'' \citep[p. 140]{penuel} rather than bystanders. 
+\quad This paper describes the results of the first iteration of this DBIR, 
+consisting of three phases. Section \ref{sec:faculty} summarizes the first phase
+of this research, investigating the computing skills necessary for environmental
+science research by graduate students. As the direct supervisors of graduate
+students, environmental science faculty members are potentially aware of the
+computing skills that are vital to researchers in their respective fields. Thus,
+interviews with faculty members from these fields allow for us to gain an
+understanding of the essential skills required of environmental science graduate
+students. Phase two of this research, described in Section \ref{sec:workshops}, 
+details how the skills identified during phase one were used to tailor
+currently existing Data Carpentry \citep{data-carpentry} and Software Carpentry
+\citep{software-carpentry} lessons to meet the needs of graduate students in the
+environmental sciences. Finally, Section \ref{sec:implement} chronicles the
+final phase of this research, implementing and evaluating these workshops. This
+final evaluation phase focuses on the backgrounds and experiences of workshop
+attendees, rather than the workshop content or learning outcomes of attendees,
+which are described as directions for future research. 
 
-% Because the aim of this research was to develop and offer data science workshops for a specific community of researchers, a large number of faculty in these fields have contributed to this research and are aware of the workshops, encouraging students in their courses to attend. When creating workshops for a broader community of researchers, we encourage Statisticians to build connections with faculty in these fields, to better understand the needs of their students. The discipline of Statistics was developed to support research in other scientific disciplines to evaluate evidence obtained from data, a position we should heed when developing resources for researchers in the broader scientific community.
+% {\spacingset{1.05}
+% \begin{table}[h!]
+% \centering
+% \begin{tabular}{p{10cm}p{2cm}p{3cm}}
+% \hline
+% Research Question & Design Phase & Data Collected  \\
+% \hline
+% What do environmental science faculty members identify as the key computing skills graduate student require to implement statistics in environmental science research?   &  Phase 1 & Faculty interviews \\ \vspace{0.1cm}
+% 
+% How can the key computing skills identified by environmental science faculty be incorporated into currently existing workshop materials?  & Phase 2 & Carpentries curriculum materials  \\ \vspace{0.1cm}
+% 
+% What are the experiences of individuals attending data science workshops?  & Phase 3 & Pre- and post-workshop surveys \\
+% \hline
+% \end{tabular}
+% \caption{Research questions, phases, and data collected for the three-phase DBIR.}
+% \label{tab:phases}
+% \end{table}
+% }
 
-\quad The first iteration of this DBIR consisted of three phases. The first 
-phase focused on investigating the computing skills necessary for environmental 
-science research by graduate students. For phase two, the skills identified 
-during phase one were used to design data science workshops for graduate 
-students in the environmental sciences, using currently existing Data and 
-Software Carpentry lessons \citep{carpentries}. The final phase focused on
-evaluating the developed data science workshops, after their first
-implementation. In this first iteration of our DBIR, the data collected from the
-workshop attendees' focus on their backgrounds prior to the workshop, previous
-experiences learning \texttt{R}, and their experiences in the workshop, rather
-than the learning outcomes of the workshop attendees. 
+\section{Outlining the Computing Skills Necessary for Environmental Science Research}
+\label{sec:faculty}
 
-\quad The phases of this research, the research question each phase addresses, 
-and the data collected during each phase are outlined in Table \ref{tab:phases}. 
-
-{\spacingset{1.05}
-\begin{table}[h!]
-\centering
-\begin{tabular}{p{10cm}p{2cm}p{3cm}}
-\hline
-Research Question & Design Phase & Data Collected  \\
-\hline
-What do environmental science faculty members identify as the key computing skills graduate student require to implement statistics in environmental science research?   &  Phase 1 & Faculty interviews \\ \vspace{0.1cm}
-
-How can the key computing skills identified by environmental science faculty be incorporated into currently existing workshop materials?  & Phase 2 & Carpentries curriculum materials  \\ \vspace{0.1cm}
-
-What are the experiences of individuals attending data science workshops?  & Phase 3 & Pre- and post-workshop surveys \\
-\hline
-\end{tabular}
-\caption{Research questions, phases, and data collected for the three-phase DBIR.}
-\label{tab:phases}
-\end{table}
-}
-
-\section{Computing Skills Necessary for Environmental Science Research}
-\label{sec:design}
-
-\quad Phase one of this research investigated the computational skills necessary
-for graduate students in the environmental sciences to implement statistics in
-their research. These needs were explored through interviews with faculty
-members who directly supervise graduate student researchers in the environmental
-sciences. 
-
-\subsection{Participants}
+% \quad Phase one of this research investigated the computational skills necessary
+% for graduate students in the environmental sciences to implement statistics in
+% their research. These needs were explored through interviews with faculty
+% members who directly supervise graduate student researchers in the environmental
+% sciences. 
+% 
+% \subsection{Participants}
 
 \quad In the spring of 2017 and fall of 2018, faculty members from diverse 
 fields within the environmental sciences were invited to participate in a 
@@ -706,7 +694,7 @@ to use anything they can find to get more tools in [their] tool box.''
 
 \section{Designing Data Science Workshops for Graduate Students in the 
 Environmental Sciences}
-\label{secion:workshops}
+\label{sec:workshops}
 
 \quad The second phase of this research attended to the  development of a suite of data science workshops targeted to graduate students in the environmental sciences. Skills identified through faculty interviews were incorporated into a set of four 3-hour workshops covering (1) the basics of programming in \texttt{R}, (2) intermediate programming tasks in \texttt{R}, (3) creating appropriate and effective data visualizations, and (4) cleaning and merging data in preparation for analysis and visualization, all using reproducible tools. 
 
@@ -963,6 +951,7 @@ Professor & 1 \\
 \quad Lastly, when attendees were asked what in the workshop needed to most improvement, themes of time and content appeared. The largest volume of constructive feedback from workshop participants focused on the amount of time allocated for the workshop. Many individuals stated that ``it could be better to have more time,'' suggesting an additional hour, with a ``break in between.'' However, others reflected that it could be more beneficial to have ``shorter, but more workshops,'' since ``it's easy for the brain to get tired after an hour or so.'' Due to the large attendance at many \emph{Introduction to \texttt{R}} workshops, often times a large number of questions would arise over the course of the afternoon. This lead to an inability to cover some of the workshop content in as much depth as hoped, which some participants remarked on. However, others felt that ``with so many people, [the workshop] had better discussions.'' There exists a balancing act between the amount of workshop content, the time allocated to addressing questions that may arise during the workshop, and the duration of the workshop. However, the three hours allocated to each of these workshops far exceeds the 60 minutes typically given to this content during a standard Data or Software Carpentry workshop. 
 
 \section{Dissemination \& Future Directions} 
+\label{sec:future}
 
 \quad Currently, this design research is focusing on incorporating the content of these workshops into the \emph{Data Analysis and Visualization in \texttt{R}} lesson within Data Carpentry's Ecology curriculum. Infusing the skills outlined in this research into the \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson helps to create a Carpentries curriculum that best reflects the ``core data skills'' necessary for data-intensive environmental science research. For skills outlined by this research where there is no room in the current \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson, the Carpentries Incubator and Carpentries Lab provide potential avenues to produce additional lesson materials that are broadly available to The Carpentries community. These avenues allow for the continued discussion of the importance of integrating user-defined functions, conditional statements, and loops into the broader Data Carpentry Ecology curriculum.    
 
