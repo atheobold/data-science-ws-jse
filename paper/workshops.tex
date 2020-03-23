@@ -273,10 +273,10 @@ environmental scientists were ill-prepared to use statistics in their research,
 and now statistics preparation is considered vital." In fact, in ecology today,
 it is ``extremely difficult to publish a manuscript without any statistical 
 testing'' \citep[p. 547]{hampton}. Furthermore, with the invention 
-of the RStudio integrated development environment \citep{rstudio}, the software 
-used throughout the data analysis cycle by environmental science researchers has
-changed. In 2017, the number of studies in environmental science journals 
-reporting the use of \texttt{R} as the ``primary tool reported in data 
+of the RStudio integrated development environment (IDE) \citep{rstudio}, the
+software used throughout the data analysis cycle by environmental science
+researchers has changed. In 2017, the number of studies in environmental science
+journals reporting the use of \texttt{R} as the ``primary tool reported in data 
 analysis'' was 58\%, compared to 11.4\% in 2008 \citep[p. 1]{Rpopular}. 
 Moreover, the preponderance of environmental science graduate students are now 
 required to produce code as part of their research \citep{mislan}. The clear 
@@ -484,14 +484,6 @@ which are described as directions for future research.
 \section{Outlining the Computing Skills Necessary for Environmental Science Research}
 \label{sec:faculty}
 
-% \quad Phase one of this research investigated the computational skills necessary
-% for graduate students in the environmental sciences to implement statistics in
-% their research. These needs were explored through interviews with faculty
-% members who directly supervise graduate student researchers in the environmental
-% sciences. 
-% 
-% \subsection{Participants}
-
 \quad In the spring of 2017 and fall of 2018, faculty members from diverse 
 fields within the environmental sciences were invited to participate in a 
 one-hour interview. All faculty members currently overseeing a graduate student
@@ -600,7 +592,7 @@ research
 students use in research from the computing required to implement those methods,
 many were able to express the expectations they held for graduate students in
 their field throughout the entire data analysis cycle. A substantial overlap 
-was seen between faculty expecations and the components of ``data acumen'' 
+was seen between faculty expectations and the components of ``data acumen'' 
 outlined by NAS \citep{nas}, with faculty expectations falling into three
 categories: (1) working with and wrangling data, (2) data visualization, and (3)
 reproducibilty.
@@ -693,9 +685,6 @@ age.'' These faculty understand that often students are required to learn these
 skills on their own because ``there is definitely a gap between the code I can
 help them with.'' 
 
-% The sentiments heard by these faculty unearth the possibilty 
-% that many faculty may be largely unaware of the computing skills necessary 
-
 \quad Although faculty feel that there may exist gaps between their own
 knowledge of working in \texttt{R} and their students', every faculty member
 affirmed the importance of students acquiring the computational abilities needed
@@ -705,64 +694,157 @@ students to acquire these computational skills necessary for their research. The
 majority of faculty voiced that it is often assumed that graduate students
 should be able to analyze their data because they've taken a statistics course.
 Yet, faculty members acknowledge the poor computational preparation of their
-students even after taking a statistic course, and thus ``encourage [students]
-to use anything they can find to get more tools in [their] tool box.'' 
+students---even after taking a statistics course---and thus ``encourage
+[students] to use anything they can find to get more tools in [their] tool
+box.'' 
 
 \section{Designing Data Science Workshops for Graduate Students in the 
 Environmental Sciences}
 \label{sec:workshops}
 
-\quad The second phase of this research attended to the  development of a suite of data science workshops targeted to graduate students in the environmental sciences. Skills identified through faculty interviews were incorporated into a set of four 3-hour workshops covering (1) the basics of programming in \texttt{R}, (2) intermediate programming tasks in \texttt{R}, (3) creating appropriate and effective data visualizations, and (4) cleaning and merging data in preparation for analysis and visualization, all using reproducible tools. 
+\quad The second phase of this research attended to the  development of a suite
+of data science workshops targeted to graduate students in the environmental
+sciences. Skills identified through faculty interviews were incorporated into a
+set of four 3-hour workshops covering (1) the basics of programming in 
+\texttt{R}, (2) intermediate programming tasks in \texttt{R}, (3) creating
+appropriate and effective data visualizations, and (4) cleaning and merging data
+in preparation for analysis and visualization, all using reproducible tools. 
 
-\quad The first workshop does not assume that attendees have any previous experience working in \texttt{R}, and each workshop builds on the knowledge acquired at previous workshop(s), without the expectation that attendees have acquired additional knowledge or skills between workshops. The materials from these workshops were adapted from Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson \citep{ecology_curriculum} \footnote{This work is a derivative of Data Analysis and Visualization in \texttt{R} for Ecologists \href{https://datacarpentry.org/R-ecology-lesson/}{(https://datacarpentry.org/R-ecology-lesson/)} by Data Carpentry, used under CC BY \href{https://creativecommons.org/licenses/by/4.0/}{(https://creativecommons.org/licenses/by/4.0/)}.}, incorporating additional skills environmental science faculty identified as necessary for graduate students to succeed in their research.   
-
-% This work is a derivative of Elephant@Amboseli (https://datacarpentry.org/R-ecology-lesson/) by Data Carpentry, used under CC BY (https://creativecommons.org/licenses/by/4.0/).
-
-\quad Data Carpentry is a component of the Carpentries project, with curricula developed to support research in ecology, genomics, and the social sciences. Data Carpentry workshops create an excellent starting point for designing a workshop curriculum for environmental science graduate students, as the Ecology curriculum is maintained by experienced researchers in that field, using field-specific data contexts. Using the themes which emerged in interviews with environmental science faculty, we were able to tailor \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} to best suit the needs of this population of graduate students as they prepare for and participate in data-intensive research. The workshop materials developed for this research are publicly available through GitHub, 
-%\footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub repository (link)}}
-with video tutorials recorded and available through our institution's library.   %\footnote{\href{http://www.montana.edu/datascience/training/index.html#workshop-recordings}{MSU Library Videos (link)}}.  
+\quad The first workshop in this series does not assume that attendees have any
+previous experience working in \texttt{R}, and each workshop builds on knowledge
+acquired at previous workshop(s), without the expectation that attendees have
+acquired additional knowledge or skills between workshops. The materials for 
+these workshops were adapted from Data Carpentry's \emph{Data Analysis and
+Visualization in \texttt{R} for Ecologists} lesson \citep{ecology_curriculum}, a
+curriculum maintained by experienced researchers in ecological fields, which 
+uses ecology-specific data contexts \footnote{This work is a derivative of 
+\emph{Data Analysis and Visualization in \texttt{R} for Ecologists} 
+\href{https://datacarpentry.org/R-ecology-lesson/}{(https://datacarpentry.org/R-ecology-lesson/)}
+by Data Carpentry, used under CC BY 
+\href{https://creativecommons.org/licenses/by/4.0/}{(https://creativecommons.org/licenses/by/4.0/)}.}. 
+Using the themes which emerged in interviews with environmental science faculty,
+we were able to tailor this workshop series to suit the needs of this population
+of graduate students as they prepare for and participate in data-intensive
+research. The workshop materials developed for this research are available
+through GitHub
+\footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub repository (link)}}, with video tutorials recorded and available through our institution's library 
+\footnote{\href{http://bit.ly/ws_recordings}{MSU Library videos (link)}}.  
 
 \subsection{Participant-Centered Learning}  
 
-\quad These workshops are taught in a technology-enhanced active learning (TEAL) classroom that seats up to 35 individuals. The classroom has two monitors on every wall, a projector at the front of the room, and tables that seat groups of three to four persons. The layout of the room allows for every student to watch as the instructor live codes, and supports the instructor and workshop assistants to easily engage with attendees as they work. Each workshop has one lead instructor and two to three workshop assistants. The assistants are tasked with addressing any participant questions that may arise during the workshop.  
+\quad These workshops are taught in a technology-enhanced active learning (TEAL)
+classroom that seats up to 35 individuals. The room's monitors make it easy for 
+attendees to watch as the instructor live codes, and the open layout of the room
+allows helpers to engage with attendees as they work. Each workshop has one lead
+instructor and two to three workshop assistants. During each workshop, topics
+are introduced by the instructor, followed by a group discussion of an example. 
+Finally, attendees group up to complete a set of hands-on tasks, applying the
+concepts covered in that section of the workshop. These tasks allow for
+attendees to ``learn the computational aspects as part of an interesting, 
+challenging, and confidence-building process'' \citep[p. 101]{nolan}.
 
-\quad During the workshop, every topic is first introduced by the instructor, followed by the live coding of an example. The group then engages in a discussion of the method. This group dialogue creates an inclusive space where attendees are able to pose questions or conjectures to the group while the instructor live codes questions asked or suggestions. Finally, attendees group up to complete a set of hands-on tasks, applying the concepts covered in that section of the workshop. These tasks allow for attendees to ``learn the computational aspects as part of an interesting, challenging, and confidence-building process'' \citep[p. 101]{nolan}. As attendees work in groups to tackle the task at hand, they are instructed to place a colored sticky note on their computer, to signal assistants for help.    
+% Similar to the practice advocated by the Carpentries, as
+% attendees work in groups to tackle the task at hand, they are instructed to
+% place a colored sticky note on their computer, to signal assistants for help.    
+% 
+% This group dialogue creates an inclusive space where attendees are able
+% to pose questions or conjectures to the group while the instructor live codes
+% questions asked or suggestions. 
 
 \subsection{Data Context}  
-\quad Faculty emphasized the importance of students acquiring computing skills in familiar data contexts. Therefore, the data used in the creation of these workshops are ecological data sets, originating from Montana Fish, Wildlife, and Parks and the Portal Project Teaching Database \citep{portal_data}. These data highlight a variety of aspects that commonly occur in environmental data, including multiple sampling instances, mark-recapture, biological measurements, and meta- and micro-level data. 
 
-\quad The data from Montana Fish, Wildlife, and Parks contain entries of 18,352 fish caught over the span of ten years on the Blackfoot River in central Montana. Each row of the data contains information for a single captured fish, and the columns represent: the trip number, section of river sampled, length, weight, and species of the fish, and whether the fish had been previously captured. The Portal Project Teaching Database contains three separate data files of time-series data collected on a small mammal community in southern Arizona: micro-level data on the rodents captured on individual plots, macro-level data on rodent species, and taxa, and macro-level data on the treatments applied to different plots. 
+\quad Emphasized by both the NAS and these faculty, ``effective application of
+data science to a domain requires knowledge of that domain'' \citep[p.\ 29]{nas}. 
+Hence, data science instruction ought to be grounded in ``substantive contextual
+examples,'' to ``ensure that data scientists develop the capacity to pose and
+answer questions'' with data relevant to them (p.\ 30). Therefore, the data used
+in the creation of these workshops are ecological in nature, originating from
+Montana Fish, Wildlife, and Parks and the Portal Project Teaching Database 
+\citep{portal_data}. These data highlight a variety of aspects that commonly
+occur in environmental data, including multiple sampling instances,
+mark-recapture, biological measurements, and meta- and micro-level data. 
+
+% \quad The data from Montana Fish, Wildlife, and Parks contain entries of 18,352 fish caught over the span of ten years on the Blackfoot River in central Montana. Each row of the data contains information for a single captured fish, and the columns represent: the trip number, section of river sampled, length, weight, and species of the fish, and whether the fish had been previously captured. The Portal Project Teaching Database contains three separate data files of time-series data collected on a small mammal community in southern Arizona: micro-level data on the rodents captured on individual plots, macro-level data on rodent species, and taxa, and macro-level data on the treatments applied to different plots. 
 
 \subsection{Computing Tools for Environmental Science Research}  
 
-\quad The structure and context of these workshops include a statistical programming language used extensively throughout environmental science research (\texttt{R}), environments which facilitate the learning of \texttt{R} (RStudio and RStudio Cloud), and tools that promote reproducibility throughout the entire data analysis cycle (\texttt{R Markdown}).
+\quad The structure and context of these workshops include a statistical
+programming language used extensively throughout environmental science research
+(\texttt{R}), environments which facilitate the learning of \texttt{R}
+(RStudio and RStudio Cloud), and tools that promote reproducibility throughout
+the entire data analysis cycle (R Markdown).
 
 \subsubsection{Why \texttt{R}?} 
 
-\quad The use of \texttt{R} is widespread throughout the environmental science research community \citep{Rpopular}. Presently, \texttt{R} includes over 100 packages frequently used in ecological data analysis, as highlighted in the CRAN Task View: Analysis of Ecological and Environmental Data \href{https://CRAN.R-project.org/view=Environmetrics}{(https://CRAN.R-project.org/view=Environmetrics)}. \texttt{R} is free and open source, so attendees learn a statistical programming language that will be accessible to them throughout their careers. Furthermore, today's researchers in scientific fields are keenly aware of the reproducibility crisis, and with \texttt{R}, their results do not depend on remembering the sequence of buttons they clicked. 
+\quad The use of \texttt{R} is widespread throughout the environmental science
+research community, a dramatic change over the last decade \citep{Rpopular}. 
+Presently, \texttt{R} includes over 100 packages frequently used in ecological
+data analysis, as highlighted in the CRAN Task View: Analysis of Ecological and
+Environmental Data \href{https://CRAN.R-project.org/view=Environmetrics}{(https://CRAN.R-project.org/view=Environmetrics)}. Furthermore, with the invention of the RStudio IDE 
+\citep{rstudio}, this user-ship continues to increase. \texttt{R} is free and
+open source, so attendees learn a statistical programming language that will be
+accessible to them throughout their careers. Furthermore, unlike other data
+analysis software used by environmental scientists, such as program MARK,
+VORTEX, or RMAS, with \texttt{R}, their results do not depend on remembering the
+sequence of buttons they clicked. With the shocking realization that large 
+numbers of modern scientific findings cannot be replicated \citep{economist, 
+johnson} and the growing appreciation for reproducible methods of data analysis
+in ecological research \citep{reproducibilty-comment, repeatability, pva,
+reproducibility_ecology}, today's researchers in scientific fields are becoming 
+more aware of the need for a reproducible data analysis workflow. 
 
 \subsubsection{Why RStudio?}
 
-\quad RStudio is a free computer application that allows you access to the resources of \texttt{R}, while providing you with a comfortable working environment \citep{rstudio}. The RStudio integrated development environment (IDE) includes a view of the workspace environment, a data browser, file browser, and plotting window, ``which makes it less intimidating than the bare \texttt{R} shell" \citep[p. 59]{mine}. The RStudio environment is consistent across operating systems, which is not the case for other statistical software packages. Because RStudio is an IDE, it includes integrated help files, intelligent code completion, and syntax highlighting---all of which help to reduce the learning curve. Additionally, RStudio makes reproducibility simple with dynamic \texttt{R Markdown} documents, allowing for a full integration of the data analysis workflow.
+\quad RStudio is a free computer application that allows you access to the 
+resources of \texttt{R}, while providing you with a comfortable working
+environment \citep{rstudio}. The RStudio IDE ``makes [programming] less 
+intimidating than the bare \texttt{R} shell" \citep[p. 59]{mine}. Additionally, 
+the RStudio environment is consistent across operating systems, which is not the
+case for other statistical software packages. Because RStudio is an IDE, it
+includes integrated help files, intelligent code completion, and syntax
+highlighting---all of which help to reduce the learning curve. Additionally,
+RStudio makes reproducibility simple with dynamic \texttt{R Markdown} documents,
+allowing for a full integration of the data analysis workflow.
 
 \subsubsection{Why RStudio Cloud?} 
 
-\quad The RStudio Cloud was created as a platform to make it easy to do, share, teach and learn data science using \texttt{R} \citep{RStudioCloud}. Through the Cloud, attendees are able to access publicly available workshop materials, without worrying about software installation, package installation, or transferring data. Especially important during an introductory workshop, unexpected hiccups around package installation, data transfer, or the working directory do not arise. 
+\quad The RStudio Cloud was created as a platform to make it easy to do, share,
+teach and learn data science using \texttt{R} \citep{RStudioCloud}. Through the 
+Cloud, attendees are able to access publicly available workshop materials, 
+without worrying about software installation, package installation, or
+transferring data. Each workshop is contained in an organized RStudio project
+directory, so attendees are exposed to best practices for reproducible project 
+construction. Workshop participants interact with the workshop's materials in
+the same manner as a locally installed version of RStudio, as seen in Figure
+\ref{fig:cloud}. 
 
-\quad Through RStudio Cloud, every student is able to clone a local copy of the workshop materials. Each workshop is contained in an organized \texttt{R} project directory, so attendees are exposed to best practices for reproducible project construction. Workshop participants interact with the workshop's materials in the same manner as a locally installed version of RStudio, as seen in Figure \ref{fig:cloud}. All of the participants' changes are stored locally in their RStudio Cloud workspace, which they have the ability to access for years to come. Additionally, RStudio Cloud provides interactive tutorials covering key skills in learning to program in \texttt{R}. 
-
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering
     \includegraphics[width = \textwidth]{images/RStudio_Cloud_blind.png}
-    \caption{RStudio Cloud workspace environment for \emph{Data Visualization with \texttt{ggplot2}} workshop. Every workshop works in an \texttt{R} project, containing a master \texttt{R Markdown} file, a data folder containing the data used in the workshop, and the handout produced for attendees.} 
+    \caption{RStudio Cloud workspace environment for \emph{Data Visualization
+    with \texttt{ggplot2}} workshop. Every workshop works in an RStudio project,
+    containing a master \texttt{R Markdown} file, a data folder containing the
+    data used in the workshop, and the handout produced for attendees.} 
     \label{fig:cloud}
 \end{figure}
 
+% Especially important during an introductory workshop,
+% unexpected hiccups around package installation, data transfer, or the working
+% directory do not arise. 
+% 
+% All of the participants' changes are stored locally in their RStudio Cloud workspace, which they have the ability to access for years to come. Additionally, RStudio Cloud provides interactive tutorials covering key skills in learning to program in \texttt{R}. 
+
 \subsubsection{Why R Markdown Documents?}
 
-\quad The \texttt{rmarkdown} package \citep{rmarkdown} and its associated \texttt{R Markdown} documents provide an easy-to-understand framework for creating reproducible documents. \text{R Markdown} documents are able to combine statistical computing and written analyses into one reproducible document, helping to break the copy-paste paradigm for generating statistical reports. The workshop materials participants clone include a master \texttt{R Markdown} document containing blocks of code and descriptions for every topic covered throughout the workshop. Therefore, when participants revisit their materials, the code they generated is neatly organized alongside the description of the process the code carries out, decreasing the amount of ramp-up time when they revisit their materials at a later time. 
-
-\quad During the workshop, \texttt{R Markdown} documents allow for attendees to keep their code organized and their workspace clean. For new learners, it is unnatural to create an organized script file with comments on each step. Furthermore, for these learners, it is difficult to understand the difference between generating \texttt{R} code in a script file versus executing code in the \texttt{R} console. An \texttt{R Markdown} file allows for participants' exploratory work to be saved within a topic's empty \texttt{R} code chunk, situating the code in context of each topic and helping workshop facilitators more easily debug any issues that may arise.   
+\quad R Markdown documents provide an easy-to-understand framework to combine
+statistical computing and written analysis in a single document, helping to
+break the copy-paste paradigm for generating statistical reports 
+\citep{mine-rmarkdown}. During the workshop, R Markdown documents allow for 
+attendees to keep their code organized and their workspace clean, which is
+unnatural for new learners. Each workshop's master R Markdown document contains
+blocks of code and descriptions for every topic covered, allowing for
+participants' exploratory work to be saved within a topic. For additional
+information on R Markdown documents see \citeauthor{mine-rmarkdown}. 
 
 \subsection{Workshop Content}
 
@@ -966,8 +1048,11 @@ Professor & 1 \\
 
 \quad Lastly, when attendees were asked what in the workshop needed to most improvement, themes of time and content appeared. The largest volume of constructive feedback from workshop participants focused on the amount of time allocated for the workshop. Many individuals stated that ``it could be better to have more time,'' suggesting an additional hour, with a ``break in between.'' However, others reflected that it could be more beneficial to have ``shorter, but more workshops,'' since ``it's easy for the brain to get tired after an hour or so.'' Due to the large attendance at many \emph{Introduction to \texttt{R}} workshops, often times a large number of questions would arise over the course of the afternoon. This lead to an inability to cover some of the workshop content in as much depth as hoped, which some participants remarked on. However, others felt that ``with so many people, [the workshop] had better discussions.'' There exists a balancing act between the amount of workshop content, the time allocated to addressing questions that may arise during the workshop, and the duration of the workshop. However, the three hours allocated to each of these workshops far exceeds the 60 minutes typically given to this content during a standard Data or Software Carpentry workshop. 
 
-\section{Dissemination \& Future Directions} 
+\section{Limitations, Dissemination, \& Future Research} 
 \label{sec:future}
+
+% The sentiments heard by these faculty unearth the possibilty 
+% that many faculty may be largely unaware of the computing skills necessary 
 
 \quad Currently, this design research is focusing on incorporating the content of these workshops into the \emph{Data Analysis and Visualization in \texttt{R}} lesson within Data Carpentry's Ecology curriculum. Infusing the skills outlined in this research into the \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson helps to create a Carpentries curriculum that best reflects the ``core data skills'' necessary for data-intensive environmental science research. For skills outlined by this research where there is no room in the current \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson, the Carpentries Incubator and Carpentries Lab provide potential avenues to produce additional lesson materials that are broadly available to The Carpentries community. These avenues allow for the continued discussion of the importance of integrating user-defined functions, conditional statements, and loops into the broader Data Carpentry Ecology curriculum.    
 
