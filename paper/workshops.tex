@@ -529,7 +529,9 @@ by department.}
 computational skills they believe are necessary for masters and doctoral 
 students to implement statistics for research in their field, and (2) how they 
 believe graduate students acquire these necessary skills. The full interview 
-protocol is included in Appendix A.  
+protocol is included in the GitHub repository associated with this manuscript 
+\footnote{Materials associated with this manuscript are available at 
+\href{https://github.com/atheobold/data-science-workshops-jse}{https://github.com/atheobold/data-science-workshops-jse}}.  
 
 \quad Based on faculty's responses, the interviewer asked follow-up questions to
 further explore why the faculty believe the computational skill(s) in question 
@@ -541,7 +543,7 @@ student researchers, follow-up questions were asked to delve further into what
 computing skills a student may require to successfully implement this type of
 statistical analysis with their data. Not only did these interviews provide
 valuable feedback on \emph{what} content the workshops should include, they also
-added insight into \emph{why} workshops form the ideal mode of delivery for this
+added insight into \emph{why} workshops form an ideal mode of delivery for this
 needed training.  
 
 \subsection{Data Analysis} 
@@ -555,9 +557,7 @@ created descriptive codes for the skills faculty identified as necessary in each
 of these excerpts. At the close of this stage, the author examined these codes 
 for specific references to computing skills currently addressed in Data 
 Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} 
-lesson. This lesson ``uses a tabular ecology dataset from the Portal Project 
-Teaching Database and teaches data cleaning, management, analysis, and 
-visualization" \citep{ecology_curriculum}. 
+lesson \citep{ecology_curriculum}. 
 
 \quad Following this process, the primary author began the second stage of 
 analytical coding. This stage acts as a method of synthesizing descriptive 
@@ -599,9 +599,11 @@ research
 \quad While some faculty had difficulties disentangling the statistical methods
 students use in research from the computing required to implement those methods,
 many were able to express the expectations they held for graduate students in
-their field throughout the entire data analysis cycle. These faculty member
-expectations fell predominantly into three categories: (1) working with and
-wrangling data, (2) data visualization, and (3) reproducibilty.
+their field throughout the entire data analysis cycle. A substantial overlap 
+was seen between faculty expecations and the components of ``data acumen'' 
+outlined by NAS \citep{nas}, with faculty expectations falling into three
+categories: (1) working with and wrangling data, (2) data visualization, and (3)
+reproducibilty.
 
 \subsubsection{Working with Data}  
 
@@ -617,7 +619,7 @@ data, and collating data," potentially merging a variety of data types into one
 meaningful data set. Every faculty member emphasized that students need to know
 how to ``organize their data and get it in a way that can be used by 
 \texttt{R}.'' 
-  
+
 \quad Often included in these skills for working with data are tasks that 
 require reorganizing data formats from wide to long or vice versa---a skill 
 which every faculty member griped is not acquired through the standard 
@@ -626,21 +628,26 @@ rows, variables as columns,' they kind of look at you like `what?'.'' Standard
 examples in statistics courses provide students with data which are the product
 of cross-tabulation, so students are never forced ``to figure out how to get the
 cross-tabulation you need, so that you can bring it into \texttt{R} and do your
-regression.''
+regression.'' These concerns reiterate the importance of ``data management and 
+curation'' detailed by NAS, who stated that ``at the heart of data science is
+the storage, preparation, and accessing of data'' \citep[p.\ 26]{nas}. 
 
 \subsubsection{Data Visualization} 
 
 \quad The importance data visualization plays in every stage of students'
 research was emphasized by every faculty member interviewed. Faculty affirmed
 that students should possess the ability to create visualizations of their data
-early, both for checks of data quality and to explore relationships. One faculty
-member declared that students' ability to look at their data in different ways
-dramatically shapes their research potential, and the tools available today 
-allow for researchers to create visualizations precisely tailored for each
-investigation. Many faculty voiced the usefulness of the \texttt{ggplot2} 
-\citep{ggplot} package for students' knowledge of producing data visualizations,
-lowering the barrier for students to learn ``how to visualize [their] data to
-explore and understand it.'' 
+early, both for checks of data quality and to explore relationships. These 
+expectations align with the the facility outlined by NAS (\citeyear{nas}), who
+stated that students need to have the ability to ``present data in a clear and
+compelling fashion'' (p.\ 26). One faculty member declared that students'
+ability to look at their data in different ways dramatically shapes their
+research potential, and the tools available today allow for researchers to
+create visualizations precisely tailored for each investigation. Many faculty
+voiced the usefulness of the \texttt{ggplot2} \citep{ggplot} package for
+students' knowledge of producing data visualizations, lowering the barrier for
+students to learn ``how to visualize [their] data to explore and understand
+it.'' 
 
 \subsubsection{Reproducibility}  
 
@@ -654,9 +661,15 @@ data, I think it fundamentally boils down to fear.'' Concern was raised for the
 students using Excel to wrangle their data, as ``they would never find [their]
 way back to what the original data set would have been'' and that their advisers
 would have no way to understand why data are missing. These advisers encourage
-students to avoid these brute force Excel manipulations, but students may not
+students to avoid these brute force Excel manipulations, yet students may not
 have the computing skills necessary to perform the same data wrangling task in a
-scripted and reproducible manner in \texttt{R}.
+scripted and reproducible manner, as their courses provide little to no exposure
+in carrying out the full data analysis cycle. These faculty concerns parallel 
+the ``workflow and reproducibility'' acumen outlined by NAS, who stated that 
+students need to ``be exposed to the concept of workflows'' and gain experience
+with the ``software software systems that enable building workflows (e.g., 
+\texttt{R} and Python) and how to document what they do (e.g., R Markdown and 
+Jupyter Notebook)'' \citep[p.\ 28]{nas}. 
 
 \subsubsection{How Students Gain Computational Skills}
 
@@ -678,7 +691,10 @@ they ``feel personally out of touch, because [students] work in \texttt{R} and
 I haven't taken the time to learn \texttt{R}, because of my training and my
 age.'' These faculty understand that often students are required to learn these
 skills on their own because ``there is definitely a gap between the code I can
-help them with.''  
+help them with.'' 
+
+% The sentiments heard by these faculty unearth the possibilty 
+% that many faculty may be largely unaware of the computing skills necessary 
 
 \quad Although faculty feel that there may exist gaps between their own
 knowledge of working in \texttt{R} and their students', every faculty member
