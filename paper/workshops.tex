@@ -727,8 +727,13 @@ we were able to tailor this workshop series to suit the needs of this population
 of graduate students as they prepare for and participate in data-intensive
 research. The workshop materials developed for this research are available
 through GitHub
-\footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub repository (link)}}, with video tutorials recorded and available through our institution's library 
+\footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
+repository (link)}}, with video tutorials recorded and available through our
+institution's library 
 \footnote{\href{http://bit.ly/ws_recordings}{MSU Library videos (link)}}.  
+
+% blurb on why these are different from Data Camp
+% blurb on how the public can use the Carpentries materials
 
 \subsection{Participant-Centered Learning}  
 
@@ -851,50 +856,150 @@ information on R Markdown documents see \citeauthor{mine-rmarkdown}.
 \subsubsection{Introduction to \texttt{R}}
 \label{sec:introR}
 
-\quad This first workshop in the series covers the basics of learning to program in \texttt{R}. The workshop first introduces the RStudio environment and project work flow in RStudio, discussing working directories and relative paths. Next, the workshop progresses through tools for working with vectors and lists of different data types, motivating methods for working with dataframes in \texttt{R}. After learning how to import data into \texttt{R}, the workshop proceeds through inspecting data, extracting data, and changing data types. Motivated by obtaining unexpected summary statistics when working with missing data, the workshop introduces \texttt{R} help files to inspect function arguments and their default values. These help files are called upon as participants use base \texttt{R} functions to create summaries of the data, perform basic data cleaning, and produce both univariate and bivariate visualizations of the data. 
+\quad This first workshop in the series covers the basics of learning to program
+in \texttt{R}. The workshop first introduces the RStudio environment and project
+work flow in RStudio, discussing project working directories and relative paths.
+Next, the workshop progresses through tools for working with vectors and lists 
+of different data types, motivating methods for working with dataframes. After
+learning how to import data into \texttt{R}, the workshop proceeds through
+inspecting data, extracting data, and changing data types. Motivated by
+obtaining unexpected summary statistics when working with missing data, the
+workshop introduces \texttt{R} help files to inspect function arguments and
+their default values. These help files are called upon as participants make use 
+of base \texttt{R} functions to create data summaries, perform simple data
+cleaning, and produce both univariate and bivariate visualizations of the data. 
 
 \subsubsection{Intermediate \texttt{R}}
 \label{sec:intermed}
-% Add footnote link to GitHub repository 
 
-\quad This second workshop in the series builds off of the content covered in \emph{Introduction to \texttt{R}}, without any expectations of attendees having additional knowledge or skills. The workshop begins with a review of creating objects in \texttt{R} and working with vectors and dataframes. The workshop then progresses through the use of relational statements in \texttt{R} and how to link these statements together using and (\texttt{\&}), or (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into the use of conditional statements, stepping from \texttt{if}, to \texttt{if else}, to \texttt{else if} statements. 
 
-\quad The second half of the workshop covers methods to iterate or replicate the same set of instructions many times. For-loops are introduced as a popular way to iterate or replicate the same set of instructions many times. Participants work through examples of a for-loop and a recursive for-loop, in the context of repeated operations on a dataset. These exercises motivate the discussion of why many \texttt{R} users recommend instead using vectorization for non-recursive for-loops. 
+\quad This second workshop in the series builds off of the content covered in 
+\emph{Introduction to \texttt{R}}, without any expectations of attendees having
+additional knowledge or skills. The workshop begins with a review of creating
+objects in \texttt{R} and working with vectors and dataframes. The workshop then
+progresses through the use of relational statements and how to link these 
+statements using and (\texttt{\&}), or (\texttt{|}), and not (\texttt{!})
+conjunctions. Next, the workshop dives into the use of conditional statements,
+stepping from \texttt{if}, to \texttt{if else}, to \texttt{else if} statements. 
 
-\quad Lastly, functions are presented as an approach to replicate the same set of instructions in multiple locations throughout your code. Persuaded by an \texttt{R} script which copies and pastes the same process multiple times, participants understand the difficulty in discerning the underlying process and spotting mistakes. Participants are then tasked with transforming this copy-paste process into a function. By parsing out the function writing process into a set of steps that one walks through once you've copied and pasted your code multiple times, participants have a more intuitive sense for why functions are useful and how they can create them in their own code.
+\quad The second half of the workshop covers methods to iterate or replicate the
+same set of instructions many times. For-loops are introduced as a popular way
+to iterate or replicate the same set of instructions many times. Participants
+work through examples of a for-loop and a recursive for-loop, in the context of
+repeated operations on a dataset. These exercises motivate a discussion of why
+\texttt{R} users recommend the use of vectorization for non-recursive for-loops. 
+Next, functions are presented as an approach to replicate the same set
+of instructions in multiple locations throughout your code. Persuaded by a 
+script which copies and pastes the same process multiple times, participants
+understand the difficulty in discerning the underlying process and spotting
+mistakes. Subsequently, participants are tasked with transforming this 
+copy-paste-modify process into a function. By parsing out the function writing
+process into a set of steps that one walks through once you've copied and pasted
+your code multiple times, participants have a more intuitive sense for why 
+functions are useful and how they can create them in their own code.
 
-\quad The content in this workshop, excluding relational statements, is not included in Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson. Instead, many of these concepts are covered in Software Carpentry's \emph{\texttt{R} for Reproducible Scientific Analysis} lesson. Yet, creating modularized code---which uses conditional statements, for-loops, and user-defined functions---are skills that many environmental science faculty asserted were necessary for graduate students to possess as they perform independent research.  
+\quad The content in this workshop, excluding relational statements, is not
+included in Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R}
+for Ecologists} lesson. Instead, many of these concepts are covered in Software
+Carpentry's \emph{\texttt{R} for Reproducible Scientific Analysis} lesson. Yet,
+creating modularized code---which uses conditional statements, for-loops, and
+user-defined functions---are skills that many environmental science faculty
+asserted were necessary for graduate students to possess as they perform
+independent research.  
 
 
 \subsubsection{Data Wrangling with \texttt{dplyr} and \texttt{tidyr}}
 \label{sec:wrangle}
 
-\quad Following the \emph{Intermediate \texttt{R}} workshop, the \emph{Data Wrangling} workshop continues forward with common data wrangling issues faced by environmental science researchers. Inspired by the difficulty of reading bracket subsetting and how cumbersome it can be to remember the different base \texttt{R} functions and formats to wrangle your data, this workshop introduces the \texttt{dplyr} \citep{dpylr} and \texttt{tidyr} \citep{tidyr} packages from the \texttt{tidyverse} \citep{tidyverse}. Much of \texttt{R}'s language has not changed over the last 20 years, which leaves the desire for a ``smoother, more efficient, and more readable pipeline for modern \texttt{R} workflows'' (Ross, Wickham, \& Robinson, \citeyear{tidytools}, p. 19). The \texttt{tidyverse} packages share common interfaces and data structures that make it simpler to learn data wrangling tasks and allow for the process to flow naturally from one step to the next. 
+\quad Following the \emph{Intermediate \texttt{R}} workshop, the \emph{Data 
+Wrangling} workshop continues forward with common data wrangling issues faced by
+environmental science researchers. Inspired by the difficulty of reading bracket
+subsetting and how cumbersome it can be to remember the different base 
+\texttt{R} functions and formats to wrangle your data, this workshop introduces 
+the \texttt{dplyr} \citep{dpylr} and \texttt{tidyr} \citep{tidyr} packages from
+the \texttt{tidyverse} \citep{tidyverse}. Much of \texttt{R}'s language has not
+changed over the last 20 years, which leaves the desire for a ``smoother, more
+efficient, and more readable pipeline for modern \texttt{R} workflows'' (Ross, 
+Wickham, \& Robinson, \citeyear{tidytools}, p. 19). The \texttt{tidyverse}
+packages share common interfaces and data structures that make it simpler to
+learn data wrangling tasks and allow for the process to flow naturally from one
+step to the next. 
 
-\quad The workshop begins with a description of the purpose of the \texttt{dplyr} package and an outline of six of the common ``verbs'' that handle common data wrangling challenges. Participants learn how to select columns with \texttt{select()}, filter rows with \texttt{filter()}, add new columns and modify existing columns with \texttt{mutate()}, create a table of summary measures by groups using \texttt{summarise()} and \texttt{group\_by()}, and change the ordering of a tables rows with \texttt{arrange()}. Prompted by the need to perform a sequence of multiple data wrangling operations, participants learn how to connect each of these data wrangling verbs using the pipe operator (\texttt{\%>\%}). 
+% Add references to how the tidyverse simplifies cognitive load when learning to program in R
 
-\quad Next, the concept of relational data is outlined, impelled by the need to integrate additional data files for analysis. Participants are introduced to the idea of key-value pairs and then use these pairs to map how the data with which they have been working can be joined with additional data files. After discussing the four types of joins (inner, left, right, full), participants use the \texttt{left\_join()} and  \texttt{right\_join()} functions to join the three datasets used in the workshop. 
 
-\quad The final topic of the workshop involves data reorganization, beginning with a discussion of ``tidy'' data. Up until now, the data were presented to participants in a ``tidy'' format, where every observation is one row, each variable has a column, and every value has one cell. This idea is then used to describe `long' and `wide' data formats, and a discussion around why each format may be useful ensues. The \texttt{tidyr} package is introduced to alleviate the burden of these types of data reorganizations, with an introduction to the \texttt{gather()} and \texttt{spread()} functions. In groups, participants then work through a final exercise applying the skills acquired throughout the entire workshop, starting with creating a data summary for multiple groups, then spreading the values across multiple columns, and finally recombining these multiple columns into a single column. 
+\quad The workshop begins by outlining six of the common ``verbs'' that handle
+common data wrangling challenges, included in the  \texttt{dplyr} package. 
+Participants learn how to select columns with \texttt{select()}, filter rows 
+with \texttt{filter()}, add new columns and modify existing columns with 
+\texttt{mutate()}, create a table of summary measures by groups using 
+\texttt{summarise()} and \texttt{group\_by()}, and change the ordering of a 
+tables rows with \texttt{arrange()}. Prompted by the need to perform a sequence
+of multiple data wrangling operations, participants learn how to connect each of
+these data wrangling verbs using the pipe operator (\texttt{\%>\%}). Next, the
+concept of relational data is outlined, motivated by the need to
+integrate additional data files for analysis. Participants are introduced to the
+idea of key-value pairs and then use these pairs to map how the data they have
+been working can be joined with additional data files. Participants use the 
+\texttt{left\_join()} and  \texttt{right\_join()} functions to join two 
+additional datasets. . 
+
+\quad The final topic of the workshop involves data reorganization. Until now, 
+participants were were presented with ``tidy'' datat, where every observation is
+one row, each variable has a column, and every value has one cell. The idea of 
+``tidy'' data is used to describe `long' and `wide' data formats. The 
+\texttt{tidyr} package is introduced to alleviate the burden of data 
+reorganizations, when transforming data from one layout to another, using the 
+\texttt{pivot\_wider()} and \texttt{pivot\_longer()} functions. In groups, 
+participants work through a final exercise, first creating a data summary for
+multiple groups, then pivoting these values across multiple columns, and finally
+recombining these multiple columns into a single column. 
 
 
 \subsubsection{Data Visualization with \texttt{ggplot2}}
 \label{sec:vizual} 
 
-\quad The final workshop in the series dives into creating data visualizations using the \texttt{ggplot2} package \citep{ggplot}. Rather than remembering a list of functions that make different visualizations, each with it's own unique syntax, arguments, inputs, and outputs, \texttt{ggplot2} creates a uniform interface with functions that each solve a particular class of problems. This uniform syntax and set of functions allows participants to create more dynamic visualizations out of the gate. This workshop works with the joined data from the close of the \emph{Data Wrangling} workshop. We begin with participants executing code to generate a scatterplot, using \texttt{ggplot()}, which is then used to illuminate the discussion of the \texttt{ggplot()} syntax.
+\quad The final workshop in the series dives into creating data visualizations
+using the \texttt{ggplot2} package \citep{ggplot}. Rather than remembering a
+list of functions that make different visualizations, each with it's own unique
+syntax, arguments, inputs, and outputs, \texttt{ggplot2} creates a uniform
+interface with functions that each solve a particular class of problems. This
+uniform syntax and set of functions allows participants to create more dynamic 
+visualizations out of the gate. This workshop works with the joined data from 
+the close of the \emph{Data Wrangling} workshop, first using a scatterplot to 
+illuminate the discussion of the \texttt{ggplot()} syntax.
 
 %\begin{verbatim}
 %ggplot(data = <DATA>) +
 %<GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
 %\end{verbatim}
 
-\quad Participants learn about the \texttt{mapping} argument for specifying aesthetics (\texttt{aes}) for the plot and the set of \texttt{geom} functions which define the type of plot you produce. By making explicit connections between the addition operator (\texttt{+}) and the pipe operator, participants understand addition to be an intuitive metaphor for adding layers to a plot. This discussion directly links to the concepts introduced in the previous workshop, using the pipe operator to motivate why the first argument of \texttt{ggplot()} is the data, and the `long' data format which \texttt{ggplot2} requires. 
+\quad Participants learn about the \texttt{mapping} argument for specifying
+aesthetics (\texttt{aes}) for the plot and the set of \texttt{geom} functions 
+which define the type of plot you produce. By making explicit connections
+between the addition operator (\texttt{+}) and the pipe operator, participants
+understand addition to be an intuitive metaphor for adding layers to a plot. 
+Next, the workshop examines how to modify the \texttt{ggplot()} aesthetics and 
+geoms to create violin plots, density plots, bar charts, and line plots. Each of
+these plots allow for participants to explore different \texttt{geom} functions
+and the aesthetics that pair with each plot. A conversation is had about the
+importance of plotting raw data rather than simply aggregate measures of the
+data, by adding a \texttt{geom\_point()} or \texttt{geom\_jitter()} layer, 
+further highlighting the layering possibilities in \texttt{ggplot()}. Finally,
+faceting is introduced as an additional tool for creating multivariate
+visualizations. Participants work with both the \texttt{facet\_wrap()} and 
+\texttt{facet\_grid()} functions to create multiple subplots based on
+categorical variables from the data. 
 
-\quad Next, the workshop examines how to modify the \texttt{ggplot()} aesthetics and geoms to create violin plots, density plots, bar charts, and line plots. Each of these plots allow for participants to explore different \texttt{geom} functions and the aesthetics that pair with each plot. A conversation is had about the importance of plotting raw data rather than simply aggregate measures of the data, by adding a \texttt{geom\_point()} or \texttt{geom\_jitter()} layer, further highlighting the layering possibilities in \texttt{ggplot()}. Finally, faceting is introduced as an additional tool for creating multivariate visualizations. Participants work with both the \texttt{facet\_wrap()} and \texttt{facet\_grid()} functions to create multiple subplots based on categorical variables from the data. 
+\quad By this point in the workshop, participants have posed many questions on
+how to modify aspects of a plot that don't depend on the geom. For the final 
+section of the workshop, the group walks through different customizations one 
+can make to each \texttt{ggplot} object. Participants learn how to flip a plot's 
+coordinate, how to make customizations of the plot's labels, the size of the
+points, the thickness of lines, the appearance of the plotting window, the color
+scheme used, and the size and color of the plot's labels. 
 
-\quad By this point in the workshop, participants have posed many questions on how to modify aspects of a plot that don't depend on the geom. For the final section of the workshop, the group walks through different customizations one can make to each \texttt{ggplot} object. Participants learn how to customize a plot's labels, the size of the points, the thickness of lines, the appearance of the plotting window, the color scheme used, and the size, color, and angle of the plot's labels. 
-
-\quad Exporting graphics is the final topic of the workshop. At this point, attendees have generated numerous plots, including faceted and arranged plots, which could potentially be used as templates for graphical displays in their research. The workshop closes with a discussion of the difference between exporting a plot using the ``Export'' tab and using the \texttt{ggsave()} function. As participants may ultimately use the \texttt{ggplot} visualizations they create for publications, a discussion of plotting dimension and resolution is included. 
+% \quad Exporting graphics is the final topic of the workshop. At this point, attendees have generated numerous plots, including faceted and arranged plots, which could potentially be used as templates for graphical displays in their research. The workshop closes with a discussion of the difference between exporting a plot using the ``Export'' tab and using the \texttt{ggsave()} function. As participants may ultimately use the \texttt{ggplot} visualizations they create for publications, a discussion of plotting dimension and resolution is included. 
 
 
 \subsection{Sustainability of Workshops}  
