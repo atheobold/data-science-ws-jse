@@ -17,7 +17,9 @@ library(RColorBrewer)
 # Read in Data  
 
 ```{r data}
-pre_survey <- read_csv("all_ws_presurvey_clean.csv")
+pre_survey <- read_csv("all_ws_presurvey_clean.csv") %>% 
+  rename(Department = department, 
+         Occupation = occupation)
 
 post_assessment <- read_csv("all_ws_postassessment_clean.csv")
 
@@ -27,9 +29,7 @@ post_assessment <- read_csv("all_ws_postassessment_clean.csv")
 # Summarizing Department & Occupation Attendance
 
 ```{r}
-attendance <- pre_survey %>%
-  rename(Department = department, 
-         Occupation = occupation) %>% 
+pre_survey <- pre_survey %>%
   mutate(Department = case_when(Department == 
                                   "Land Resources Environmental Science" ~ 
                                   "LRES",
@@ -42,47 +42,57 @@ attendance <- pre_survey %>%
                                 Department == 
                                   "Biochemistry/Microbiology" ~ 
                                   "Biochem/Microbio", 
-                                TRUE ~ Department)) %>% 
+                                TRUE ~ Department), 
+         Department = fct_explicit_na(Department), 
+         Occupation = fct_explicit_na(Occupation), 
+         Occupation = fct_relevel(Occupation, 
+                                  "Bachelors",
+                                  "Master's",
+                                  "Doctorate",
+                                  "Post-Doctorate",
+                                  "Faculty",
+                                  "Staff",
+                                  "Other")
+         ) 
+
+dept_attend <- pre_survey %>% 
+  group_by(Department) %>%
+  summarize(Freq = n()) %>% 
+  arrange(desc(Freq)) 
+
+
+dept_occupation_attend <- pre_survey %>% 
   group_by(Department, Occupation) %>%
   summarize(Freq = n()) %>% 
   arrange(desc(Freq)) %>% 
   ungroup()
 
-cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", 
-               "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
-attendance %>%
-  mutate(Department = case_when(Department == 
-                                  "Land Resources Environmental Science" ~ 
-                                  "LRES",
-                                Department == 
-                                  "Mathematics/Statistics/Data Science" ~ 
-                                  "Math/Stat/Data Science", 
-                                Department == 
-                                  "Animal and Range Sciences" ~ 
-                                  "Animal & Range Sciences",
-                                Department == 
-                                  "Biochemistry/Microbiology" ~ 
-                                  "Biochem/Microbio", 
-                                TRUE ~ Department), 
-         Department = factor(Department,
-                             levels = unique(attendance$Department))) %>% 
+palette <- c("#40e0d0", "#6495ed", "#0000CD", "#191970", 
+               "#008000", "#B22222", "#FFD700")
+
+plot <- dept_occupation_attend %>% 
+  mutate(Department = factor(Department,
+                                  levels = dept_attend$Department)
+         ) %>%
   ggplot(mapping = aes(x = Department, y = Freq, fill = Occupation)) + 
   geom_bar(stat = "identity") + 
-  ylim(0, 40) +
-  labs(x = "Department Affiliation") + 
+  labs(x = "Department Affiliation", 
+       y = "Attendance") + 
   theme_classic() +
-  theme(axis.text.x = element_text(angle = -75, hjust = 0, vjust = 0.5, 
-                                   size = 10), 
+  coord_flip(ylim = c(0, 32), expand = FALSE) + 
+  theme(axis.text.x = element_text(size = 14), 
         axis.title.y = element_blank(),
-        axis.title.x = element_text(size = 12), 
-        axis.text.y = element_text(size = 12),
-        legend.position = "top", 
-        legend.text = element_text(size = 10), 
-        legend.title = element_text(size = 10)) + 
-  scale_fill_brewer(palette = "Paired")
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14), 
+        legend.position = c(0.8, 0.8), 
+        legend.text = element_text(size = 14), 
+        legend.title = element_text(size = 14)) +
+  theme(panel.grid = element_blank(),
+        panel.border = element_blank()) + 
+  scale_fill_manual(values = palette)
   
-# ggsave(plot, file = "better_colors_attendance.png", dpi = 300, width = 7, height = 7)
+ggsave(plot, file = "better_colors_attendance.png", dpi = 300, width = 12, height = 7)
 ```
 
 
