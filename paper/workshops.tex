@@ -309,7 +309,7 @@ encourage submissions of broader topics in the statistics curriculum. Articles
 in the special issue ranged from detailing how computing should be included 
 throughout the Statistics curriculum \citep{jenny, tintle, hesterberg}, to 
 presenting thoughts on how data science topics should be integrated into 
-undergraduate statistics courses, \citep{nolan-data-analysis, grimshaw, 
+undergraduate statistics courses, \citep{esr, grimshaw, 
 baumer_datascience, hardin}. In the same issue, George Cobb provocatively stated
 that the statistics curriculum needed to be rebuilt ``from the ground up'' 
 (\citeyear{cobb}), as ``what we teach lags decades behind what we practice'' and
@@ -339,9 +339,11 @@ believe (1) that it is not possible to teach statistical concepts and
 programming in just one course, (2) that teaching programming takes up valuable
 time which could be used towards teaching important statistical concepts, or 
 (3) students are not interested in learning to program \citep{mine-jsm}. Thus, 
-many students leave their Introductory Statistics course without ``a set of 
-practices and attitudes about data that are immediately applicable to their 
-lives'' \citep[p.\ 309]{gould}. 
+despite charges for the statistics community to ``treat computing as fundamental
+as basic mathematics and writing'' \citep[p.\ 298]{esr}, many students leave
+their Introductory Statistics course without ``a set of practices and attitudes
+about data that are immediately applicable to their lives'' 
+\citep[p.\ 309]{gould}. 
 
 \quad Amidst these conversations, \texttt{R} packages were being created, which 
 would fundamentally changing how users interact with \texttt{R}. These 
@@ -421,19 +423,22 @@ or to learn from others. Moreover, this drove of online materials, poses a
 ``significant challenge in being able to discover relevant and high-quality
 materials,'' for researchers with limited time. 
 
-\quad Finally, extracurricular workshops are not a direct substitute for the
-prolonged instruction of these skills that occurs in a course. But, short, 
-intensive workshops, such as those provided by the Carpentries, are able to
-teach immediately useful skills that can be taught and learned quickly, keep
-learners active by using live coding and formative assessment, work with a
-learners from a variety of backgrounds, and build learners' self efficacy 
-\citep{null-carpentries}. Additionally, because workshops are able to thrive
-outside of university curricula, they hold the ability to ``adapt materials
-rapidly and remain on the leading edge of technological development'' 
-\citep[p. 547]{hampton}. Furthermore, workshops offer the opportunity for a wide
-variety of researchers, not just students, to acquire the data science skills
-necessary for data-intensive research, supporting the broader community of
-researchers. 
+\quad As, reiterated by Nolan and Temple Lang \citeyear{esr}, extracurricular
+learning opportunities are not a direct substitute for the prolonged instruction
+of these skills that occurs in a course, as ``students do not learn as much 
+[...] or get the same extensive training in computing or visualization as
+they would in a 6 or 10 week program'' (p.\ 295). However, this is not the goal 
+of these learning opportunities. Instead, short, intensive workshops, such as
+those provided by the Carpentries, are able to teach immediately useful skills
+that can be taught and learned quickly, keep learners active by using live
+coding and formative assessment, work with a learners from a variety of
+backgrounds, and build learners' self efficacy \citep{null-carpentries}.
+Additionally, because workshops are able to thrive outside of university
+curricula, they hold the ability to ``adapt materials rapidly and remain on the
+leading edge of technological development'' \citep[p.\ 547]{hampton}.
+Furthermore, workshops offer the opportunity for a wide variety of researchers,
+not just students, to acquire the data science skills necessary for
+data-intensive research, supporting the broader community of researchers. 
 
 \section{Methodology}
 
@@ -792,14 +797,15 @@ more aware of the need for a reproducible data analysis workflow.
 
 \quad RStudio is a free computer application that allows you access to the 
 resources of \texttt{R}, while providing you with a comfortable working
-environment \citep{rstudio}. The RStudio IDE ``makes [programming] less 
-intimidating than the bare \texttt{R} shell" \citep[p. 59]{mine}. Additionally, 
-the RStudio environment is consistent across operating systems, which is not the
-case for other statistical software packages. Because RStudio is an IDE, it
-includes integrated help files, intelligent code completion, and syntax
-highlighting---all of which help to reduce the learning curve. Additionally,
-RStudio makes reproducibility simple with dynamic \texttt{R Markdown} documents,
-allowing for a full integration of the data analysis workflow.
+environment \citep{rstudio}. The RStudio integrated development environment 
+(IDE) ``makes [programming] less intimidating than the bare \texttt{R} shell" 
+\citep[p. 59]{mine}. Additionally, the RStudio environment is consistent across
+operating systems, which is not the case for other statistical software
+packages. Because RStudio is an IDE, it includes integrated help files,
+intelligent code completion, and syntax highlighting---all of which help to
+reduce the learning curve. Furthermore, RStudio makes reproducibility simple
+with dynamic \texttt{R Markdown} documents, allowing for a full integration of
+the data analysis workflow.
 
 \subsubsection{Why RStudio Cloud?} 
 
@@ -818,7 +824,7 @@ the same manner as a locally installed version of RStudio, as seen in Figure
     \includegraphics[width = \textwidth]{images/RStudio_Cloud_blind.png}
     \caption{RStudio Cloud workspace environment for \emph{Data Visualization
     with \texttt{ggplot2}} workshop. Every workshop works in an RStudio project,
-    containing a master \texttt{R Markdown} file, a data folder containing the
+    containing a master R Markdown file, a data folder containing the
     data used in the workshop, and the handout produced for attendees.} 
     \label{fig:cloud}
 \end{figure}
@@ -839,7 +845,8 @@ attendees to keep their code organized and their workspace clean, which is
 unnatural for new learners. Each workshop's master R Markdown document contains
 blocks of code and descriptions for every topic covered, allowing for
 participants' exploratory work to be saved within a topic. For additional
-information on R Markdown documents see \citeauthor{mine-rmarkdown}. 
+information on R Markdown documents see \citeauthor{mine-rmarkdown} 
+(\citeyear{mine-rmarkdown}). 
 
 \subsection{Workshop Content}
 
@@ -954,15 +961,11 @@ using the \texttt{ggplot2} package \citep{ggplot}. Rather than remembering a
 list of functions that make different visualizations, each with it's own unique
 syntax, arguments, inputs, and outputs, \texttt{ggplot2} creates a uniform
 interface with functions that each solve a particular class of problems. This
-uniform syntax and set of functions allows participants to create more dynamic 
+uniform syntax and ``vocabulary for describing the elements of a statistical 
+plot'' \citep[p.\ 261]{nolan-viz}, allows participants to create more dynamic 
 visualizations out of the gate. This workshop works with the joined data from 
 the close of the \emph{Data Wrangling} workshop, first using a scatterplot to 
 illuminate the discussion of the \texttt{ggplot()} syntax.
-
-%\begin{verbatim}
-%ggplot(data = <DATA>) +
-%<GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
-%\end{verbatim}
 
 \quad Participants learn about the \texttt{mapping} argument for specifying
 aesthetics (\texttt{aes}) for the plot and the set of \texttt{geom} functions 
@@ -974,23 +977,25 @@ geoms to create violin plots, density plots, bar charts, and line plots. Each of
 these plots allow for participants to explore different \texttt{geom} functions
 and the aesthetics that pair with each plot. A conversation is had about the
 importance of plotting raw data rather than simply aggregate measures of the
-data, by adding a \texttt{geom\_point()} or \texttt{geom\_jitter()} layer, 
-further highlighting the layering possibilities in \texttt{ggplot()}. Finally,
-faceting is introduced as an additional tool for creating multivariate
-visualizations. Participants work with both the \texttt{facet\_wrap()} and 
-\texttt{facet\_grid()} functions to create multiple subplots based on
-categorical variables from the data. 
+data, and the difficulties that might arise. Similar to the advise of Nolan and
+Perrett \citeyear{nolan-viz}, adding a \texttt{geom\_point()} or 
+\texttt{geom\_jitter()} layer to a visualization highlights tools that can be 
+used so graph elements don't interfere with the data (e.g. jittering,
+transparency). Finally, faceting, using \texttt{facet\_wrap()} and
+\texttt{facet\_grid()}, is introduced as an additional visualization tool to
+facilitate multivariate comparisons \citep[p.\ 261]{nolan-viz}. 
 
 \quad By this point in the workshop, participants have posed many questions on
 how to modify aspects of a plot that don't depend on the geom. For the final 
 section of the workshop, the group walks through different customizations one 
-can make to each \texttt{ggplot} object. Participants learn how to flip a plot's 
-coordinate, how to make customizations of the plot's labels, the size of the
-points, the thickness of lines, the appearance of the plotting window, the color
-scheme used, and the size and color of the plot's labels. 
-
-% \quad Exporting graphics is the final topic of the workshop. At this point, attendees have generated numerous plots, including faceted and arranged plots, which could potentially be used as templates for graphical displays in their research. The workshop closes with a discussion of the difference between exporting a plot using the ``Export'' tab and using the \texttt{ggsave()} function. As participants may ultimately use the \texttt{ggplot} visualizations they create for publications, a discussion of plotting dimension and resolution is included. 
-
+can make to each \texttt{ggplot} object, to add clarity and information to the 
+plot. Participants learn how to flip a plot's coordinate, how to make
+customizations of the plot's labels, the size of the points, the thickness of
+lines, the appearance of the plotting window, and the color scheme used. Each of
+these customizations continue to emphasize to participants the iterative nature 
+of creating data visualizations, transforming a simple plot step-by-step ``into
+a graph that is data rich and presents a clear vision of the important features
+of the data'' \citep[p.\ 262]{nolan-viz}.
 
 \section{Evaluating Data Science Workshops}
 \label{sec:implement}
@@ -1030,23 +1035,23 @@ an itemized list of campus departments and positions.}
 \end{figure}
 }
 
-\quad A total of 150 unique students, faculty, and staff attended at
-least one of the workshops. A total of 65 individuals attended the 
-\emph{Introduction to \texttt{R}} workshop, 40 attended \emph{Intermediate 
-\texttt{R}}, and 10 attended each of the \emph{Data Wrangling} and \emph{Data
-Visualization} workshops. The majority of the workshop attendees were in 
-biological fields---from departments such as Land Resources and Environmental
-Sciences (LRES), Ecology, Plant Sciences, Animal and Range Sciences, Earth
-Sciences, and Biochemistry or Microbiology. The majority of workshop attendees
-were masters and doctoral students in these fields. It is worth noting that 12
-faculty, staff, and postdocs also attended these workshops. Figure 
-\ref{fig:departments} displays the department affiliations of the workshop
-attendees and their current occupation. 
+\quad A total of 121 students, faculty, and staff attended at least one of the
+workshops. A total of 64 individuals attended the \emph{Introduction to 
+\texttt{R}} workshop, 40 attended \emph{Intermediate \texttt{R}}, and 9 attended
+each of the \emph{Data Wrangling} and \emph{Data Visualization} workshops. The
+majority of the workshop attendees were in biological fields---from departments
+such as Land Resources and Environmental Sciences (LRES), Ecology, Plant
+Sciences, Biochemistry or Microbiology, Animal and Range Sciences, and Earth
+Sciences. Additionally, over 60\% of workshop attendees were masters and
+doctoral students. It is worth noting, however, that 18 faculty, staff, and
+postdocs also attended these workshops. Figure \ref{fig:departments} displays
+the department affiliations of the workshop attendees and their current 
+occupation. 
 
 \quad Consistent with the environmental science literature \citep{andelman, 
 hampton, hernandez, datacarpentry}, a large number of workshop participants were
 either unfamiliar with the concept of a programming language or had no
-experience with any programming languages. Out of the 122 complete survey
+experience with any programming languages. Out of the 121 complete survey
 responses, nearly 60\% of attendees reported no experiences with any programming
 languages, 20\% reported experiences working in \texttt{R}, and 30\% reported
 experiences with other programming languages (e.g. MatLab, SQL, Java, C). 
@@ -1195,7 +1200,8 @@ the content from both Data and Software Carpentry workshops. Additionally,
 through this experience the primary author was able to guide the future 
 workshop instructors through the process of becoming certified instructors. 
 
-\quad The ``standard'' Carpentries workshop format takes place over an 
+\quad Similar to the Explorations in Statistics Research workshop model 
+\citep{esr}, the ``standard'' Carpentries workshop format takes place over an 
 intensive two days. Self-organized workshops allow for the added flexibility of 
 tailoring this format more conducive for busy students, faculty, and staff.
 Yet, institutions should be aware of the benefits and costs of this 
