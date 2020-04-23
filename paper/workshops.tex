@@ -666,7 +666,7 @@ in preparation for analysis and visualization, all using reproducible tools.
 \quad The materials for these workshops were adapted from Data Carpentry's 
 \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson 
 \citep{ecology_curriculum}, a curriculum maintained by experienced researchers
-in ecological fields, which uses ecology-specific data contexts \footnote{This
+in ecological fields, which uses ecology-specific data contexts\footnote{This
 work is a derivative of \emph{Data Analysis and Visualization in \texttt{R} for
 Ecologists} \href{https://datacarpentry.org/R-ecology-lesson/}{(https://datacarpentry.org/R-ecology-lesson/)}
 by Data Carpentry, used under CC-BY 
@@ -680,20 +680,23 @@ developed for this research are available through GitHub
 \footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
 repository (link)}}, with video tutorials recorded and available through our
 institution's library 
-\footnote{\href{http://bit.ly/ws_recordings}{MSU Library videos (link)}}.  
-
+\footnote{\href{http://bit.ly/ws_recordings}{MSU Library videos (link)}}. 
+\stacey{Need to anonymize footnotes}
 %  Data Carpentry materials are freely available under the \href{https://creativecommons.org/licenses/by/2.0/}{Creative Commons Attribution License}, for re-use or adaptation
 
 \subsection{Data Context}  
 
 \quad Emphasized by both the NAS and these faculty, ``effective application of
-data science to a domain requires knowledge of that domain'' \citep[p.\ 29]{nas}. 
+data science to a domain requires knowledge of that domain'' (\citeyear[p.\ 29]{nas}). 
 Hence, data science instruction ought to be grounded in ``substantive contextual
 examples,'' to ``ensure that data scientists develop the capacity to pose and
 answer questions'' with data relevant to them (\citeyear{nas}, p.\ 30). 
 Therefore, ecological data are used for these workshops, originating from 
 Montana Fish, Wildlife, and Parks and the Portal Project Teaching Database 
-\citep{portal_data}. These data highlight a variety of aspects that
+\citep{portal_data}.
+\stacey{Do you think the mention of Montana is a problem if the submission
+is anonymous?}
+These data highlight a variety of aspects that
 commonly occur in ecological data, including multiple sampling instances,
 mark-recapture, biological measurements, and meta- and micro-level data. 
 
@@ -711,10 +714,10 @@ the entire data analysis cycle (R Markdown).
 research community, a dramatic change over the last decade \citep{Rpopular}. 
 Furthermore, with the invention of the RStudio IDE \citep{rstudio}, this
 user-ship continues to increase, as \texttt{R} includes over 100 packages
-frequently used in ecological data analysis \href{https://CRAN.R-project.org/view=Environmetrics}{(https://CRAN.R-project.org/view=Environmetrics)}. \texttt{R} is free and open source, so
+frequently used in ecological data analysis\footnote{\href{https://CRAN.R-project.org/view=Environmetrics}{https://CRAN.R-project.org/view=Environmetrics}}. \texttt{R} is free and open source, so
 attendees learn a statistical programming language that will be accessible to
 them throughout their careers. Unlike MARK, VORTEX, or RMAS, with \texttt{R}, 
-attendees results do not depend on remembering the sequence of buttons they
+attendees' results do not depend on remembering the sequence of buttons they
 clicked. With the shocking realization that large numbers of modern scientific
 findings cannot be replicated \citep{economist, johnson} and the growing
 appreciation for reproducible data analysis methods in ecological research
@@ -724,26 +727,30 @@ a reproducible data analysis workflow.
 
 \subsubsection{Why RStudio?}
 
-\quad RStudio is a free computer application that allows you access to the 
-resources of \texttt{R}, while providing you with a comfortable working
-environment \citep{rstudio}. The RStudio IDE ``makes [programming] less
+\quad RStudio is a free computer application that allows you to access the 
+resources of \texttt{R} through a comfortable working
+environment \citep{rstudio}. The RStudio IDE
+\stacey{Was this acronym introduced earlier? If not, spell it out here and put the acronym in parentheses.}
+``makes [programming] less
 intimidating than the bare \texttt{R} shell" \citep[p.\ 59]{mine}. Additionally,
-the RStudio environment is consistent across operating systems, which is not the
+the RStudio environment is consistent across operating systems, which is not often the
 case for other statistical software packages. Moreover, because RStudio is an
 IDE, it includes integrated help files, intelligent code completion, and syntax 
-highlighting---all of which help to reduce the learning curve. 
+highlighting---all of which help to reduce\stacey{"reduce" seems like the wrong word here.
+What would be a word that meant "to make less steep"?} the learning curve. 
 
 \subsubsection{Why RStudio Cloud?} 
 
 \quad The RStudio Cloud was created as a platform to make it easy to do, share,
 teach, and learn data science using \texttt{R} \citep{RStudioCloud}. Through the 
-Cloud, attendees are able to access publicly available workshop materials, 
+Cloud, attendees are able to access publicly available workshop materials 
 without worrying about software installation, package installation, or
 transferring data. Workshop participants interact with the workshop's materials
 in the same manner as a locally installed version of RStudio, as seen in Figure
 \ref{fig:cloud}, and an organized RStudio project directory exposes attendees to 
 best practices for reproducible project construction. 
 
+\stacey{This figure looks blurry}
 \begin{figure}[t!]
     \centering
     \includegraphics[width = \textwidth]{images/RStudio_Cloud_blind.png}
@@ -764,7 +771,7 @@ attendees to keep their code organized and their workspace clean, which is
 unnatural for new learners. Each workshop's master R Markdown document contains
 blocks of code and descriptions for every topic covered, allowing for
 participants' exploratory work to be saved within a topic. For additional
-information on R Markdown documents see \citeauthor{mine-rmarkdown} 
+information on R Markdown documents, see \citeauthor{mine-rmarkdown} 
 (\citeyear{mine-rmarkdown}). 
 
 \subsection{Workshop Content}
