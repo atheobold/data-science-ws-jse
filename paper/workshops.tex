@@ -375,6 +375,7 @@ Claiming these graduate students ought to take additional, data science-specific
 courses to obtain these skills is infeasible for many, as graduate programs
 frequently leave little room for additional coursework. 
 
+\stacey{I feel like the next three paragraphs could be shortened and condensed.}
 \quad Until computing has been meaningfully integrated into these service 
 courses, extracurricular workshops hold the potential to address the gap between
 the computational preparation of students by their coursework and the 
@@ -421,12 +422,13 @@ understanding the skills required for these students to be successful in their
 research. Design-based implementation research (DBIR) \citep{confrey, penuel,
 oneill} ``offers a model for the design and testing of innovations
 within the crucible of classrooms and other contexts for learning'' 
-\citep[p.\ 140]{penuel}. Rather than creating workshops covering content outside
-parties believe are important, DBIR uses collaboration with members of the
+\citep[p.\ 140]{penuel}. DBIR uses collaboration with members of the
 community to develop ``evidence-based improvements'' (p.\ 143) to teaching 
 innovations---situating community members as ``co-designers of solutions to 
 problems'' \citep[p.\ 140]{penuel} rather than bystanders. 
 
+\stacey{This paragraph repeats what was already said in the last paragraph of the intro.
+Could we cut parts of this or the intro paragraph so we're not repeating it?}
 \quad This paper describes the results of the first iteration of this DBIR, 
 consisting of three phases. Section \ref{sec:faculty} summarizes phase one which 
 investigated the computing skills necessary for graduate-level environmental
@@ -452,10 +454,11 @@ researchers in their respective fields. Thus, interviews with faculty members
 from these fields allow for us to gain an understanding of the essential skills
 required of environmental science graduate students. 
 
-\quad In the spring of 2017 and fall of 2018, every faculty member in the
+\quad In the spring of 2017 and fall of 2018, every faculty member
+currently overseeing a graduate student in the
 Ecology, Land Resources and Environmental Sciences, Animal and Range Sciences, 
-and Plant Sciences and Plant Pathology departments, currently overseeing a
-graduate student were emailed requesting their participation in this research. 
+and Plant Sciences and Plant Pathology departments was emailed
+requesting their participation in this research. 
 While some faculty enthusiastically agreed to participate, others declined for
 three main reasons---they hadn't directly overseen a graduate student recently,
 they deemed themselves to be weak in statistics, or they were unavailable to
@@ -484,13 +487,14 @@ by department.}
 
 \subsection{Data Collection}  
 
-\quad The faculty members who agreed to participate, engaged in a one-hour 
+\quad The faculty members who agreed to participate engaged in a one-hour 
 interview regarding (1) the computational skills they believe are necessary for
 masters and doctoral students to implement statistics for research in their
 field, and (2) how they believe graduate students acquire these necessary
-skills. The full interview protocol as supplementary material 
+skills. The full interview protocol is available as supplementary material 
 \footnote{Materials associated with this manuscript are available at 
-\href{https://github.com/atheobold/data-science-workshops-jse}{https://github.com/atheobold/data-science-workshops-jse}}.  
+\href{https://github.com/atheobold/data-science-workshops-jse}{https://github.com/atheobold/data-science-workshops-jse}}.\stacey{If this version needs to be anonymous,
+then you need to remove this footnote or put "anonymous website" in the footnote}
 
 % \quad Based on faculty's responses, the interviewer asked follow-up questions to
 % further explore why the faculty believe the computational skill(s) in question 
@@ -507,7 +511,7 @@ skills. The full interview protocol as supplementary material
 
 \subsection{Data Analysis} 
 
-\quad The primary author led a three-stage data analysis process (Miles, 
+\quad The primary author led a three-stage data analysis process on the faculty interviews (Miles, 
 Huberman, Salada$\tilde{\text{n}}$a, \citeyear{miles}). During the first stage,
 the interviews for every faculty member were transcribed verbatim. Following 
 this process, the primary author read the transcripts independently, 
@@ -520,7 +524,7 @@ lesson \citep{ecology_curriculum}.
 
 % Why only look at this curriculum? 
 
-\quad Following this process, the primary author began the second stage of 
+\quad The primary author then began the second stage of 
 analytical coding, synthesizing descriptive summaries into instances of a
 general concept \citep[p.\ 95]{miles}. During this stage, skills were linked
 thematically, and themes that held across multiple interviews were retained.
@@ -533,28 +537,31 @@ example, while every faculty voiced students' need to work with data in
 other data wrangling operations, such as reorganize data, filtering out rows of
 data, selecting columns, creating new variables, or modifying existing
 variables. Hence, the themes of ``working with data'' and ``data wrangling''
-were merged into the single theme of ``working with data.'' Alternatively, while
-reproducibility is a key aspect to working with data in \texttt{R}, faculty
-sentiments regarding the need for students' work to be reproducible was not
-voiced alongside a specific software.
+were merged into the single theme of ``working with data.'' 
+%Alternatively, while
+%reproducibility is a key aspect to working with data in \texttt{R}, faculty
+%sentiments regarding the need for students' work to be reproducible was not
+%voiced alongside a specific software.
 
 \quad In the final stage of the analysis, the primary author searched the 
 faculty transcripts for evidence supporting the emerging themes, scrutinizing 
 whether each identified skill fit into the identified themes. Following this 
 validation process, the first and second authors met to discuss the rationale
 for each code and inspect the skills identified by faculty in the context of the
-emergent themes. These final themes provide evidence for designing data 
+emergent themes. These final themes informed the design of data 
 science workshops for environmental science graduate students. 
 
 \subsection{Skills Identified by Environmental Science Faculty}
 
+\stacey{What is the distinction between themes (previous section) and skills (this section title)? Should we use "themes" in this section's title rather than "skills"?}
 \quad While some faculty had difficulties disentangling the statistical methods
 students use in research from the computing required to implement those methods,
 many were able to express the computing skills necessary for graduate students
 in their field to engage in the entire data analysis process. A substantial
 overlap was seen between faculty expectations and the ``data acumen'' outlined
-by NAS \citep{nas}, falling into three categories: (1) working with and
-wrangling data, (2) data visualization, and (3) reproducibilty.
+by the National Academies of Sciences, Engineering, and Medicine (NAS) (\citeyear{nas}), falling into three categories: (1) working with and
+wrangling data, (2) data visualization, and (3) reproducibilty.\stacey{Are these three
+categories the "data acumen" or the faculty expectations? Not clear.}
 
 \subsubsection{Working with Data}  
 
@@ -578,16 +585,16 @@ cross-tabulation [they] need, so that [they] can bring it into \texttt{R} and do
 [their] regression.'' These concerns reiterate the importance of ``data
 management and curation'' detailed by NAS, who stated that ``at the heart of
 data science is the storage, preparation, and accessing of data'' 
-\citep[p.\ 26]{nas}. 
+(\citeyear[p.\ 26]{nas}). 
 
 \subsubsection{Data Visualization} 
 
 \quad The importance data visualization plays in every stage of students'
 research was emphasized by every faculty member interviewed. Faculty affirmed
 that students should possess the ability to create visualizations of their data
-early and often. These expectations align with the the facility outlined by NAS
-(\citeyear{nas}), who stated that students need to have the ability to ``present
-data in a clear and compelling fashion'' (p.\ 26). One faculty member declared
+early and often. These expectations align with the the facility outlined by NAS,
+who stated that students need to have the ability to ``present
+data in a clear and compelling fashion'' (\citeyear[p.\ 26]{nas}). One faculty member declared
 that students' ability to look at their data in different ways dramatically
 shapes their research potential, and the tools available today allow for
 researchers to create visualizations precisely tailored for each investigation.
@@ -597,6 +604,7 @@ explore and understand it.''
 
 \subsubsection{Reproducibility}  
 
+\stacey{Clarify how we define "reproducibility" in this paper here.}
 \quad Every faculty member emphasized the usefulness of ``manipulating data in
 ways that are repeatable,'' through scripted programs such as \texttt{R}. Across
 environmental science disciplines, faculty concurred that many students do not
@@ -626,8 +634,8 @@ that it isn't valuable, but there is no one to teach it.'' Some faculty believed
 manipulate data than their advisers do,'' while others lamented the gaps between
 the computational skills of their graduate students and their own training,
 feeling ``personally out of touch [with students] because I haven't taken the
-time to learn \texttt{R}, because of my training and my age.''These gaps impact
-the assistance faculty can provide to their students, as ``increasingly faculty
+time to learn \texttt{R}, because of my training and my age.'' These gaps impact
+the assistance faculty can provide to their students, as ``increasingly, faculty
 feel that they're not at the forefront of their programming abilities, so their
 students are being self-taught and are often computationally ahead of them.''
 
