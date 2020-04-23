@@ -217,13 +217,12 @@ two studies on the computational ill-preparation of environmental students by
 their curriculum. In the first large scale study of ecology instructors, 
 Strasser and Hampton found that undergraduate students were not being prepared
 with the data management tools necessary to engage in environmental science
-research. Across 51 different institutions, despite largely affirming the
+research\stacey{Missing citation for Strasser and Hampton year}. Across 51 different institutions, despite largely affirming the
 importance of data management skills, fewer than 20\% of instructors reported
-data management topics in their courses. That same year, an environmental
-science graduate student led a large scale study of the computational
-experiences of future environmental scientists \citep[p.\ 1068]{hernandez}. In a
-survey of environmental science graduate students across the United States, the
-authors found that over 74\% of the students surveyed reported they had no
+data management topics in their courses. 
+That same year, in a
+survey of environmental science graduate students across the United States,
+\citet{hernandez} found that over 74\% reported they had no
 skills in any programming language---including \texttt{R}---and only 17\%
 reported basic skill levels in any programming language. Hence, a large number
 of students may be leaving their undergraduate and graduate programs without the
@@ -236,9 +235,9 @@ students could learn ``particular methods or technologies'' (p.\ 1075).
 \citep[p.\ 136]{datacarpentry} in undergraduate and graduate programs in the 
 environmental sciences, external learning opportunities are necessary to prevent
 researchers from continuing to teach themselves or each other everything they
-know about data management and analysis. Out of these need for high-quality
+know about data management and analysis. Out of this need for high-quality
 resources for learning scientific computing emerged The Carpentries project
-(\citeyear{carpentries}). The Carpentries focuses on teaching ``foundational
+(\citeyear{carpentries}), which focuses on teaching ``foundational
 computational and data science skills to researchers'' through in-person,
 hands-on, domain-specific workshops. As part of their educational mission,
 The Carpentries collaboratively develops publicly available lessons for
@@ -256,21 +255,16 @@ effective and reproducible way'' (p.\ 143).
 % programs to equip students with the computational skills they need to conduct 
 % data-intensive research'' (p.\ 547). 
 
-\quad Over the last 20 years, statistical preparation in the environmental 
-sciences has grown to be considered vital \citep{hampton}, and statistics
-coursework has been integrated into graduate programs across the nation. Yet,
-none of these conversations have acknowledged the substantial role students'
-statistics education potentially plays in their attainment of the data science
-skills necessary for research. Today, throughout their research, the majority of 
+\quad Today, throughout their research, the majority of 
 environmental science graduate students are required to produce code as part of
-their data analysis process \citep{mislan}. To compound the difficulties these 
-graduate students face, over this same period, the software used by
+their data analysis process \citep{mislan}. Compounding the difficulties these 
+graduate students face, the software used by
 environmental science researchers has shifted, with an increase of over 45\%
 in the use of \texttt{R} in environmental science publications since 2008
-\citep{Rpopular}. The clear need for data science proficiency in environmental
-science research necessitates a transformation of the environmental science
-curriculum similar to that which infused statistics preparation into the
-required graduate coursework. 
+\citep{Rpopular}. 
+Yet, none of these conversations have acknowledged the substantial role students'
+statistics education could potentially play in the attainment of the data science
+skills necessary for research.
 
 \subsection{Computing in the Statistics Curriculum}
 
@@ -292,9 +286,8 @@ use a variety of computational approaches to extract meaning from data, program
 in higher-level languages" \citep[p.\ 7]{asa}. 
 
 \quad With this curricular momentum, in 2015, \emph{The American Statistician} 
-produced a special issue on ``Statistics and the Undergraduate Curriculum,'' to
-encourage submissions of broader topics in the statistics curriculum. Articles 
-in the special issue ranged from detailing how computing should be included 
+produced a special issue on ``Statistics and the Undergraduate Curriculum." Articles 
+in this special issue ranged from detailing how computing should be included 
 throughout the Statistics curriculum \citep{jenny, tintle, hesterberg}, to 
 presenting thoughts on how data science topics should be integrated into 
 undergraduate statistics courses, \citep{esr, grimshaw, 
@@ -305,24 +298,25 @@ that the statistics curriculum needed to be rebuilt ``from the ground up''
 statistical practice continues to widen'' (p.\ 268). Moreover, despite the 
 issue's focus on the broader statistics curriculum, statistics educators
 continued to lament that the current Introductory Statistics curriculum teaches
-a snapshot of the entire data analysis cycle, ``wherein challenges with data
+but a snapshot of the entire data analysis cycle, ``wherein challenges with data
 computational methods, and visualization and presentation are typically elided'' 
-\citep[p.\ 336]{baumer_datascience}. 
+\citep[p.\ 336]{baumer_datascience}. \stacey{Is elided a word? Or is that a typo?}
 
-\quad The following year, however, brought the revised GAISE college report 
+\quad The following year brought the revised GAISE college report 
 \citep{gaise}, creating a push for reform in the Introductory Statistics 
 curriculum. The six recommendations originally outlined by the committee in 2005
 continued, but the authors suggested two new emphases for the first
 recommendation (teach statistical thinking), which better reflect the modern
 practice of statistics. First, statistics educators should ``teach statistics as
-an investigative process of problem-solving and decision making,'' and should 
+an investigative process of problem-solving and decision making,'' and second, should 
 ``give students experience with multivariable thinking'' (\citeyear{gaise}, 
 p.\ 3). These recommendations reiterate the sentiments heard throughout the
 statistics community, that students should emerge from our courses with the
 understanding that data analysis ``isn't just inference and modeling, it's also
 data importing, cleaning, preparation, exploration, and visualization'' 
 \citep{mine-jsm}. Yet, the inclusion of these topics in the Introductory 
-Statistics curriculum is still a heated discussion. Many educators continue to 
+Statistics curriculum is still a heated discussion.\stacey{This is a strong statement -
+could you cite something?} Many educators continue to 
 believe (1) that it is not possible to teach statistical concepts and 
 programming in just one course, (2) that teaching programming takes up valuable
 time which could be used towards teaching important statistical concepts, or 
@@ -331,10 +325,11 @@ despite charges for the statistics community to ``treat computing as fundamental
 as basic mathematics and writing'' \citep[p.\ 298]{esr}, many students leave
 their Introductory Statistics course without ``a set of practices and attitudes
 about data that are immediately applicable to their lives'' 
-\citep[p.\ 309]{gould}. 
+\citep[p.\ 309]{gould}. \stacey{It seems odd to cite a paper from 2010 when
+arguing that changes haven't been made since the new guidelines in 2014.}
 
-\quad Amidst these conversations, \texttt{R} packages were being created, which 
-would fundamentally changing how users interact with \texttt{R}. These 
+\quad Amidst these curriculum conversations, \texttt{R} packages that
+would fundamentally change how users interact with \texttt{R} were being developed. These 
 \texttt{R} packages, universally known as the ``\texttt{tidyverse},'' have 
 created user friendly \texttt{R} tools which ``share an underlying design 
 philosophy, grammar, and data structures'' \citep{tidyverse}. Statistics 
@@ -343,16 +338,15 @@ classroom to teach reproducibility \citep{mine-rmarkdown}, data management
 \citep{horton_takingachance}, dynamic data \citep{hardin-tise}, and big data
 \citep{horton-tise}. While there exists a growing momentum to incorporate these
 new \texttt{R} tools into the Introductory Statistics classroom, attention has 
-yet to be paid to alternative statistics service courses, such as those taken 
-by environmental science graduate students. These courses, like Introductory 
-Statistics, serve graduate students from a variety of scientific backgrounds. 
-However, unlike an undergraduate Introductory Statistics course, students are 
+yet to be paid to statistics service courses. These courses, like Introductory 
+Statistics, serve students from a variety of scientific backgrounds. 
+However, unlike an undergraduate Introductory Statistics course, graduate students are 
 expected to emerge from their statistics coursework with the statistical and 
 data science skills necessary for their research. 
 
 \quad The frustrations echoed by environmental science educators 
 \citep{hampton, datacarpentry} suggest that, despite the inclusion of statistics 
-coursework into these graduate programs, students continue to leave the 
+coursework into their graduate programs, students continue to leave the 
 statistics classroom without the data science skills necessary to participate in 
 the data analysis cycle in their own research. The fundamental question raised 
 ten years ago by Nolan and Temple Lang still applies today: do our students
@@ -361,10 +355,9 @@ efficiently?'' (\citeyear{nolan}, p.\ 100). An in-depth study of environmental
 science graduate students' experiences acquiring the computing knowledge
 necessary for their research answered this question with a resounding `no' 
 \citep{theobold}. Like the hypothesis of Teal and colleagues (2015), these
-students did not attribute their acquisition of the data science skills
-necessary for their research to the statistics courses they took for their
-degree. Rather, students gained the data science skills necessary to engage in
-the entire data analysis cycle through independent research experiences, an
+students did not attribute their data science skills
+to the statistics courses they took for their
+degree. Rather, students gained these skills through independent research experiences, an
 ``all-knowing'' past or current graduate students, and peer networks. Ten years 
 after the publication of ``Computing in the Statistics Curriculum,'' we continue
 to assume that ``students will `pick up' the skills they need'' to participate 
@@ -382,7 +375,7 @@ the wrong concepts, learn just enough to get what they need done, spend weeks or
 months on tasks that could be done in hours or days, and they may be unaware of 
 the reliability and reproducibility---or lack there of---of their results (Nolan
 and Temple Lang, 2010, p.\ 100; Teal et al., 2015, p.\ 136). But why are these
-skills still so rarely included in these service courses when the need for them
+skills still so rarely included in these graduate service courses when the need for them
 is widely recognized?
 
 \quad Environmental science educators have reiterated the challenges in 
@@ -395,7 +388,7 @@ graduate-level statistics service courses. Instructors of these courses are
 often explicitly told the statistical content students are expected to learn, 
 while it is implicitly assumed they are also teaching students the data science
 skills necessary for them to participate in the entire data analysis cycle.
-Claiming these graduate students ought to take additional, data science specific
+Claiming these graduate students ought to take additional, data science-specific
 courses to obtain these skills is infeasible for many, as graduate programs
 frequently leave little room for additional coursework. 
 
@@ -408,15 +401,15 @@ such as online lessons, MOOCs and books, none of these resources provide
 researchers with the ability to pose their questions directly to an instructor
 or to learn from others. Moreover, this drove of online materials, poses a  
 ``significant challenge in being able to discover relevant and high-quality
-materials,'' for researchers with limited time. 
+materials,'' for researchers with limited time. \stacey{Missing citation}
 
-\quad As, reiterated by Nolan and Temple Lang (\citeyear{esr}), extracurricular
+\quad As reiterated by Nolan and Temple Lang (\citeyear{esr}), extracurricular
 learning opportunities are not a direct substitute for the prolonged instruction
 of these skills that occurs in a course. However, this is not the goal 
 of these learning opportunities. Instead, short, intensive workshops, such as
 those provided by The Carpentries, are able to teach immediately useful skills
 that can be taught and learned quickly, keep learners active by using live
-coding and formative assessment, work with a learners from a variety of
+coding and formative assessment, work with learners from a variety of
 backgrounds, and build learners' self efficacy \citep{null-carpentries}, so that
 attendees ``learn the computational aspects as part of an interesting, 
 challenging, and confidence-building process'' \citep[p.\ 101]{nolan}.
