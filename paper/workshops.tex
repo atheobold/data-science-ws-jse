@@ -803,7 +803,7 @@ conditional statements, for-loops, and user-defined functions are skills that
 many environmental science faculty asserted were necessary for graduate students
 to possess as they perform independent research. 
 
-\quad First, the workshop then progresses through the use of relational
+\quad First, the workshop progresses through the use of relational
 statements and how to link these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
 the use of conditional statements, stepping from \texttt{if}, to \texttt{if
@@ -812,9 +812,10 @@ methods to iterate or replicate a set of instructions many times. Looping,
 specifically \texttt{for()} loops, are introduced as a popular way to iterate or
 replicate the same set of instructions. Working through exercises which
 repeat operations on a dataset using both a \texttt{for()} loop and a recursive 
-\texttt{for()} loop, motivate a discussion of why \texttt{R} users recommend the
-use of vectorization for non-recursive \texttt{for()} loops. To conclude,
-functions are presented as an approach to replicate the same set of instructions
+\texttt{for()} loop, motivates a discussion of why \texttt{R} users recommend the
+use of vectorization for non-recursive \texttt{for()} loops.
+
+To conclude, functions are presented as an approach to replicate the same set of instructions
 in multiple locations throughout your code. Motivated by a script which copies 
 and pastes the same process multiple times, attendees understand why this is 
 an undesirable practice. Attendees are then tasked with transforming the
@@ -842,8 +843,9 @@ next.
 
 % Add references to how the tidyverse simplifies cognitive load when learning to program in R
 
-\quad The workshop begins by outlining six of the common ``verbs'' that handle
-common data wrangling challenges, included in the  \texttt{dplyr} package: 
+\quad The workshop begins by outlining six of the common ``verbs''
+in the \texttt{dplyr} package that handle
+common data wrangling challenges: 
 \texttt{select()}, \texttt{filter()}, \texttt{mutate()}, \texttt{group\_by()},
 \texttt{summarise()}, and \texttt{arrange()}. Prompted by the need to perform a
 sequence of multiple data wrangling operations, participants learn how to
@@ -889,10 +891,11 @@ bar charts, and line plots, allowing for participants to explore the
 \texttt{geom} functions and aesthetics that pair with each plot. A conversation
 is had about the importance of plotting raw data rather than simply aggregate
 measures of the data, and the difficulties that might arise. Similar to the
-advise of Nolan and Perrett (\citeyear{nolan-viz}), adding a 
+advice of Nolan and Perrett (\citeyear{nolan-viz}), adding a 
 \texttt{geom\_point()} or \texttt{geom\_jitter()} layer to a visualization
 highlights tools that can be used so graph elements don't interfere with the
-data (e.g. jittering, transparency). Finally, faceting, using 
+data (e.g. jittering, transparency)\stacey{Can we reword the last portion of this sentence?
+It reads funny.}. Finally, faceting, using 
 \texttt{facet\_wrap()} and \texttt{facet\_grid()}, is introduced as an
 additional visualization tool to facilitate multivariate comparisons
 \citep[p.\ 261]{nolan-viz}. 
@@ -900,11 +903,11 @@ additional visualization tool to facilitate multivariate comparisons
 \quad By this point in the workshop, participants have posed many questions on
 how to modify aspects of a plot that don't depend on the geom. For the final 
 section of the workshop, the group walks through different customizations one 
-can make to each \texttt{ggplot} object, to add clarity and information to the 
-plot. Participants learn how to flip a plot's coordinate, how to make
+can make to each \texttt{ggplot} object to add clarity and information to the 
+plot. Participants learn how to flip a plot's coordinates, and how to make
 customizations of the plot's labels, the size of the points, the thickness of
-lines, the appearance of the plotting window, and the color scheme used. Each of
-these customizations continue to emphasize to participants the iterative nature 
+lines, the appearance of the plotting window, and the color scheme. Each of
+these customizations continues to emphasize the iterative nature 
 of creating data visualizations, transforming a simple plot step-by-step ``into
 a graph that is data rich and presents a clear vision of the important features
 of the data'' \citep[p.\ 262]{nolan-viz}.
