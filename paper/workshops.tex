@@ -83,7 +83,7 @@ incorporating data science into the classroom.
 \end{abstract}
 
 \noindent %
-{\it Keywords:}  data science, data visualization, data wrangling, \texttt{R}, 
+{\it Keywords:} data science, data visualization, data wrangling, \texttt{R}, 
 environmental science, workshops, reproducible research 
 
 \vfill
@@ -157,17 +157,17 @@ workshop attendees regarding their experiences participating in each workshop. \
 \quad For this research, the collection of disciplines who perform research 
 across a variety of environmental science fields are captured under the term 
 ``environmental science.'' At our institution, these are the fields of Ecology, 
-Land Resources and Environmental Sciences, Plant Sciences and Plant Pathology,
-and Animal and Range Sciences, whose students are required or highly recommended
-to complete graduate-level statistics coursework for a masters or doctoral
-degree. In this paper, the ``data analysis cycle'' consists of all stages in the
-data analysis process, from data importation to data exploration to the
-communication of results (Figure \ref{fig:cycle}), where data modeling is but
-one component. The ``data science skills'' necessary to engage in this cycle may
-include general programming concepts such as loops, user-defined functions, or 
-conditional statements. However, the cornerstone of data science skills differs
-fundamentally from general programming skills, with a focus on data rather than 
-computer architecture, design, and applications. 
+Land Resources and Environmental Sciences (LRES), Plant Sciences and Plant
+Pathology (PSPP), and Animal and Range Sciences (ARS), whose students are
+required or highly recommended to complete graduate-level statistics coursework
+for a master's or doctoral degree. In this paper, the ``data analysis cycle''
+consists of all stages in the data analysis process, from data importation to
+data exploration to the communication of results (Figure \ref{fig:cycle}), where
+data modeling is but one component. The ``data science skills'' necessary to
+engage in this cycle may include general programming concepts such as loops,
+user-defined functions, or conditional statements. However, the cornerstone of
+data science skills differs fundamentally from general programming skills, with
+a focus on data rather than computer architecture, design, and applications. 
 
 \quad We begin by outlining areas of research that address the computational and
 statistical training of graduate students in the environmental sciences and the 
@@ -179,16 +179,17 @@ computational skills environmental science faculty members identified as
 necessary for graduate students to succeed in their independent research. Next,
 Section \ref{sec:workshops} discusses how these identified skills were
 interwoven into existing data science workshop materials for researchers in the
-environmental sciences. Section \ref{sec:implement} summarizes the backgrounds and experiences
-of the workshop attendees during the 2018-2019 academic year, and describes the
-research conducted on the implementation of the workshops. The resources used to 
-facilitate the sustainability of these workshops are outlined in section 
-\ref{sec:sustainability}, alongside possibilities for formally integrating these
-workshops into the university curricula. Section \ref{sec:future} outlines
-future research plans for the second iteration of this design work. To close, we
-revisit the current climate of computing in the statistics curriculum for
-service courses and describe how these types of extracurricular workshops can
-assist in further integration of computing into these classrooms. 
+environmental sciences. Section \ref{sec:implement} summarizes the backgrounds
+and experiences of the workshop attendees during the 2018-2019 academic year,
+and describes the research conducted on the implementation of the workshops. The
+resources used to facilitate the sustainability of these workshops are outlined
+in section \ref{sec:sustainability}, alongside possibilities for formally
+integrating these workshops into the university curricula. Section 
+\ref{sec:future} outlines future research plans for the second iteration of this
+design work. To close, we revisit the current climate of computing in the
+statistics curriculum for service courses and describe how these types of
+extracurricular workshops can assist in further integration of computing into
+these classrooms. 
 
 \section{The Current Climate of Statistics and Computing in the Environmental 
 Sciences}
@@ -454,10 +455,8 @@ from these fields allow for us to gain an understanding of the essential skills
 required of environmental science graduate students. 
 
 \quad In the spring of 2017 and fall of 2018, every faculty member
-currently overseeing a graduate student in the
-Ecology, Land Resources and Environmental Sciences, Animal and Range Sciences, 
-and Plant Sciences and Plant Pathology departments was emailed
-requesting their participation in this research. 
+currently overseeing a graduate student in the Ecology, LRES, ARS, and PSPP
+departments was emailed requesting their participation in this research. 
 While some faculty enthusiastically agreed to participate, others declined for
 three main reasons---they hadn't directly overseen a graduate student recently,
 they deemed themselves to be weak in statistics, or they were unavailable to
@@ -488,7 +487,7 @@ by department.}
 
 \quad The faculty members who agreed to participate engaged in a one-hour 
 interview regarding (1) the computational skills they believe are necessary for
-masters and doctoral students to implement statistics for research in their
+master's and doctoral students to implement statistics for research in their
 field, and (2) how they believe graduate students acquire these necessary
 skills. The full interview protocol is available as supplementary material 
 \footnote{Materials associated with this manuscript are available at 
@@ -712,15 +711,16 @@ the entire data analysis cycle (R Markdown).
 
 \quad The use of \texttt{R} is widespread throughout the environmental science
 research community, a dramatic change over the last decade \citep{Rpopular}. 
-Furthermore, with the invention of the RStudio IDE \citep{rstudio}, this
-user-ship continues to increase, as \texttt{R} includes over 100 packages
-frequently used in ecological data analysis\footnote{\href{https://CRAN.R-project.org/view=Environmetrics}{https://CRAN.R-project.org/view=Environmetrics}}. \texttt{R} is free and open source, so
-attendees learn a statistical programming language that will be accessible to
-them throughout their careers. Unlike MARK, VORTEX, or RMAS, with \texttt{R}, 
-attendees' results do not depend on remembering the sequence of buttons they
-clicked. With the shocking realization that large numbers of modern scientific
-findings cannot be replicated \citep{economist, johnson} and the growing
-appreciation for reproducible data analysis methods in ecological research
+Furthermore, with the invention of the RStudio integrated development 
+environment (IDE) \citep{rstudio}, this user-ship continues to increase, as
+\texttt{R} includes over 100 packages frequently used in ecological data
+analysis\footnote{\href{https://CRAN.R-project.org/view=Environmetrics}{https://CRAN.R-project.org/view=Environmetrics}}. \texttt{R} is free and open source, so attendees learn a statistical
+programming language that will be accessible to them throughout their careers.
+Unlike MARK, VORTEX, or RMAS, with \texttt{R}, attendees' results do not depend
+on remembering the sequence of buttons they clicked. With the shocking
+realization that large numbers of modern scientific findings cannot be
+replicated \citep{economist, johnson} and the growing appreciation for
+reproducible data analysis methods in ecological research 
 \citep{reproducibilty-comment, repeatability, pva, reproducibility_ecology},
 today's researchers in scientific fields are becoming more aware of the need for
 a reproducible data analysis workflow. 
@@ -729,15 +729,12 @@ a reproducible data analysis workflow.
 
 \quad RStudio is a free computer application that allows you to access the 
 resources of \texttt{R} through a comfortable working
-environment \citep{rstudio}. The RStudio IDE
-\stacey{Was this acronym introduced earlier? If not, spell it out here and put the acronym in parentheses.}
-``makes [programming] less
+environment \citep{rstudio}. The RStudio IDE ``makes [programming] less
 intimidating than the bare \texttt{R} shell" \citep[p.\ 59]{mine}. Additionally,
 the RStudio environment is consistent across operating systems, which is not often the
 case for other statistical software packages. Moreover, because RStudio is an
 IDE, it includes integrated help files, intelligent code completion, and syntax 
-highlighting---all of which help to reduce\stacey{"reduce" seems like the wrong word here.
-What would be a word that meant "to make less steep"?} the learning curve. 
+highlighting---all of which help to decrease the learning curve. 
 
 \subsubsection{Why RStudio Cloud?} 
 
@@ -945,13 +942,9 @@ post-workshop surveys are included as supplementary materials.
 \subsection{Backgrounds of Workshop Participants}
 
 \quad The majority of the workshop attendees were from environmental science
-fields---from departments such as Land Resources and Environmental Sciences
-(LRES)\stacey{Is this the first time we use Land Resources and Environmental Sciences?
-I feel like I read that department earlier in the paper, in which case we could introduce
-the acronym there and just use LRES here}, Ecology, Plant Sciences and Plant Pathology, Biochemistry or
-Microbiology, Animal and Range Sciences, and Earth Sciences. Additionally, over
-60\% of workshop attendees were master's\stacey{You're not consistent with either masters
-or master's throughout the paper - I don't remember which of the two is correct.} and doctoral students. It is worth
+fields---from departments such as LRES, Ecology, PSPP, Biochemistry or
+Microbiology, ARS, and Earth Sciences. Additionally, over
+60\% of workshop attendees were master's and doctoral students. It is worth
 noting, however, that 18 faculty, staff, and postdocs also attended these
 workshops. Figure \ref{fig:departments} displays the department affiliations of
 the workshop attendees and their current occupation. 
@@ -1079,7 +1072,7 @@ workshops, becoming a Carpentries certified instructor, and incorporating the
 results of this research into the broader Data and Software Carpentry curricula.
 A \$5,000 faculty excellence grant during the 2019-2020 academic year,
 facilitated the implementation of a ``train-the-trainer'' model, training two 
-future graduate student instructors. Students were recruited from the masters
+future graduate student instructors. Students were recruited from the master's
 and doctoral programs in Statistics, but because of the widespread use of 
 \texttt{R} across scientific fields, students from a variety of backgrounds hold
 the potential to be effective instructors. Both semesters, the authors met with 
@@ -1133,10 +1126,10 @@ skills that are necessary for their research. Hence, the next iteration of this
 design work will be informed by the collection of the research (\texttt{R}) code
 produced by environmental science graduate students. Graduate students' research
 code acts as artifacts of their research experience, providing ``mute evidence''
-\citep{hodder} of the data science skills necessary throughout the data analysis
-cycle. The skills outlined by this research aid in reevaluating the content of
-these workshops, to ensure they cover the skills necessary for graduate-level
-environmental science research. 
+\citep{hodder} of the data science skills necessary throughout their data
+analysis cycle. The skills outlined by this research aid in reevaluating the
+content of these workshops, to ensure they cover the skills necessary for
+graduate-level environmental science research. 
 
 \quad Additionally, the attendance of these tailored workshops by students,
 faculty, and staff from disciplines outside of the environmental sciences brings
