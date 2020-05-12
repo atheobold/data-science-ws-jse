@@ -187,7 +187,7 @@ a focus on data rather than computer architecture, design, and applications.
     \caption{Data Analysis Cycle, Wickham, H. \& Grolemund, G. (2017) \emph{R 
     for Data Science}. Sebastopol, California: O'Reilly.}
 \label{fig:cycle}
-\end{figure}
+\end{figure} 
 
 \section{The Current Climate of Statistics and Computing in the Environmental 
 Sciences}
@@ -371,21 +371,22 @@ skills.
 
 \section{Methodology}
 
-\noindent Improving environmental science graduate students' access to ``powerful,
-effective learning opportunities'' \citep[p.\ 137]{penuel} necessitates
-understanding the skills required for these students to be successful in their
-research. Design-based implementation research (DBIR) \citep{confrey, penuel,
-oneill} ``offers a model for the design and testing of innovations
-within the crucible of classrooms and other contexts for learning'' 
-\citep[p.\ 140]{penuel}. DBIR uses collaboration with members of the
+\noindent Improving environmental science graduate students' access to 
+``powerful, effective learning opportunities'' \citep[p.\ 137]{penuel}
+necessitates understanding the skills required for these students to be
+successful in their research. Design-based implementation research (DBIR) 
+\citep{confrey, penuel, oneill} ``offers a model for the design and testing of
+innovations within the crucible of classrooms and other contexts for learning'' 
+\citep[p.\ 140]{penuel}. DBIR uses collaboration with members of a
 community to develop ``evidence-based improvements'' (p.\ 143) to teaching 
 innovations---situating community members as ``co-designers of solutions to 
-problems'' \citep[p.\ 140]{penuel} rather than bystanders. 
+problems'' (p.\ 140) rather than bystanders. 
 
 \quad The content of these tailored workshops was informed by the Data 
 Carpentry (\citeyear {data-carpentry}) and Software Carpentry 
 (\citeyear{software-carpentry}) curriculum. Adhering to the recommendations of 
-statisticians \citep{nas}, Data Carpentry offers domain-specific curricula, so
+the National Academies of Sciences, Engineering, and Medicine (NAS)
+(\citeyear{nas}), Data Carpentry offers domain-specific curricula, so
 participants ``learn more quickly and effectively,'' and can ``see more
 immediately how to implement these skills and approaches in their own work''
 (\citeyear{carpentry}, p.\ 136). The Data Carpentry Ecology curriculum has been
@@ -403,13 +404,13 @@ adaptation (with acknowledgement).
 % Carpentries requires that the lead instructor be a Carpentries certified instructor.
 
 
-\section{Outlining the Computing Skills Necessary for Environmental Science
-Research}
+\section{Outlining the Computing Skills Necessary for Data-Intensive 
+Environmental Science Research}
 \label{sec:faculty}
 
 \noindent As the direct supervisors of graduate students, environmental science
-faculty members are potentially aware of the computing skills that are vital to
-researchers in their respective fields. Thus, interviews with faculty members
+faculty are potentially aware of the computing skills that are vital to
+researchers in their respective fields. Thus, interviews with faculty
 from these fields allow for us to gain an understanding of the essential skills
 required of environmental science graduate students. 
 
@@ -444,7 +445,7 @@ by department.}
 
 \subsection{Data Collection \& Data Analysis}  
 
-\noindent The faculty members who agreed to participate engaged in a one-hour 
+\noindent Faculty who agreed to participate engaged in a one-hour 
 interview regarding (1) the computational skills they believe are necessary for
 master's and doctoral students to implement statistics for research in their
 field, and (2) how they believe graduate students acquire these necessary
@@ -458,24 +459,24 @@ website}.
 
 \quad The primary author led a three-stage data analysis process of the faculty
 interviews (Miles, Huberman, Salada$\tilde{\text{n}}$a, \citeyear{miles}). 
-During the first stage, the interviews for every faculty member were transcribed
+During the first stage, every faculty member's interviews were transcribed
 verbatim. Subsequently, the primary author read each transcript, highlighting
-excerpts where computing skills were discussed. The author then created
-descriptive codes for the skills faculty identified as necessary in each
-of these excerpts. These codes were then examined for references to computing
+excerpts where computing skills were discussed, creating descriptive codes for
+the skills faculty identified as necessary in each of these excerpts. These
+codes were then examined for references to computing
 skills currently addressed in Data Carpentry's \emph{Data Analysis and
 Visualization in \texttt{R} for Ecologists} lesson \citep{ecology_curriculum}. 
 
 \quad Next, the primary author began the second stage of analytical coding,
-synthesizing descriptive summaries into instances of a general concept 
-\citep[p.\ 95]{miles}. During this stage, skills were linked thematically, and
-themes that held across multiple interviews were retained. The author then 
-searched faculty transcript to uncover how each theme related to the others.
-Through this process it was determined that certain themes captured similar
-constructs, and were merged into a single theme. For example, while every
-faculty voiced students' need to work with data in \texttt{R}, these sentiments
-were voiced alongside students' need to perform other data wrangling operations,
-such as reorganizing data, or filtering out rows or selecting columns of data. 
+synthesizing the descriptive codes into instances of a general concept 
+\citep[p.\ 95]{miles}. During this stage, computing skills were linked
+thematically, and themes that held across multiple interviews were retained.
+The author then searched faculty transcripts to uncover how each theme related
+to the others. During this process it was determined whether themes captured
+similar constructs and should be merged, or if themes ought to remain separate. 
+For example, while every faculty voiced students' need to work with data in 
+\texttt{R}, these sentiments were voiced alongside students' need to perform
+other data wrangling operations, such filtering out rows or selecting columns. 
 Hence, the themes of ``working with data'' and ``data wrangling'' were merged
 into the single theme of ``working with data.'' 
 
@@ -486,10 +487,10 @@ into the single theme of ``working with data.''
 
 \quad In the final stage, the author searched the faculty transcripts for
 evidence supporting the emerging themes, scrutinizing whether each identified
-skill fit into the identified themes. Following this validation process, the
-first and second authors met to discuss the rationale for each theme and to 
-inspect the skills identified by faculty in the context of the emergent themes.
-These final themes informed the design of data science workshops. 
+skill fit into the emergent themes. Following this process, the first and second
+authors met to discuss the rationale for each theme and to inspect the skills
+identified by faculty in the context of the emergent themes. These final themes
+informed the design of data science workshops. 
 
 \subsection{Themes of Skills Identified by Environmental Science Faculty}
 
@@ -498,14 +499,13 @@ students use in research from the computing required to implement those methods,
 many were able to express the computing skills necessary for graduate students
 in their field to engage in the entire data analysis process. A substantial
 overlap was seen between faculty expectations and the ``data acumen'' outlined
-by the National Academies of Sciences, Engineering, and Medicine (NAS) 
-(\citeyear{nas}), with faculty themes falling into three categories: (1) working
-with and wrangling data, (2) data visualization, and (3) reproducibilty. 
+by NAS (\citeyear{nas}), with faculty themes falling into three categories: (1)
+working with and wrangling data, (2) data visualization, and (3) reproducibilty. 
 
 \subsubsection{Working with Data}  
 
 \noindent Every faculty member interviewed believed that students' experiences in
-the statistics classroom do not adequately prepare students to work with and
+the statistics classroom do not adequately prepare them to work with and
 organize large, messy datasets. As graduate students perform their research,
 they are required to think about ``storing data, managing data, matching
 data, and collating data,'' into meaningful datasets for analysis. Some 
@@ -529,18 +529,18 @@ data science is the storage, preparation, and accessing of data''
 
 \subsubsection{Data Visualization} 
 
-\noindent The importance data visualization plays in every stage of students'
-research was emphasized by every faculty member interviewed. Faculty affirmed
+\noindent The importance data visualization has on every stage of students'
+research was emphasized by every faculty member. Faculty affirmed
 that students should possess the ability to create visualizations of their data
-early and often. These expectations align with the the faculty outlined by NAS,
-who stated that students need to have the ability to ``present data in a clear
-and compelling fashion'' (\citeyear[p.\ 26]{nas}). One faculty member declared
-that students' ability to look at their data in different ways dramatically
-shapes their research potential, and the tools available today allow for
-researchers to create visualizations precisely tailored for each investigation.
-Many faculty voiced the usefulness of the \texttt{ggplot2} package 
-\citep{ggplot} in lowering the barriers for students to learn ``how to visualize
-[their] data to explore and understand it.'' 
+early and often. These expectations align with the the capabilities outlined by
+NAS, who stated that students need to have the ability to ``present data in a
+clear and compelling fashion'' (\citeyear[p.\ 26]{nas}). One faculty member
+declared that students' ability to look at their data in different ways
+dramatically shapes their research potential, and the tools available today
+allow researchers to create visualizations precisely tailored for each
+investigation. Many faculty voiced the usefulness of the \texttt{ggplot2} 
+package \citep{ggplot} in lowering the barriers for students to learn ``how to
+visualize [their] data to explore and understand it.'' 
 
 \subsubsection{Reproducibility}  
 
@@ -551,9 +551,9 @@ be computationally reproducible, where faculty would be able to recreate
 student's results, ``given only a set of files and written instructions''
 (Kitzes, Turek, Deniz, \citeyear{reproducible}). Across environmental science
 disciplines, faculty concurred that many students do not perform scripted data
-wrangling, and instead rely on Excel because ``[\texttt{R})] is kind of a black
-box'' and when they ``don't have that instant connection with [their] data, I
-think it fundamentally boils down to fear.'' Concerns were raised for the
+wrangling, and instead rely on Excel because ``[\texttt{R}] is kind of a black
+box'' and when students ``don't have that instant connection with [their] data,
+I think it fundamentally boils down to fear.'' Concerns were raised for the
 students using unreproducible tools to wrangle their data, as ``they would never
 find [their] way back to what the original data set would have been'' and their
 advisers would have no way to understand why certain data are missing. While
@@ -562,7 +562,7 @@ data manipulations, they reflected that students may not have the computing
 skills necessary to perform the same tasks in a scripted and reproducible
 manner. These faculty concerns parallel the ``workflow and reproducibility''
 acumen outlined by NAS, who stated that students need to ``be exposed to the
-concept of workflows'' \citep[p.\ 28]{nas}. 
+concept of workflows'' (\citeyear{nas}, p.\ 28). 
 
 \subsubsection{How Students Gain Computational Skills}
 
@@ -572,10 +572,10 @@ data either in their required statistics coursework or on their own. When asked
 why students are not acquiring computing skills in their field-specific courses,
 a faculty member stated, ``we don't really have anyone to teach that. It's not
 that it isn't valuable, but there is no one to teach it.'' Some faculty believed
-``most graduate students come in knowing more about the tools one might use to
+``graduate students come in knowing more about the tools one might use to
 manipulate data than their advisers do,'' while others lamented the gaps between
-the computational skills of their graduate students and their own training,
-feeling ``personally out of touch [with students] because I haven't taken the
+the computing skills of their graduate students and their own training,
+feeling ``personally out of touch with [students] because I haven't taken the
 time to learn \texttt{R}, because of my training and my age.'' These gaps impact
 the assistance faculty can provide to their students, as ``increasingly, faculty
 feel that they're not at the forefront of their programming abilities, so their
@@ -602,19 +602,17 @@ Students}
 of data science workshops targeted to graduate students in the environmental
 sciences. The skills identified through faculty interviews were incorporated 
 into Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for
-Ecologists} lesson \citep{ecology_curriculum}, a curriculum maintained by
-experienced researchers in ecological fields \footnote{This
+Ecologists} lesson \citep{ecology_curriculum} \footnote{This
 work is a derivative of \href{https://datacarpentry.org/R-ecology-lesson}{Data 
 Analysis and Visualization in R for Ecologists (link)} by Data Carpentry, used
 under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License (link)}}.
 The series of workshops consists of four 3-hour workshops covering (1) the
 basics of programming in \texttt{R}, (2) intermediate programming tasks in 
-\texttt{R}, (3) creating effective data visualizations, and (4) wrangling data, 
-all using reproducible tools. Importantly,
-similar to Data Carpentry workshops, the first workshop does not assume 
-attendees have previous experience working in \texttt{R}, with each workshop
-building on knowledge acquired at previous workshop(s). The workshop materials
-developed for this research are available through GitHub
+\texttt{R}, (3) creating effective data visualizations, and (4) wrangling data.
+Importantly, the first workshop does not assume attendees have previous
+experience working in \texttt{R}, and each workshop builds on the knowledge
+acquired at the previous workshop(s). The workshop materials developed for this
+research are available through GitHub
 \footnote{Anonymous GitHub link}, 
 % \href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
 % repository (link)}}
@@ -628,7 +626,7 @@ with video tutorials recorded and available through our institution's library
 
 \subsection{Data Context}  
 
-\noindent Emphasized by both faculty at this institution and NAS, ``effective
+\noindent Emphasized by both faculty members and NAS, ``effective
 application of data science to a domain requires knowledge of that domain'' 
 (\citeyear[p.\ 29]{nas}). Hence, data science instruction ought to be grounded
 in ``substantive contextual examples,'' to ``ensure that data scientists develop
@@ -660,10 +658,8 @@ environment (IDE) \citep{rstudio}, this user-ship continues to increase.
 \texttt{R} is free and open source, so attendees learn a statistical
 programming language that will be accessible to them throughout their careers.
 Unlike MARK, VORTEX, or RMAS, with \texttt{R}, attendees' results do not depend
-on remembering the sequence of buttons they clicked. With the shocking
-realization that large amounts of modern scientific findings cannot be
-replicated \citep{economist, johnson} and the growing appreciation for
-reproducible data analysis methods in ecological research 
+on remembering the sequence of buttons they clicked. With a growing appreciation
+for reproducible data analysis methods in ecological research 
 \citep{reproducibilty-comment, repeatability, pva, reproducibility_ecology},
 today's researchers in scientific fields are becoming more aware of the need for
 a reproducible data analysis workflow. 
@@ -674,10 +670,10 @@ a reproducible data analysis workflow.
 resources of \texttt{R} through a comfortable working
 environment \citep{rstudio}. The RStudio IDE ``makes [programming] less
 intimidating than the bare \texttt{R} shell" \citep[p.\ 59]{mine}. Additionally,
-the RStudio environment is consistent across operating systems, which is not often the
-case for other statistical software packages. Moreover, because RStudio is an
-IDE, it includes integrated help files, intelligent code completion, and syntax 
-highlighting---all of which help to decrease the learning curve. 
+the RStudio environment is consistent across operating systems, which is often
+not the case for other statistical software packages. Moreover, because RStudio
+is an IDE, it includes integrated help files, intelligent code completion, and
+syntax highlighting---all of which help to decrease the learning curve. 
 
 \subsubsection{Why RStudio Cloud?} 
 
@@ -688,7 +684,7 @@ worrying about software installation, package installation, or data transfers.
 Workshop participants interact with the workshop's materials in the same manner
 as a locally installed version of RStudio, as seen in Figure \ref{fig:cloud},
 and are exposed to best practices for reproducible project construction through 
-the use of an RStudio project. 
+the use of RStudio projects. 
 
 \begin{figure}[t!]
     \centering
@@ -725,8 +721,8 @@ for modern \texttt{R} workflows'' (Ross, Wickham, \& Robinson,
 Wickham and colleagues, universally known as the ``\texttt{tidyverse},'' has 
 created user friendly \texttt{R} tools which ``share an underlying design
 philosophy, grammar, and data structures'' \citep{tidyverse}. Inspired by how
-cumbersome it can be to remember different base \texttt{R} functions, each with
-its own unique syntax, to wrangle and visualize your data, the workshops in this
+cumbersome it can be to remember different base \texttt{R} functions to wrangle
+and visualize your data, each with its own unique syntax, the workshops in this
 series make use of many \texttt{tidyverse} packages, including \texttt{dplyr}
 (\citeyear{dplyr}), \texttt{tidyr} (\citeyear{tidyr}), and  \texttt{ggplot2}
 (\citeyear{ggplot}). The common syntax of these packages lessen learner's 
@@ -738,13 +734,13 @@ in their data science toolbox.
 \subsubsection{Introduction to \texttt{R}}
 \label{sec:introR}
 
-\noindent This first workshop in the series covers the basics of learning to program
-in \texttt{R}. The workshop first introduces the RStudio environment and project
-work flow in RStudio, discussing project working directories and relative paths.
+\noindent This first workshop in the series covers the basics of learning to
+program in \texttt{R}. The workshop first introduces the RStudio environment and
+project work flow in RStudio, discussing working directories and relative paths.
 Next, the workshop progresses through tools for working with vectors and lists 
 of different data types, motivating methods for working with dataframes. After
 learning how to import data into \texttt{R}, the workshop proceeds through
-inspecting data, extracting data, and changing data types. Motivated by working
+inspecting data, extracting data, and changing data types. Prompted by working
 with missing data, the workshop introduces \texttt{R} help files to inspect
 function arguments and their default values. These help files are called upon
 as participants make use of base \texttt{R} functions to create data summaries,
@@ -757,14 +753,14 @@ visualizations of the data.
 \noindent This second workshop covers coding skills to modularize \texttt{R} code. 
 The content in this workshop, excluding relational statements, is not
 included in Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R}
-for Ecologists} lesson. Instead, many of these concepts are covered in Software
-Carpentry's \emph{\texttt{R} for Reproducible Scientific Analysis} lesson. Yet,
-conditional statements, for-loops, and user-defined functions are skills that
-many environmental science faculty asserted were necessary for graduate students
-to possess as they perform independent research. 
+for Ecologists} lesson. Yet, conditional statements, for-loops, and user-defined
+functions are skills that many faculty asserted were necessary for graduate
+students to possess as they perform independent research. Many of these
+concepts, however, are included in Software Carpentry's 
+\emph{\texttt{R} for Reproducible Scientific Analysis} lesson. 
 
-\quad First, the workshop progresses through the use of relational
-statements and how to link these statements using and (\texttt{\&}), or
+\quad The workshop first progresses through the use of relational
+statements and linking these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
 the use of conditional statements, stepping from \texttt{if}, to \texttt{if
 else}, to \texttt{else if} statements. The second half of the workshop covers
@@ -772,12 +768,12 @@ methods to iterate or replicate a set of instructions many times. Looping,
 specifically \texttt{for()} loops, are introduced as a popular way to iterate or
 replicate the same set of instructions. Working through exercises which
 repeat operations on a dataset using both a \texttt{for()} loop and a recursive 
-\texttt{for()} loop, motivates a discussion of why \texttt{R} users recommend the
-use of vectorization for non-recursive \texttt{for()} loops.
+\texttt{for()} loop, motivates a discussion of why vectorization is 
+recommended for non-recursive \texttt{for()} loops.
 
-\quad To conclude, functions are presented as an approach to replicate the same set of
-instructions in multiple locations throughout your code. Motivated by a script
-which copies and pastes the same process multiple times, attendees understand
+\quad To conclude, functions are presented as an approach to replicate the same
+set of instructions throughout your code. Inspired by a script
+which copies and pastes the same process multiple times, attendees see
 why this is an undesirable practice. Attendees are then tasked with transforming
 the copy-paste-modify process into a function. By parsing out the function
 writing process into a set of steps that should be used when you have copied and
@@ -788,29 +784,31 @@ implementing them in their own code.
 \subsubsection{Data Wrangling with \texttt{dplyr} and \texttt{tidyr}}
 \label{sec:wrangle}
 
-\noindent The \emph{Data Wrangling} workshop introduces common data wrangling issues
-faced by environmental science researchers. Using the \texttt{dplyr} package
-\citep{dplyr}, the workshop outlines six of the common ``verbs'' that handle
-common data wrangling challenges: \texttt{select()}, \texttt{filter()},
+\noindent The \emph{Data Wrangling} workshop introduces common data wrangling
+issues faced by environmental science researchers. Using the \texttt{dplyr} 
+package \citep{dplyr}, the workshop outlines six of the common ``verbs'' that
+handle common data wrangling challenges: \texttt{select()}, \texttt{filter()},
 \texttt{mutate()}, \texttt{group\_by()}, \texttt{summarise()}, and
 \texttt{arrange()}. Prompted by the need to perform a sequence of multiple data
 wrangling operations, participants learn how to connect each of these
-data wrangling verbs using the pipe operator (\texttt{\%>\%}). Next, motivated
-by the need to integrate additional data files for analysis, the concept of
-relational data is outlined. After an introduction to key-value pairs, attendees
+data wrangling verbs using the pipe operator (\texttt{\%>\%}). Next, with a 
+need to integrate additional data files for analysis, the concept of relational
+data is outlined. After an introduction to key-value pairs, attendees
 make use of the \texttt{left\_join()} and \texttt{right\_join()} functions to
 join these additional data files. 
 
 \quad The final topic of the workshop involves the issue of data reorganization.
-Until now, participants have been presented with ``tidy'' data, where every
-observation is one row, each variable has a column, and every value has one
-cell. This concept of ``tidy'' data is used to describe `long' and `wide' data
-formats. The \texttt{tidyr} package is introduced to alleviate the burden of
-data reorganizations, when transforming data from one layout to another. In
+Until now, participants have been presented with ``tidy'' data \citep{tidy}. 
+% , where every
+% observation is one row, each variable has a column, and every value has one
+% cell. 
+This concept of tidy data is used to describe `long' and `wide' data
+formats. The \texttt{tidyr} package \citep{tidyr} is introduced to alleviate the
+burden of data reorganizations, when transforming data from one layout to another. In
 groups, participants work through a final exercise summarizing groups, using 
 \texttt{pivot\_wider()} to spread these values across multiple columns, and
-finally using \texttt{pivot\_longer()} to gather these multiple columns
-into a single column.
+finally using \texttt{pivot\_longer()} to gather these multiple columns back 
+together. 
 
 \subsubsection{Data Visualization with \texttt{ggplot2}}
 \label{sec:vizual} 
@@ -820,8 +818,8 @@ using the \texttt{ggplot2} package \citep{ggplot}. Using the joined data from
 the close of the \emph{Data Wrangling} workshop, a scatterplot is used to
 illuminate a discussion of the \texttt{ggplot()} syntax. Participants learn
 about the \texttt{mapping} argument
-for specifying aesthetics (\texttt{aes}) for the plot and the set of 
-\texttt{geom} functions which define the type of plot you produce. By making
+for specifying aesthetics (\texttt{aes}) for the plot and the \texttt{geom}
+functions which define the type of plot you produce. By making
 explicit connections between the addition operator (\texttt{+}) and the pipe
 operator, participants understand addition to be an intuitive metaphor for
 adding layers to a plot. Next, the workshop examines how to modify the
@@ -842,8 +840,8 @@ how to modify aspects of a plot that don't depend on the geom. For the final
 section of the workshop, the group walks through different customizations one 
 can make to each \texttt{ggplot} object to add clarity and information to the 
 plot. Participants learn how to flip a plot's coordinates, and how to make
-customizations of the plot's labels, the size of the points, the thickness of
-lines, the appearance of the plotting window, and the color scheme. Each of
+customizations of the labels, the size of the points, the thickness of
+lines, the appearance of the plotting window, and the colors. Each of
 these customizations continues to emphasize the iterative nature 
 of creating data visualizations, transforming a simple plot step-by-step ``into
 a graph that is data rich and presents a clear vision of the important features
@@ -852,8 +850,8 @@ of the data'' \citep[p.\ 262]{nolan-viz}.
 \section{Evaluating Data Science Workshops}
 \label{sec:implement}
 
-\noindent During the 2018-2019 academic year, a total of 202 students, faculty, and
-staff attended at least one workshop. The \emph{Introduction to \R} and
+\noindent During the 2018-2019 academic year, a total of 202 students, faculty,
+and staff attended at least one workshop. The \emph{Introduction to \R} and
 \emph{Intermediate \R} workshops were offered twice during the fall semester,
 and once during the spring semester, with 84 individuals attending 
 \emph{Introduction to \R} and 74 attending \emph{Intermediate \R}. The 
@@ -1037,7 +1035,7 @@ progress through their program.
 \section{Limitations \& Future Research} 
 \label{sec:future}
 
-\noindent The sentiments heard by faculty members in this research unearth the
+\noindent The sentiments heard by faculty in this research unearth the
 possibility that many faculty may be unaware of the computing skills necessary
 for their graduate students to participate in the entire data analysis cycle.
 Instead, students may have more relevant knowledge regarding the data science
