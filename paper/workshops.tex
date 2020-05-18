@@ -131,17 +131,16 @@ the American Statistical Association's \citeyear{asa} \emph{Curriculum
 Guidelines for Undergraduate Programs in Statistical Science} reflect the
 increasing importance of data science skills. Despite this campaign for
 computing in the statistics classroom, graduate-level statistics service courses
-have largely been overlooked, even though their potential impact is substantial.
-Unlike courses designed for an undergraduate or graduate program in Statistics,
-these service courses often act as the sole exposure to computing with data
-prior to the start of a student's independent research. A ``symptom of the
-current curriculum's shortcomings'' \citep[p.\ 547]{hampton} is the emergence of
-a variety of extracurricular opportunities for acquiring critical data science
-skills, such as Data Carpentry (\citeyear{data-carpentry}). While Data 
-Carpentry's workshops teach domain-tailored lessons covering the ``fundamental
-data skills'' needed for the ``full lifecycle of data-driven research,'' the 
-possibility of tailoring these workshops to specific populations of researchers
-has yet to be investigated. 
+have largely been overlooked. Unlike courses designed for an undergraduate or
+graduate program in Statistics, these service courses often act as the sole
+exposure to computing with data prior to the start of a student's independent
+research. A ``symptom of the current curriculum's shortcomings'' 
+\citep[p.\ 547]{hampton} is the emergence of a variety of extracurricular
+opportunities for acquiring critical data science skills, such as Data Carpentry
+(\citeyear{data-carpentry}). While Data Carpentry's workshops teach
+domain-tailored lessons covering the ``fundamental data skills'' needed for the
+``full lifecycle of data-driven research,'' the possibility of tailoring these
+workshops to specific populations of researchers has yet to be investigated. 
 
 \quad The intention of this research is to (1) describe the computing skills 
 necessary for graduate-level environmental science research, (2)
@@ -149,26 +148,9 @@ investigate how these skills can be infused into currently existing
 extracurricular workshops, and (3) understand the experiences of attendees of
 these workshops. This paper summarizes the results of the first iteration of a 
 three-phase design-based implementation research model, investigating each of
-these areas. Section \ref{sec:faculty} summarizes phase one, which focused on 
-outlining the computational skills environmental science faculty members
-identified as necessary for graduate students to succeed in their independent
-research. Phase two of this research, described in Section \ref{sec:workshops},
-details how the skills identified during phase one were used to tailor
-currently existing Data Carpentry (\citeyear{data-carpentry}) and Software
-Carpentry (\citeyear{software-carpentry}) lessons.
-% to meet the needs of environmental science graduate students. 
-Section \ref{sec:implement} chronicles the third phase of this research, 
-implementing and evaluating these workshops, focusing on the backgrounds and 
-experiences of workshop attendees. Resources used to facilitate the
-sustainability of these workshops are outlined in Section 
-\ref{sec:sustainability}, alongside possibilities for formally integrating these
-workshops into the university curricula. Finally, Section \ref{sec:future}
-outlines plans for the second iteration of this design work, and the need for
-future research investigating the learning outcomes of workshop attendees.
-
-\quad For this research, the collection of disciplines who perform research 
-across a variety of environmental science fields are captured under the term 
-``environmental science.'' At our institution, these are the departments of
+these areas. For this research, the collection of disciplines who perform
+research across a variety of environmental science fields are captured under the
+term ``environmental science.'' At our institution, these are the departments of
 Ecology, Land Resources and Environmental Sciences (LRES), Plant Sciences and
 Plant Pathology (PSPP), and Animal and Range Sciences (ARS), whose students are
 required or highly recommended to complete graduate-level statistics coursework
@@ -209,24 +191,24 @@ better prepare current and future generations of researchers
 
 \subsection{Computing in the Environmental Science Curriculum}
 
-\noindent Arising from a decade of mumblings about the importance of computing to 
-environmental science research \citep{andelman, dodds1, dodds2, eglen, 
+\noindent Arising from a decade of mumblings about the importance of computing
+to environmental science research \citep{andelman, dodds1, dodds2, eglen, 
 green, hastings, kelling, wilson-software-carpentry, wilson, wing}, 2012 brought
 two studies on the computational ill-preparation of environmental science 
 students by their curriculum. In the first large-scale study of ecology
 instructors, Strasser and Hampton (\citeyear{labs}) found that undergraduate
 students were not being prepared with the data management tools necessary to
-engage in environmental science research. Across 51 different institutions,
-despite largely affirming the importance of data management skills, fewer than
-20\% of instructors reported including data management topics in their courses. 
-That same year, in a survey of environmental science graduate students across
-the United States, \citet{hernandez} found that over 74\% reported they had no
-skills in any programming language---including \texttt{R}---and only
-17\% reported basic skill levels in any programming language. 
+engage in environmental science research. Across 51 different institutions, 
+fewer than 20\% of instructors reported including data management topics in
+their courses. That same year, in a survey of environmental science graduate
+students across the United States, \citet{hernandez} found that over 74\%
+reported they had no skills in any programming language---including 
+\texttt{R}---and only 17\% reported basic skill levels in any programming
+language. 
 
 \quad Today, throughout their research, the majority of environmental science
 graduate students are required to produce code as part of their data analysis
-process \citep{mislan}. But dramatic changes have also been seen in the 
+process \citep{mislan}. Dramatic changes have also been seen in the 
 computing tools used in environmental science, with an increase of over 45\% in
 the use of \texttt{R} in environmental science publications over the last ten 
 years \citep{Rpopular}. With this changing research climate, these studies
@@ -243,16 +225,16 @@ science skills necessary for research.
 
 \subsection{Computing in the Statistics Curriculum}
 
-\noindent Changes in the digital age have also had ``a profound impact on statistics
-and the nature of data analysis" \citep[p.\ 97]{nolan}, with today's skills 
-differing substantially from what was needed but five to ten years ago. 
+\noindent Changes in the digital age have also had ``a profound impact on
+statistics and the nature of data analysis" \citep[p.\ 97]{nolan}, with today's
+skills differing substantially from what was needed but five to ten years ago. 
 In the year following the publication of ``Computing in the Statistics 
 Curriculum'' \citep{nolan}, the Mckinsey Report \citep{mckinsey} was published, 
 stating that, by 2018, ``the United States alone could face a
 shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5
 million managers and analysts with the know-how to use the analysis of big data
 to make effective decisions'' (p.\ 3). With calls to transform the undergraduate
-statistics curriculum resounding nationally, the 2014 American Statistical 
+statistics curriculum, the 2014 American Statistical 
 Association (ASA) President, Nathaniel Schenker, convened a workgroup to update
 the association's guidelines for undergraduate programs. These new guidelines 
 included an increased emphasis on data science skills and real applications, 
@@ -262,19 +244,20 @@ program in higher-level languages'' \citep[p.\ 7]{asa}.
 
 \quad With this curricular momentum, in 2015, \emph{The American Statistician} 
 produced a special issue on ``Statistics and the Undergraduate Curriculum." 
-Articles in this special issue ranged from detailing how computing should be
-included throughout the statistics curriculum \citep{jenny, tintle, hesterberg},
-to presenting thoughts on how data science topics ought to be integrated into 
-undergraduate statistics courses, \citep{esr, grimshaw, 
-baumer_datascience, hardin}. In the same issue, George Cobb (\citeyear{cobb}) 
-provocatively stated that the statistics curriculum needed to be rebuilt ``from
-the ground up,'' as ``what we teach lags decades behind what we practice'' and 
-``the gap between our half-century-old curriculum and our contemporary 
-statistical practice continues to widen'' (p.\ 268). Despite the 
-issue's focus on the broader statistics curriculum, statistics educators
-continued to lament that the current Introductory Statistics curriculum teaches
-but a snapshot of the entire data analysis cycle, ``wherein challenges with data
-computational methods, and visualization and presentation are typically elided'' 
+% Articles in this special issue ranged from detailing how computing should be
+% included throughout the statistics curriculum \citep{jenny, tintle, hesterberg},
+% to presenting thoughts on how data science topics ought to be integrated into 
+% undergraduate statistics courses, \citep{esr, grimshaw, 
+% baumer_datascience, hardin}.
+In this issue, George Cobb (\citeyear{cobb}) provocatively stated that the
+statistics curriculum needed to be rebuilt ``from the ground up,'' as ``what we
+teach lags decades behind what we practice'' and ``the gap between our
+half-century-old curriculum and our contemporary statistical practice continues
+to widen'' (p.\ 268). Despite the issue's focus on the broader statistics
+curriculum, statistics educators continued to lament that the current
+Introductory Statistics curriculum teaches but a snapshot of the entire data
+analysis cycle, ``wherein challenges with data computational methods, and
+visualization and presentation are typically elided'' 
 \citep[p.\ 336]{baumer_datascience}. 
 
 \quad The following year brought the revised GAISE college report 
@@ -314,24 +297,24 @@ necessary for their research answered this question with a resounding `no'
 students did not attribute their data science skills to the statistics courses
 they took for their degree. Rather, students gained these skills through
 independent research experiences, an ``all-knowing'' past or current graduate
-students, and peer networks. Ten years after the publication of ``Computing in
-the Statistics Curriculum,'' we continue to assume that ``students will `pick
-up' the skills they need'' to participate in the data analysis cycle outside of
-their statistics coursework \citep[p.\ 309]{gould}. 
+students, and their peer networks. Ten years after the publication of 
+``Computing in the Statistics Curriculum,'' we continue to assume that 
+``students will `pick up' the skills they need'' to participate in the data
+analysis cycle outside of their statistics coursework \citep[p.\ 309]{gould}. 
 
 \subsection{Extracurricular Workshops to Bridge the Gap}
 
 \noindent Reiterated by both statistics education and environmental science 
 researchers alike \citep{nolan, carpentry}, this lack of training in 
-computing impedes the progress of scientific research, sends the 
-signal to students that computing is not of intellectual importance, and is 
+computing impedes the progress of scientific research and is 
 laden with hidden costs. Students may pick up bad habits, misunderstandings, or 
 the wrong concepts, learn just enough to get what they need done, spend weeks or
 months on tasks that could be done in hours or days, and may be unaware of 
 the reliability and reproducibility---or lack there of---of their results (Nolan
-and Temple Lang, 2010, p.\ 100; Teal et al., 2015, p.\ 136). But why are these
-skills still so rarely included in these statistics service courses when the
-need for them is widely recognized?
+and Temple Lang, 2010, p.\ 100; Teal et al., 2015, p.\ 136). 
+% But why are these
+% skills still so rarely included in these statistics service courses when the
+% need for them is widely recognized?
 
 \quad Environmental science educators have restated the challenges in 
 integrating computing into the curriculum outlined by Nolan and Temple Lang. 
@@ -351,7 +334,7 @@ additional coursework.
 courses, extracurricular workshops hold the potential to address the gap between
 the computing preparation of students by their coursework and the 
 computing skills required for their research. The current drove of online
-resources, such as online lessons and MOOCs, poses a ``significant challenge
+resources poses a ``significant challenge
 in being able to discover relevant and high-quality materials'' 
 \citep[p.\ 136]{carpentry} for researchers with limited time. Instead, short,
 intensive workshops, such as those provided by The Carpentries, are able to
@@ -381,6 +364,26 @@ innovations within the crucible of classrooms and other contexts for learning''
 community to develop ``evidence-based improvements'' (p.\ 143) to teaching 
 innovations---situating community members as ``co-designers of solutions to 
 problems'' (p.\ 140) rather than bystanders. 
+
+\quad In this article we summarize the results of the first iteration of a
+three-phase DBIR model, supporting environmental science graduate students in
+acquiring the data science skills necessary for data-intensive environmental 
+science research. Phase one, detailed in Section \ref{sec:faculty}, focuses on
+outlining the computational skills environmental science faculty members
+identified as necessary for graduate students to succeed in their independent
+research. Phase two of this research details how the skills identified during
+phase one were used to tailor currently existing Data Carpentry 
+(\citeyear{data-carpentry}) and Software Carpentry 
+(\citeyear{software-carpentry}) lessons. Section \ref{sec:implement} chronicles
+the third phase of this research, implementing and evaluating these workshops,
+focusing on the backgrounds and experiences of workshop attendees. 
+
+% Resources used to facilitate the
+% sustainability of these workshops are outlined in Section
+% \ref{sec:sustainability}, alongside possibilities for formally integrating these
+% workshops into the university curricula. Finally, Section \ref{sec:future}
+% outlines plans for the second iteration of this design work, and the need for
+% future research investigating the learning outcomes of workshop attendees.
 
 \quad The content of these tailored workshops was informed by the Data 
 Carpentry (\citeyear {data-carpentry}) and Software Carpentry 
@@ -417,10 +420,11 @@ required of environmental science graduate students.
 \quad In the spring of 2017 and fall of 2018, every faculty member
 currently overseeing a graduate student in the Ecology, LRES, ARS, and PSPP
 departments was emailed requesting their participation in this research. 
-While some faculty enthusiastically agreed to participate, others declined for
-three main reasons---they hadn't directly overseen a graduate student recently,
-they deemed themselves to be weak in statistics, or they were unavailable to
-meet. Table \ref{tab:faculty} outlines the number of faculty requested for
+% While some faculty enthusiastically agreed to participate, others declined for
+% three main reasons---they hadn't directly overseen a graduate student recently,
+% they deemed themselves to be weak in statistics, or they were unavailable to
+% meet. 
+Table \ref{tab:faculty} outlines the number of faculty requested for
 participation and the number of faculty interviewed, by departmental
 affiliation. 
 
@@ -485,12 +489,13 @@ into the single theme of ``working with data.''
 %sentiments regarding the need for students' work to be reproducible was not
 %voiced alongside a specific software.
 
-\quad In the final stage, the author searched the faculty transcripts for
-evidence supporting the emerging themes, scrutinizing whether each identified
-skill fit into the emergent themes. Following this process, the first and second
-authors met to discuss the rationale for each theme and to inspect the skills
-identified by faculty in the context of the emergent themes. These final themes
-informed the design of data science workshops. 
+\quad In the final stage, the first and second authors searched the faculty
+transcripts for evidence supporting the emerging themes, scrutinizing whether
+each identified skill fit into the emergent themes. 
+% Following this process, the first and second
+% authors met to discuss the rationale for each theme and to inspect the skills
+% identified by faculty in the context of the emergent themes. 
+These final themes informed the design of data science workshops. 
 
 \subsection{Themes of Skills Identified by Environmental Science Faculty}
 
@@ -509,10 +514,9 @@ the statistics classroom do not adequately prepare them to work with and
 organize large, messy datasets. As graduate students perform their research,
 they are required to think about ``storing data, managing data, matching
 data, and collating data,'' into meaningful datasets for analysis. Some 
-faculty, aware of the different types of data their students work with, 
-reflected that they don't believe it's uncommon for students to work with 
-large datasets, but ``[they] think it's uncommon [for students] to be doing it
-effectively or efficiently.'' 
+faculty reflected that they don't believe it's uncommon for students to work
+with large datasets, but ``[they] think it's uncommon [for students] to be doing
+it effectively or efficiently.'' 
 
 \quad These skills for working with data ranged from students' ability to 
 ``organize their data and get it in a way that can be used by \texttt{R}'' to 
@@ -544,10 +548,8 @@ visualize [their] data to explore and understand it.''
 
 \subsubsection{Reproducibility}  
 
-% \stacey{Clarify how we define "reproducibility" in this paper here.}
-
-\noindent Every faculty member emphasized the necessity for students' analysis to 
-be computationally reproducible, where faculty would be able to recreate 
+\noindent Every faculty member emphasized the necessity for students' analysis
+to be computationally reproducible, where faculty would be able to recreate 
 student's results, ``given only a set of files and written instructions''
 (Kitzes, Turek, Deniz, \citeyear{reproducible}). Across environmental science
 disciplines, faculty concurred that many students do not perform scripted data
@@ -598,16 +600,16 @@ students are being self-taught and are often computationally ahead of them.''
 Students}
 \label{sec:workshops}
 
-\noindent The second phase of this research attended to the  development of a suite
-of data science workshops targeted to graduate students in the environmental
-sciences. The skills identified through faculty interviews were incorporated 
-into Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for
-Ecologists} lesson \citep{ecology_curriculum} \footnote{This
+\noindent The second phase of this research attended to the  development of a 
+suite of data science workshops targeted to graduate students in the 
+environmental sciences. The skills identified through faculty interviews were
+incorporated into Data Carpentry's \emph{Data Analysis and Visualization in 
+\texttt{R} for Ecologists} lesson \citep{ecology_curriculum} \footnote{This
 work is a derivative of \href{https://datacarpentry.org/R-ecology-lesson}{Data 
 Analysis and Visualization in R for Ecologists (link)} by Data Carpentry, used
-under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License (link)}}.
-The series of workshops consists of four 3-hour workshops covering (1) the
-basics of programming in \texttt{R}, (2) intermediate programming tasks in 
+under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License 
+(link)}}. The series of workshops consists of four 3-hour workshops covering (1)
+the basics of programming in \texttt{R}, (2) intermediate programming tasks in 
 \texttt{R}, (3) creating effective data visualizations, and (4) wrangling data.
 Importantly, the first workshop does not assume attendees have previous
 experience working in \texttt{R}, and each workshop builds on the knowledge
@@ -651,7 +653,7 @@ the entire data analysis cycle (R Markdown).
 
 \noindent The use of \texttt{R} is widespread throughout the environmental science
 research community, a dramatic change over the last decade \citep{Rpopular}. 
-Furthermore, with the invention of the RStudio integrated development 
+Furthermore, with the creation of the RStudio integrated development 
 environment (IDE) \citep{rstudio}, this user-ship continues to increase. 
 % as \texttt{R} includes over 100 packages frequently used in ecological data
 % analysis\footnote{\href{https://CRAN.R-project.org/view=Environmetrics}{https://CRAN.R-project.org/view=Environmetrics}}. 
@@ -666,14 +668,12 @@ a reproducible data analysis workflow.
 
 \subsubsection{Why RStudio?}
 
-\noindent RStudio is a free computer application that allows you to access the 
-resources of \texttt{R} through a comfortable working
-environment \citep{rstudio}. The RStudio IDE ``makes [programming] less
-intimidating than the bare \texttt{R} shell" \citep[p.\ 59]{mine}. Additionally,
-the RStudio environment is consistent across operating systems, which is often
-not the case for other statistical software packages. Moreover, because RStudio
-is an IDE, it includes integrated help files, intelligent code completion, and
-syntax highlighting---all of which help to decrease the learning curve. 
+\noindent The RStudio IDE ``makes [programming] less
+intimidating than the bare \texttt{R} shell" \citep[p.\ 59]{mine}. Unlike other 
+statistical software packages, the RStudio environment is consistent across
+operating systems. Moreover, because RStudio is an IDE, it includes integrated
+help files, intelligent code completion, and syntax highlighting---all of which
+help to decrease the learning curve. 
 
 \subsubsection{Why RStudio Cloud?} 
 
@@ -859,16 +859,17 @@ and once during the spring semester, with 84 individuals attending
 once during the spring semester, with a total of 20 individuals attending 
 \emph{Data Wrangling} and 24 attending \emph{Data Visualization}. The first
 workshop was offered two weeks after the start of the semester, with three week
-breaks between each subsequent workshop. Each workshop lasted three hours and
-was taught by one lead instructor with two workshop assistants. 
+breaks between each subsequent workshop. 
+% Each workshop lasted three hours and
+% was taught by one lead instructor with two workshop assistants. 
 
-\quad In the week prior to each workshop, a pre-workshop survey was
+\quad In the week prior to each workshop, a survey was
 sent out using a Google Form. This survey detailed individuals' demographics and
 backgrounds prior to attending the workshop. Following each workshop, attendees
-were asked to complete a post-workshop survey, detailing their experiences in
+were asked to complete a survey, detailing their experiences in
 the workshop. The submission of these surveys requires responses to every
-question. The content of these surveys was informed from the pre- and
-post-workshop surveys developed by The Carpentries \footnote{This work is a
+question. The content of these surveys was informed from the assessments 
+developed by The Carpentries \footnote{This work is a
 derivative of The Carpentries \href{https://carpentries.org/assessment/}{pre-
 and post-workshop survey materials (link)}, used under 
 \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License (link)}, with
@@ -876,8 +877,11 @@ revisions to disciplines and occupations, and removal of questions regarding
 frequency of use of computing tools and the level of agreement with provided
 statements}. Of the 202 students, faculty, and staff that attended these
 workshops, 121 (60\%) completed the pre-workshop survey and 56 (27\%) completed
-the post-workshop survey. The full pre- and post-workshop surveys are included
-as supplementary materials.
+the post-workshop survey. The pre- and post-workshop surveys are available
+through GitHub \footnote{Anonymous GitHub link}.
+% \href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
+% repository (link)}}
+
 
 \subsection{Backgrounds of Workshop Participants}
 
@@ -1084,13 +1088,9 @@ discipline-specific learning opportunities.
 \noindent Ten years ago, Nolan and Temple Lang declared that ``modernizing the
 statistics curricula to include computing [...] is an issue that deserves
 widespread attention and action'' (p.\ 106). Over the last ten years, we have
-seen both small 
-%\citep{gaise} 
-and large 
-%\citep{asa}
-changes advocated for the statistics curriculum. Unfortunately, graduate-level
-statistics service courses have received less attention and pose different 
-issues. 
+seen both small and large changes advocated for the statistics curriculum. 
+However, graduate-level statistics service courses have received less
+attention and pose different issues. 
 
 \quad Statistics courses that serve a variety of students (undergraduate,
 graduate, statistics major, non-major) reflect a snapshot of the statistics
