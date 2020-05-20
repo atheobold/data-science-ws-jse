@@ -178,12 +178,13 @@ Manyika, J., Chui, M., Brown, B., Bughin, J., Dobbs, R., Roxburgh, C., and
   productivity.
 \newblock Technical report, McKinsey Global Institute.
 
-\bibitem[McNamara and Horton, 2018]{mcnamara}
-McNamara, A. and Horton, N. (2018).
-\newblock Wrangling categorical data in {R}.
-\newblock {\em The American Statistician}, 72(1):97--104.
+\bibitem[McNamara, 2018]{mcnamara}
+McNamara, A. (2018).
+\newblock Imagining the future of statistical education software.
+\newblock In {\em Proceedings of the 10th International Conference on Teaching
+  Statistics (ICOTS)}.
 
-\bibitem[Michonneau et~al., 2019]{ecology_curriculum}
+\bibitem[Michonneau et~al., 2018]{ecology_curriculum}
 Michonneau, F., Teal, T., Fournier, A., Seok, B., Obeng, A., Pawlik, A.~N.,
   Conrado, A.~C., Woo, K., Lijnzaad, P., Hart, T., White, E.~P., Marwick, B.,
   Bolker, B., Jordan, K.~L., Ashander, J., Dashnow, H., Hertweck, K., Cuesta,
@@ -197,14 +198,14 @@ Michonneau, F., Teal, T., Fournier, A., Seok, B., Obeng, A., Pawlik, A.~N.,
   Vanichkina, D., Wilson, E., Strauss, E., Bledsoe, E., Gan, E., Fishman, D.,
   Boehm, F., Daskalova, G., Tavares, H., Kaupp, J., Dunic, J., Keane, J.,
   Stachelek, J., Herr, J.~R., Millar, J., Lotterhos, K., Cranston, K., Direk,
-  K., TylÃ©n, K., Chatzidimitriou, K., Deer, L., Tarkowski, L., Chiapello, M.,
+  K., Tylén, K., Chatzidimitriou, K., Deer, L., Tarkowski, L., Chiapello, M.,
   Burle, M.-H., Ankenbrand, M., Czapanskiy, M., Moreno, M., Culshaw-Maurer, M.,
   Koontz, M., Weisner, M., Johnston, M., Carchedi, N., Burge, O.~R., Harrison,
-  P., Humburg, P., Pauloo, R., Peek, R., Elahi, R., Cortijo, S., Umashankar,
-  S., Goswami, S., Yanco, S., Webster, T., Reiter, T., Pearse, W., and Li, Y.
-  (2019).
+  P., Humburg, P., Pauloo, R., Peek, R., Elahi, R., Cortijo, S., {sfn\_brt},
+  Umashankar, S., Goswami, S., {Sumedh}, Yanco, S., Webster, T., Reiter, T.,
+  Pearse, W., and Li, Y. (2018).
 \newblock datacarpentry/r-ecology-lesson: Data carpentry: Data analysis and
-  visualization in {R} for ecologists, {J}uly 2019.
+  visualization in r for ecologists.
 
 \bibitem[Miles et~al., 2014]{miles}
 Miles, M.~B., Huberman, A.~M., and Saldana, J. (2014).

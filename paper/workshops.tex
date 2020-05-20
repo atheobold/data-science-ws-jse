@@ -85,11 +85,11 @@ the design and implementation of a suite of data science workshops for
 environmental science graduate students, providing students with the skills 
 necessary to retrieve, view, wrangle, visualize, and analyze their data using 
 reproducible tools. These workshops help to bridge the gap between the computing
-skills necessary for scientific research and the computing skills with which students 
-leave their statistics service courses. Open to faculty, staff, and the 
-larger community, these workshops promote continued learning of the computational tools
-necessary for working with data and provide additional resources for
-incorporating data science into the classroom.
+skills necessary for scientific research and the computing skills with which
+students leave their statistics service courses. Open to faculty, staff, and the 
+larger community, these workshops promote continued learning of the
+computational tools necessary for working with data and provide additional
+resources for incorporating data science into the classroom.
 
 \end{abstract}
 
@@ -138,11 +138,10 @@ research. A ``symptom of the current curriculum's shortcomings''
 \citep[p.\ 547]{hampton} is the emergence of a variety of extracurricular
 opportunities for acquiring critical data science skills, such as Data Carpentry
 (\citeyear{data-carpentry}). While Data Carpentry's workshops teach
-domain-tailored lessons covering the ``fundamental data skills'' needed for the
-``full lifecycle of data-driven research,'' the possibility of tailoring these
-workshops to specific populations of researchers has yet to be investigated. 
-\stacey{I still find this sentence contradictory, perhaps because "domain-tailored"
-and "tailoring these workshops to specific populations of researchers" seem so similar.}
+domain-specific lessons covering the ``fundamental data skills'' needed for the
+``full lifecycle of data-driven research,'' the possibility of further tailoring
+these workshops to populations of graduate student researchers has yet to be
+investigated.
 
 \quad The intention of this research is to (1) describe the computing skills 
 necessary for graduate-level environmental science research, (2)
@@ -160,7 +159,7 @@ for a master's or doctoral degree. In this paper, the ``data analysis cycle''
 consists of all stages in the data analysis process, from data importation to
 data exploration to the communication of results (Figure \ref{fig:cycle}), where
 data modeling is but one component. The ``data science skills'' necessary to
-engage in this cycle may include general programming concepts such as loops,
+engage in this cycle may include general programming concepts such as looping,
 user-defined functions, or conditional statements. However, the cornerstone of
 data science skills differs fundamentally from general programming skills, with
 a focus on data rather than computer architecture, design, and applications. 
@@ -233,7 +232,7 @@ skills differing substantially from what was needed but five to ten years ago.
 In the year following the publication of ``Computing in the Statistics 
 Curriculum'' \citep{nolan}, a McKinsey report on ``Big data: The next frontier
 for innovation, competition, and productivity" \citep{mckinsey}
-stating that, by 2018, ``the United States alone could face a
+stated that, by 2018, ``the United States alone could face a
 shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5
 million managers and analysts with the know-how to use the analysis of big data
 to make effective decisions'' (p.\ 3). With calls to transform the undergraduate
@@ -373,11 +372,12 @@ science research. Phase one, detailed in Section \ref{sec:faculty}, focuses on
 outlining the computational skills environmental science faculty members
 identified as necessary for graduate students to succeed in their independent
 research. Phase two of this research, described in Section \ref{sec:workshops},
-used the skills identified during phase one to tailor currently existing Data Carpentry 
-(\citeyear{data-carpentry}) and Software Carpentry 
-(\citeyear{software-carpentry}) lessons to this population. Section \ref{sec:implement} chronicles
-the third phase of this research, implementing and evaluating these workshops,
-focusing on the backgrounds and experiences of workshop attendees. 
+used the skills identified during phase one to tailor currently existing Data 
+Carpentry (\citeyear{data-carpentry}) and Software Carpentry 
+(\citeyear{software-carpentry}) lessons to this population. Section 
+\ref{sec:implement} chronicles the third phase of this research, implementing
+and evaluating these workshops, focusing on the backgrounds and experiences of
+workshop attendees. 
 
 % Resources used to facilitate the
 % sustainability of these workshops are outlined in Section
@@ -497,13 +497,14 @@ These final themes informed the design of data science workshops.
 
 \subsection{Themes of Skills Identified by Environmental Science Faculty}
 
-\noindent While some faculty had difficulties disentangling the statistical methods
-students use in research from the computing required to implement those methods,
-many were able to express the computing skills necessary for graduate students
-in their field to engage in the entire data analysis process. A substantial
-overlap was seen between faculty expectations and the ``data acumen'' outlined
-by NAS (\citeyear{nas}), with faculty themes falling into three categories: (1)
-working with and wrangling data, (2) data visualization, and (3) reproducibilty. 
+\noindent While some faculty had difficulties disentangling the statistical
+methods students use in research from the computing required to implement those
+methods, many were able to express the computing skills necessary for graduate
+students in their field to engage in the entire data analysis process. A
+substantial overlap was seen between faculty expectations and the ``data
+acumen'' outlined by NAS (\citeyear{nas}), with faculty themes falling into
+three categories: (1) working with and wrangling data, (2) data visualization,
+and (3) reproducibilty. 
 
 \subsubsection{Working with Data}  
 
@@ -605,9 +606,7 @@ incorporated into Data Carpentry's \emph{Data Analysis and Visualization in
 \texttt{R} for Ecologists} lesson \citep{ecology_curriculum}\footnote{This
 work is a derivative of the \href{https://datacarpentry.org/R-ecology-lesson}{``Data 
 Analysis and Visualization in R for Ecologists"} lesson by Data Carpentry, used
-under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License}}.
-\stacey{The citation is from 2019; should we cite the year in which the
-lesson was examined?}
+under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License}.}.
 The series of workshops consists of four 3-hour workshops covering (1)
 the basics of programming in \texttt{R}, (2) intermediate programming tasks in 
 \texttt{R}, (3) creating effective data visualizations, and (4) wrangling data.
@@ -625,10 +624,28 @@ with video tutorials recorded and available through our institution's library\fo
 % workshops tailored for this research as ``non-standard'' Carpentries workshops. 
 
 \subsection{Pedagogy}
-\stacey{Didn't we used to have a section that talked about how the workshops were taught?
-I think we should add this back in - talk about the active learning classroom, participants
-bring their own laptops, using sticky notes, inter-weaving short instructional lectures with
-hands-on practice and challenges, etc.}
+
+\noindent These workshops were taught in a technology-enhanced active learning
+(TEAL) classroom that seats up to 35 individuals. The classroom has two monitors
+on every wall, a projector at the front of the room, and tables that seat groups
+of three to four persons. The layout of the room allowed for students to
+watch as the instructor live coded, and supported the instructor and workshop
+assistants in easily engaging with attendees as they worked. Each workshop had
+one lead instructor and two to three workshop assistants. The assistants were
+tasked with addressing any questions that arose while participants completed 
+hands-on tasks. 
+
+During the workshop, each topic was first introduced by the instructor, 
+followed by the live coding of an example. The group then engaged in a
+discussion of the computing concept. This group dialogue created an inclusive
+space where attendees were able to pose questions or conjectures to the group
+while the instructor live coded questions asked or participant's conjectures.
+Finally, attendees grouped up to complete a set of hands-on tasks, applying the
+concepts covered in that section of the workshop. These hands-on tasks allowed
+for attendees to ``learn the computational aspects as part of an interesting,
+challenging, and confidence-building process'' \citep[p.\ 101]{nolan}. As
+attendees worked in groups to tackle the tasks at hand, they were instructed to
+place a colored sticky note on their computer, to signal assistants for help.
 
 \subsection{Data Context}  
 
@@ -650,10 +667,9 @@ mark-recapture, and meta- and micro-level data.
 \noindent The structure and context of these workshops include a statistical
 programming language used extensively throughout environmental science research
 (\texttt{R}), environments which facilitate the learning of \texttt{R}
-(RStudio and RStudio Cloud), user-friendly \texttt{R} packages for data wrangling and
-data visualization (\texttt{tidyverse}),
-and tools that promote reproducibility throughout
-the entire data analysis cycle (R Markdown).
+(RStudio and RStudio Cloud), user-friendly \texttt{R} packages for data
+wrangling and data visualization (\texttt{tidyverse}), and tools that promote
+reproducibility throughout the entire data analysis cycle (R Markdown).
 
 \subsubsection{Why \texttt{R}?} 
 
@@ -712,13 +728,13 @@ for modern \texttt{R} workflows'' (Ross, Wickham, \& Robinson,
 Wickham and colleagues, universally known as the ``\texttt{tidyverse},'' has 
 created user friendly \texttt{R} tools which ``share an underlying design
 philosophy, grammar, and data structures'' \citep{tidyverse}. Inspired by how
-cumbersome it can be to remember different base \texttt{R} functions to wrangle
-and visualize your data, each with its own unique syntax, the workshops in this
-series make use of many \texttt{tidyverse} packages, including \texttt{dplyr}
-(\citeyear{dplyr}), \texttt{tidyr} (\citeyear{tidyr}), and  \texttt{ggplot2}
-(\citeyear{ggplot}). The common syntax of these packages lessen learner's 
-cognitive load, allowing for participants to leave each workshop with more tools
-in their data science toolbox. 
+cumbersome it can be to remember the different base \texttt{R} functions to
+wrangle and visualize your data, each with its own unique syntax, the workshops
+in this series make use of many \texttt{tidyverse} packages, including 
+\texttt{dplyr} (\citeyear{dplyr}), \texttt{tidyr} (\citeyear{tidyr}), and 
+\texttt{ggplot2} (\citeyear{ggplot}). The common syntax of these packages lessen
+learner's cognitive load, allowing for participants to leave each workshop with
+more tools in their data science toolbox. 
 
 
 \subsubsection{Why R Markdown Documents?}
@@ -814,13 +830,10 @@ Until now, participants have been presented with ``tidy'' data \citep{tidy}.
 % cell. 
 This concept of tidy data is used to describe `long' and `wide' data
 formats. The \texttt{tidyr} package \citep{tidyr} is introduced to alleviate the
-burden of data reorganizations, when transforming data from one layout to another. In
-groups, participants work through a final exercise summarizing groups, using 
-\texttt{pivot\_wider()} to spread these values across multiple columns, and
-finally using \texttt{pivot\_longer()} to gather these multiple columns back 
-together.
-\stacey{I'm not following this sentence. What "groups" are we summarizing?
-what are "these values"?}
+burden of data reorganizations, when transforming data from one layout to
+another. In groups, participants work through a final exercise connecting the
+concepts of variable mutation, grouped data summaries, and `long` and `wide` 
+data. 
 
 \subsubsection{Data Visualization with \texttt{ggplot2}}
 \label{sec:vizual} 
@@ -1004,16 +1017,16 @@ code, what certain symbols/terms/etc mean and how they work.''
 \section{Sustainability of Workshops}  
 \label{sec:sustainability}
 
-\noindent \stacey{Add sentence: To date, we have held XX workshops, serving XX members
-of the Anonymous University community.} To facilitate the sustainability of these workshops, we forged a
-partnership between our institution's library and the Department of Mathematical
-Science's Statistical Consulting and Research Services (SCRS). We believe a 
-university's library is an optimal unit for offering these workshops, as it is
-both department-agnostic and a central hub for the entire university community.
-Furthermore, by partnering with an organization that provides statistical
-consulting, workshop participants are provided with a potential avenue if
-difficulties or additional questions arise---so the peer network is not shifted 
-onto workshop instructors. 
+To date, we have held 14 workshops, serving 382 members of the Anonymous 
+University community. To facilitate the sustainability of these workshops, we
+forged a partnership between our institution's library and the Department of
+Mathematical Science's Statistical Consulting and Research Services (SCRS). We
+believe a university's library is an optimal unit for offering these workshops,
+as it is both department-agnostic and a central hub for the entire university
+community. Furthermore, by partnering with an organization that provides
+statistical consulting, workshop participants are provided with a potential
+avenue if difficulties or additional questions arise---so the peer network is
+not shifted onto workshop instructors. 
 
 \quad A data-engagement grant from the National Network of Libraries of Medicine
 during the 2018-2019 academic year supported the primary author in leading the
@@ -1021,34 +1034,34 @@ workshops, becoming a Carpentries certified instructor, and incorporating the
 results of this research into the broader Data and Software Carpentry curricula.
 A \$5,000 faculty excellence grant during the 2019-2020 academic year,
 facilitated the implementation of a ``train-the-trainer'' model, training two 
-future graduate student instructors. Instructors were recruited from the Master's
-and Doctoral programs in Statistics, but because of the widespread use of 
-\texttt{R} across scientific fields, graduate students from a variety of backgrounds also hold
-the potential to be effective instructors. Both semesters, the authors met with 
-these students for one hour a week to build students' facilities and confidence
-instructing. Each semester, instructor trainees taught different 30 to 45 minute portions
-of each workshop, and acted as assistants for the remainder for the workshop.  
+future graduate student instructors. Instructors were recruited from the
+Master's and Doctoral programs in Statistics, but because of the widespread use
+of \texttt{R} across scientific fields, graduate students from a variety of
+backgrounds also hold the potential to be effective instructors. Both semesters,
+the authors met with these students for one hour a week to build students'
+facilities and confidence instructing. Each semester, instructor trainees taught
+different 30 to 45 minute portions of each workshop, and acted as assistants for
+the remainder for the workshop.  
 
 % \quad Currently, this design research is focusing on incorporating the content of these workshops into the \emph{Data Analysis and Visualization in \texttt{R}} lesson within Data Carpentry's Ecology curriculum. Infusing the skills outlined in this research into the \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson helps to create a Carpentries curriculum that best reflects the ``core data skills'' necessary for data-intensive environmental science research. For skills outlined by this research where there is no room in the current \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson, the Carpentries Incubator and Carpentries Lab provide potential avenues to produce additional lesson materials that are broadly available to The Carpentries community. These avenues allow for the continued discussion of the importance of integrating user-defined functions, conditional statements, and loops into the broader Data Carpentry Ecology curriculum.    
 
-\quad Similar to the Explorations in Statistics Research\stacey{Should this be in quotes?} workshop model
+\quad Similar to the ``explorations in statistics research'' workshop model
 \citep{esr}, the ``standard'' Carpentries workshop format takes place over an
 intensive two days. Self-organized workshops, however, allow for this format to
-be tailored towards busy students, faculty, and staff---by offering one 3-hour workshop
-every few weeks---but this
-revised format has both benefits and costs. The additional time between each
-workshop helps to alleviate the fatigue often experienced in intensive
-workshops, and allows for participants to selectively attend workshops relevant
-to the skills they wish to acquire. However, in this extended format, workshops
-after \emph{Introduction to \texttt{R}} are potentially
-considered ``specialized'' workshops and experience lower attendance. At an
-academic institution, there is the possibility of integrating this type of
-workshop series into a single credit course. When considering this as an option,
-however, institutions should think carefully about how faculty and staff can 
-continue to participate in these learning opportunities. Alternatively,
-institutions could offer course credit for undergraduate students assisting with 
-the workshops, and allow for students to become lead or co-instructors as they
-progress through their program.
+be tailored towards busy students, faculty, and staff---by offering one 3-hour
+workshop every few weeks---but this revised format has both benefits and costs.
+The additional time between each workshop helps to alleviate the fatigue often
+experienced in intensive workshops, and allows for participants to selectively
+attend workshops relevant to the skills they wish to acquire. However, in this
+extended format, workshops after \emph{Introduction to \texttt{R}} are
+potentially considered ``specialized'' workshops and experience lower
+attendance. At an academic institution, there is the possibility of integrating
+this type of workshop series into a single credit course. When considering this
+as an option, however, institutions should think carefully about how faculty and
+staff can continue to participate in these learning opportunities.
+Alternatively, institutions could offer course credit for undergraduate students
+assisting with the workshops, and allow for students to become lead or 
+co-instructors as they progress through their program.
 
 \section{Limitations \& Future Research} 
 \label{sec:future}
