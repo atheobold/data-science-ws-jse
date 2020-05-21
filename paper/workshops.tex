@@ -9,8 +9,6 @@
 \usepackage{natbib}
 \usepackage{enumitem}
 \usepackage[splitrule]{footmisc} % For footnotelayout command
-%\interfootnotelinepenalty=10000 % To not allow split footnotes
-% \raggedbottom 
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 
@@ -29,6 +27,7 @@
 
 \renewcommand\footnotelayout{\fontsize{10}{12}\selectfont}
 \interfootnotelinepenalty = 10000  % Keep footnotes from breaking across pages
+\raggedbottom
 
 \date{May 21, 2020}
 
@@ -404,12 +403,11 @@ of the lessons, the Data Carpentry Ecology curriculum represents the ``best''
 theory for the teaching and learning of data science skills this field
 possesses. Notably, the Carpentries does not require training for instructors
 to use their content, as their materials are publicly available for use and
-adaptation (with acknowledgement). 
-
-% However, if the instructor or institution
-% desires to advertise their workshops as a Carpentries sponsored workshop, the
-% Carpentries requires that the lead instructor be a Carpentries certified instructor.
-
+adaptation (with acknowledgement). However, because the primary author is a
+Carpentries certified instructor, we chose to offer ``self-organized,''
+``non-standard'' Carpentries workshops \footnote{Additional information on
+organizing Carpentries workshops can be found here 
+\href{https://bit.ly/carpentriesorganize}{(link)}.}. 
 
 \section{Outlining the Computing Skills Necessary for Data-Intensive 
 Environmental Science Research}
