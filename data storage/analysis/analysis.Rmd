@@ -68,8 +68,8 @@ dept_occupation_attend <- pre_survey %>%
   ungroup()
 
 
-palette <- c("#40e0d0", "#6495ed", "#0000CD", "#191970", 
-               "#008000", "#B22222", "#FFD700")
+palette <- c("#58CCED","#3895D3", "#1261A0", "#072F5F", 
+               "#e69138", "#85200c", "#FFD700")
 
 plot <- dept_occupation_attend %>% 
   mutate(Department = factor(Department,
@@ -92,7 +92,7 @@ plot <- dept_occupation_attend %>%
         panel.border = element_blank()) + 
   scale_fill_manual(values = palette)
   
-ggsave(plot, file = "better_colors_attendance.png", dpi = 300, width = 12, height = 7)
+ggsave(plot, file = "final_colors_attendance.png", dpi = 300, width = 12, height = 7)
 ```
 
 

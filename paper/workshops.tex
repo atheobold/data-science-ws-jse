@@ -8,7 +8,9 @@
 \usepackage{float}
 \usepackage{natbib}
 \usepackage{enumitem}
-\usepackage{footmisc} % For footnotelayout command
+\usepackage[splitrule]{footmisc} % For footnotelayout command
+%\interfootnotelinepenalty=10000 % To not allow split footnotes
+% \raggedbottom 
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 
@@ -20,14 +22,14 @@
     urlcolor=blue,
 }
 
-\newcommand{\blind}{0}
+\newcommand{\blind}{1}
 \newcommand{\todo}[1]{{\color{blue}[[\textbf{TODO: }#1]]}}
 \newcommand{\stacey}[1]{{\color{purple}[[\textbf{Stacey says: }#1]]}}
 \newcommand{\R}{\texttt{R}}
 
 \renewcommand\footnotelayout{\fontsize{10}{12}\selectfont}
 
-\date{December 15, 2019}
+\date{May 21, 2020}
 
 \begin{document}
 \def\spacingset#1{\renewcommand{\baselinestretch}%
@@ -123,7 +125,7 @@ these necessary computational skills.
 \quad Over the last 10 years, a large number of statistics educators have echoed
 Nolan and Temple Lang's call to ``embrace computing and integrate it fully into 
 statistics undergraduate major and graduate programs" (Nolan and Temple Lang, 
-\citeyear{nolan}, p.\ 97; Baumer, \citeyear{baumer_datascience}; Baumer, Horton, 
+\citeyear{nolan}, p.\ 97; e.g., Baumer, \citeyear{baumer_datascience}; Baumer, Horton, 
 \& Wickham, \citeyear{horton_takingachance}; Cetinkaya-Rundel and Rundel, 
 \citeyear{mine}; Cobb, \citeyear{cobb}; Hardin et al., \citeyear{hardin}; Horton
 and Hardin, \citeyear{horton_thinkwithdata}; Kaplan, \citeyear{kaplan}). Indeed,
@@ -454,11 +456,9 @@ by department.}
 interview regarding (1) the computational skills they believe are necessary for
 master's and doctoral students to implement statistics for research in their
 field, and (2) how they believe graduate students acquire these necessary
-skills. The full interview protocol is available as supplementary material\footnote{Materials
-associated with this manuscript are available at: anonymous 
-website}.
-
-% \href{https://github.com/atheobold/data-science-workshops-jse}{https://github.com/atheobold/data-science-workshops-jse}}
+skills. The full interview protocol is available as supplementary material
+\footnote{Materials associated with this manuscript are available at: 
+\href{https://github.com/atheobold/data-science-workshops-jse}{https://github.com/atheobold/data-science-workshops-jse}.}
 
 % \subsection{Data Analysis} 
 
@@ -613,11 +613,11 @@ the basics of programming in \texttt{R}, (2) intermediate programming tasks in
 Importantly, the first workshop does not assume attendees have previous
 experience working in \texttt{R}, and each workshop builds on the knowledge
 acquired at the previous workshop(s). The workshop materials developed for this
-research are available through GitHub\footnote{Anonymous GitHub link}, 
-% \href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
-% repository (link)}}
-with video tutorials recorded and available through our institution's library\footnote{Anonymous YouTube link}. 
-% \href{http://bit.ly/ws_recordings}{MSU Library videos (link)}}. 
+research are available through GitHub
+\footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
+repository (link)}}, with video tutorials recorded and available through our
+institution's library \footnote{\href{http://bit.ly/ws_recordings}{MSU Library
+videos (link)}}. 
 
 % Because the
 % primary author is a Carpentries certified instructor, we were able to offer the
@@ -885,8 +885,8 @@ once during the spring semester, with a total of 20 individuals attending
 \emph{Data Wrangling} and 24 attending \emph{Data Visualization}. The first
 workshop was offered two weeks after the start of the semester, with three week
 breaks between each subsequent workshop. 
-% Each workshop lasted three hours and
-% was taught by one lead instructor with two workshop assistants. 
+
+\enlargethispage{0.25in}
 
 \quad In the week prior to each workshop, a pre-workshop survey was
 sent out using a Google Form. This survey detailed individuals' demographics and
@@ -901,11 +901,10 @@ revisions to disciplines and occupations, and removal of questions regarding
 frequency of use of computing tools and the level of agreement with provided
 statements}. Of the 202 students, faculty, and staff that attended these
 workshops, 121 (60\%) completed the pre-workshop survey and 56 (27\%) completed
-the post-workshop survey. The submission of these surveys required responses to every
-question. The pre- and post-workshop surveys are available
-through GitHub\footnote{Anonymous GitHub link}.
-% \href{https://github.com/atheobold/data-science-workshops-jse}{GitHub
-% repository (link)}}
+the post-workshop survey. The submission of these surveys required responses to
+every question. The pre- and post-workshop surveys are available through GitHub 
+\footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub 
+repository (link)}}. 
 
 
 \subsection{Backgrounds of Workshop Participants}
@@ -921,7 +920,7 @@ reported occupation.
 {\spacingset{1.05}
 \begin{figure}[h!]
 \centering
-\includegraphics[width = \textwidth]{images/better_colors_attendance.png}
+\includegraphics[width = \textwidth]{images/final_colors_attendance.png}
 \caption{Number of workshop attendees during the 2018-2019 academic year, by
 department and current occupation, selected from an itemized list of campus
 departments and positions in the pre-workshop survey.}
@@ -1017,7 +1016,7 @@ code, what certain symbols/terms/etc mean and how they work.''
 \section{Sustainability of Workshops}  
 \label{sec:sustainability}
 
-To date, we have held 14 workshops, serving 382 members of the Anonymous 
+To date, we have held 14 workshops, serving 382 members of Montana State 
 University community. To facilitate the sustainability of these workshops, we
 forged a partnership between our institution's library and the Department of
 Mathematical Science's Statistical Consulting and Research Services (SCRS). We
