@@ -342,4 +342,11 @@ Wing, J. (2006).
 \newblock Computational thinking.
 \newblock {\em Communications of {ACM}}, 49(3):33--35.
 
+\bibitem[Word et~al., 2017]{null-carpentries}
+Word, K.~R., Jordan, K., Becker, E., Williams, J., Reynolds, P., Hodge, A.,
+  Belkin, M., Marwick, B., and Teal, T. (2017).
+\newblock When do workshops work? {A} response to the `{N}ull {E}ffects' paper
+  from {F}eldon et al.
+\newblock Technical report, Software Carpentry.
+
 \end{thebibliography}
