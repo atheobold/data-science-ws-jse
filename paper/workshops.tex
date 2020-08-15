@@ -29,9 +29,10 @@
 \interfootnotelinepenalty = 10000  % Keep footnotes from breaking across pages
 \raggedbottom
 
-\date{May 26, 2020}
+\date{August 31, 2020}
 
 \begin{document}
+
 \def\spacingset#1{\renewcommand{\baselinestretch}%
 {#1}\small\normalsize} \spacingset{1}
 
@@ -215,12 +216,12 @@ process \citep{mislan}. Dramatic changes have also been seen in the
 computing tools used in environmental science, with an increase of over 45\% in
 the use of \texttt{R} in environmental science publications over the last ten 
 years \citep{Rpopular}. With this changing research climate, these studies
-suggest a large number of graduate students may be leaving their program without
-the data science skills necessary for research in their field. Although 
-statistics coursework has been readily incorporated into environmental science
-degrees, these conversations have yet to acknowledge the substantial role
-students' statistics education potentially plays in the attainment of the data
-science skills necessary for research.
+suggest a large number of graduate students may be leaving their programs 
+without the data science skills necessary for research in their field. Although 
+more traditional statistics coursework has been readily incorporated into
+environmental science degrees, these conversations have yet to acknowledge the
+substantial role students' statistics education potentially plays in the
+attainment of the data science skills necessary for research.
 
 % While Hernandez and colleagues noted that student-focused workshops could
 % work toward bridging this gap, by ``providing intensive environments'' where
@@ -370,16 +371,16 @@ problems'' (p.\ 140) rather than bystanders.
 \quad In this paper, we summarize the results of the first iteration of a
 three-phase DBIR model, supporting environmental science graduate students in
 acquiring the data science skills necessary for data-intensive environmental 
-science research. Phase one, detailed in Section \ref{sec:faculty}, focuses on
+science research. Phase one, detailed in Section \ref{sec:faculty}, focused on
 outlining the computational skills environmental science faculty members
 identified as necessary for graduate students to succeed in their independent
 research. Phase two of this research, described in Section \ref{sec:workshops},
 used the skills identified during phase one to tailor currently existing Data 
 Carpentry (\citeyear{data-carpentry}) and Software Carpentry 
 (\citeyear{software-carpentry}) lessons to this population. Section 
-\ref{sec:implement} chronicles the third phase of this research, implementing
-and evaluating these workshops, focusing on the backgrounds and experiences of
-workshop attendees. 
+\ref{sec:implement} chronicles the third phase of this research, where the 
+workshops were implemented and evaluated, specifically focusing on the
+backgrounds and experiences of workshop attendees. 
 
 % Resources used to facilitate the
 % sustainability of these workshops are outlined in Section
@@ -391,13 +392,13 @@ workshop attendees.
 \quad The content of these tailored workshops was informed by the Data 
 Carpentry (\citeyear {data-carpentry}) and Software Carpentry 
 (\citeyear{software-carpentry}) curriculum. Adhering to the recommendations of 
-the National Academies of Sciences, Engineering, and Medicine (NAS)
+the National Academies of Sciences, Engineering, and Medicine (NASEM)
 (\citeyear{nas}), Data Carpentry offers domain-specific curricula, so
 participants ``learn more quickly and effectively,'' and can ``see more
 immediately how to implement these skills and approaches in their own work''
-(\citeyear{carpentry}, p.\ 136). The Data Carpentry Ecology curriculum has been
+(\citep[p.\ 136]{carpentry}. The Data Carpentry Ecology curriculum has been
 developed by the community, to ``share perspectives on best practices''
-(\citeyear{carpentry}, p.\ 137). Furthermore, because these workshops are taught
+(p.\ 137). Furthermore, because these workshops are taught
 numerous times across the world, with public input on the content and structure
 of the lessons, the Data Carpentry Ecology curriculum represents the ``best''
 theory for the teaching and learning of data science skills this field
@@ -503,7 +504,7 @@ methods students use in research from the computing required to implement those
 methods, many were able to express the computing skills necessary for graduate
 students in their field to engage in the entire data analysis process. A
 substantial overlap was seen between faculty expectations and the ``data
-acumen'' outlined by NAS (\citeyear{nas}), with faculty themes falling into
+acumen'' outlined by NASEM (\citeyear{nas}), with faculty themes falling into
 three categories: (1) working with and wrangling data, (2) data visualization,
 and (3) reproducibilty. 
 
@@ -527,7 +528,7 @@ statistics courses provide students with data which are the product
 of cross-tabulation, so students are never forced ``to figure out how to get the
 cross-tabulation [they] need, so that [they] can bring it into \texttt{R} and do
 [their] regression.'' These concerns reiterate the importance of ``data
-management and curation'' detailed by NAS, who stated that ``at the heart of
+management and curation'' detailed by NASEM, who stated that ``at the heart of
 data science is the storage, preparation, and accessing of data'' 
 (\citeyear[p.\ 26]{nas}). 
 
@@ -537,7 +538,7 @@ data science is the storage, preparation, and accessing of data''
 research was emphasized by every faculty member. Faculty affirmed
 that students should possess the ability to create visualizations of their data
 early and often. These expectations align with the capabilities outlined by
-NAS, who stated that students need to have the ability to ``present data in a
+NASEM, who stated that students need to have the ability to ``present data in a
 clear and compelling fashion'' (\citeyear[p.\ 26]{nas}). One faculty member
 declared that students' ability to look at their data in different ways
 dramatically shapes their research potential, and the tools available today
@@ -563,7 +564,7 @@ many advisers stated that they encourage students to avoid these brute force
 data manipulations, they reflected that students may not have the computing
 skills necessary to perform the same tasks in a scripted and reproducible
 manner. These faculty concerns parallel the ``workflow and reproducibility''
-acumen outlined by NAS, who stated that students need to ``be exposed to the
+acumen outlined by NASEM, who stated that students need to ``be exposed to the
 concept of workflows'' (\citeyear{nas}, p.\ 28). 
 
 \subsubsection{How Students Gain Computational Skills}
@@ -600,7 +601,6 @@ students are being self-taught and are often computationally ahead of them.''
 Students}
 \label{sec:workshops}
 
-\noindent The second phase of this research attended to the  development of a 
 suite of data science workshops targeted to graduate students in the 
 environmental sciences. The skills identified through faculty interviews were
 incorporated into Data Carpentry's \emph{Data Analysis and Visualization in 
@@ -654,7 +654,7 @@ challenging, and confidence-building process'' \citep[p.\ 101]{nolan}
 
 \subsection{Data Context}  
 
-\noindent Emphasized by both faculty members and NAS, ``effective
+\noindent Emphasized by both faculty members and NASEM, ``effective
 application of data science to a domain requires knowledge of that domain'' 
 (\citeyear[p.\ 29]{nas}). Hence, data science instruction ought to be grounded
 in ``substantive contextual examples,'' to ``ensure that data scientists develop
@@ -686,7 +686,8 @@ environment (IDE) \citep{rstudio}, this user-ship continues to increase.
 % analysis\footnote{\href{https://CRAN.R-project.org/view=Environmetrics}{https://CRAN.R-project.org/view=Environmetrics}}. 
 \texttt{R} is free and open source, so attendees learn a statistical
 programming language that will be accessible to them throughout their careers.
-Unlike MARK, VORTEX, or RMAS, with \texttt{R}, attendees' results do not depend
+Unlike frequently used environmental science software, such as MARK, VORTEX, or
+RMAS, with \texttt{R}, attendees' results do not depend
 on remembering the sequence of buttons they clicked. With a growing appreciation
 for reproducible data analysis methods in ecological research 
 \citep{reproducibilty-comment, repeatability, pva, reproducibility_ecology},
@@ -784,7 +785,7 @@ visualizations of the data.
 The content in this workshop, excluding relational statements, was not
 included in Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R}
 for Ecologists} lesson.
-Yet, conditional statements, for-loops, and user-defined
+Yet, conditional statements, looping, and user-defined
 functions are skills that many faculty asserted were necessary for graduate
 students to possess as they perform independent research. Many of these
 concepts, however, are included in Software Carpentry's 
@@ -794,13 +795,14 @@ concepts, however, are included in Software Carpentry's
 statements and linking these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
 the use of conditional statements, stepping from \texttt{if}, to \texttt{if
-else}, to \texttt{else if} statements. The second half of the workshop covers
-methods to iterate or replicate a set of instructions many times. Looping,
-specifically \texttt{for()} loops, are introduced as a popular way to iterate or
-replicate the same set of instructions. Working through exercises which
-repeat operations on a dataset using both a \texttt{for()} loop and a recursive 
-\texttt{for()} loop, motivates a discussion of why vectorization is 
-recommended for non-recursive \texttt{for()} loops.
+else}, to \texttt{else if} statements. The use of the \texttt{ifelse()} function 
+is motivated by the need to vectorize conditional operations. The second half of
+the workshop covers methods to iterate or replicate a set of instructions many
+times. Looping, specifically \texttt{for()} loops, are introduced as a popular
+way to iterate or replicate the same set of instructions. Working through
+exercises which repeat operations on a dataset using both a \texttt{for()} loop
+and a recursive \texttt{for()} loop, motivates a discussion of why vectorization
+is recommended for non-recursive \texttt{for()} loops.
 
 \quad To conclude, functions are presented as an approach to replicate the same
 set of instructions throughout your code. Inspired by a script
