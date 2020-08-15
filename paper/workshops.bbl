@@ -58,6 +58,11 @@ Cobb, P.~A., Confrey, J., diSessa, A.~A., Lehrer, R., and Schauble, L. (2003).
 \newblock Design experiments in educational research.
 \newblock {\em Educational Researcher}, 32(1):9--13.
 
+\bibitem[Conrado et~al., 2018]{ecology_curriculum}
+Conrado, A.~C., Fournier, A.~M., Michonneau, F., and Seok, B. (2018).
+\newblock datacarpentry/r-ecology-lesson: Data carpentry: Data analysis and
+  visualization in {R} for ecologists.
+
 \bibitem[{Data {C}arpentry}, 2020]{data-carpentry}
 {Data {C}arpentry} (2020).
 \newblock \href{https://datacarpentry.org/}{https://datacarpentry.org/}.
@@ -112,7 +117,7 @@ Green, J.~L., Hastings, A., Arzberger, P., Ayala, F.~J., Cottingham, K.~L.,
 \bibitem[Hampton et~al., 2017]{hampton}
 Hampton, S.~E., Jones, M.~B., Wasser, L.~A., Schildhauer, M.~P., Supp, S.~R.,
   Brun, J., Hernandez, R.~R., Boettiger, C., Collins, S.~L., Gross, L.~J.,
-  FernÃƒÂ¡ndez, D.~S., Budden, A., White, E.~P., Teal, T.~K., Labou, S.~G., and
+  Fernandez, D.~S., Budden, A., White, E.~P., Teal, T.~K., Labou, S.~G., and
   Aukema, J.~E. (2017).
 \newblock Skills and knowledge for data-intensive environmental research.
 \newblock {\em BioScience}, 67(6):546--557.
@@ -132,7 +137,7 @@ Hastings, A., Arzberger, P., Bolker, B., Collins, S., Ives, Anthony, R.,
 
 \bibitem[He et~al., 2019]{crossroads}
 He, X., Madigan, D., Yu, B., and Wellner, J. (2019).
-\newblock Statistics at a crossroads: who is for the challenge.
+\newblock Statistics at a crossroads: {W}ho is for the challenge.
 \newblock Technical report, The National Science Foundation.
 
 \bibitem[Hernandez et~al., 2012]{hernandez}
@@ -183,29 +188,6 @@ McNamara, A. (2018).
 \newblock Imagining the future of statistical education software.
 \newblock In {\em Proceedings of the 10th International Conference on Teaching
   Statistics (ICOTS)}.
-
-\bibitem[Michonneau et~al., 2018]{ecology_curriculum}
-Michonneau, F., Teal, T., Fournier, A., Seok, B., Obeng, A., Pawlik, A.~N.,
-  Conrado, A.~C., Woo, K., Lijnzaad, P., Hart, T., White, E.~P., Marwick, B.,
-  Bolker, B., Jordan, K.~L., Ashander, J., Dashnow, H., Hertweck, K., Cuesta,
-  S.~M., Becker, E.~A., Guillou, S., Shiklomanov, A., Klinges, D., Odom, G.~J.,
-  Jean, M., Mislan, K. A.~S., Johnson, K., Jahn, N., Mannheimer, S., Pederson,
-  S., Pletzer, A., Fouilloux, A., Switzer, C., Bahlai, C., Li, D., Kerchner,
-  D., Rodriguez-Sanchez, F., Rajeg, G. P.~W., Ye, H., Tavares, H., Leinweber,
-  K., Peck, K., Lepore, M.~L., Hancock, S., Sandmann, T., Hodges, T., Tirok,
-  K., Jean, M., Bailey, A., {von Hardenberg}, A., Theobold, A., Wright, A.,
-  Basu, A., Johnson, C., Voter, C., Hulshof, C., Bouquin, D., Quinn, D.,
-  Vanichkina, D., Wilson, E., Strauss, E., Bledsoe, E., Gan, E., Fishman, D.,
-  Boehm, F., Daskalova, G., Tavares, H., Kaupp, J., Dunic, J., Keane, J.,
-  Stachelek, J., Herr, J.~R., Millar, J., Lotterhos, K., Cranston, K., Direk,
-  K., Tylén, K., Chatzidimitriou, K., Deer, L., Tarkowski, L., Chiapello, M.,
-  Burle, M.-H., Ankenbrand, M., Czapanskiy, M., Moreno, M., Culshaw-Maurer, M.,
-  Koontz, M., Weisner, M., Johnston, M., Carchedi, N., Burge, O.~R., Harrison,
-  P., Humburg, P., Pauloo, R., Peek, R., Elahi, R., Cortijo, S., {sfn\_brt},
-  Umashankar, S., Goswami, S., {Sumedh}, Yanco, S., Webster, T., Reiter, T.,
-  Pearse, W., and Li, Y. (2018).
-\newblock datacarpentry/r-ecology-lesson: Data carpentry: Data analysis and
-  visualization in r for ecologists.
 
 \bibitem[Miles et~al., 2014]{miles}
 Miles, M.~B., Huberman, A.~M., and Saldana, J. (2014).
@@ -316,20 +298,20 @@ Wickham, H. (2017).
 \newblock {\em tidyverse: Easily Install and Load the `Tidyverse'}.
 \newblock R package version 1.2.1.
 
-\bibitem[Wickham et~al., 2020]{dplyr}
-Wickham, H., François, R., Henry, L., and Müller, K. (2020).
-\newblock {\em dplyr: A Grammar of Data Manipulation}.
-\newblock R package version 0.8.5.
-
 \bibitem[Wickham and Henry, 2020]{tidyr}
 Wickham, H. and Henry, L. (2020).
 \newblock {\em tidyr: Tidy Messy Data}.
 \newblock R package version 1.0.2.
 
+\bibitem[Wickham et~al., 2020]{dplyr}
+Wickham, H., Romain~Francois, R., Henry, L., and Muller, K. (2020).
+\newblock {\em dplyr: A Grammar of Data Manipulation}.
+\newblock R package version 0.8.5.
+
 \bibitem[Wilson, 2006]{wilson-software-carpentry}
 Wilson, G. (2006).
-\newblock Software carpentry: Getting scientists to write better code by making
-  them more productive.
+\newblock Software carpentry: {G}etting scientists to write better code by
+  making them more productive.
 \newblock {\em Computing in Science \& Engineering}, 8(6):66--69.
 
 \bibitem[Wilson et~al., 2008]{wilson}

@@ -543,7 +543,7 @@ clear and compelling fashion'' (\citeyear[p.\ 26]{nas}). One faculty member
 declared that students' ability to look at their data in different ways
 dramatically shapes their research potential, and the tools available today
 allow researchers to create visualizations precisely tailored for each
-investigation. Many faculty voiced the usefulness of the \texttt{ggplot2} 
+investigation. Many faculty voiced the usefulness of the \textbf{ggplot2} 
 package \citep{ggplot} in lowering the barriers for students to learn ``how to
 visualize [their] data to explore and understand it.'' 
 
@@ -673,8 +673,8 @@ mark-recapture, and meta- and micro-level data.
 programming language used extensively throughout environmental science research
 (\texttt{R}), environments which facilitate the learning of \texttt{R}
 (RStudio and RStudio Cloud), user-friendly \texttt{R} packages for data
-wrangling and data visualization (\texttt{tidyverse}), and tools that promote
-reproducibility throughout the entire data analysis cycle (R Markdown).
+wrangling and data visualization (\textbf{tidyverse}), and tools that promote
+reproducibility throughout the entire data analysis cycle (\textbf{rmarkdown}).
 
 \subsubsection{Why \texttt{R}?} 
 
@@ -724,41 +724,35 @@ the use of RStudio projects.
     \label{fig:cloud}
 \end{figure}
 
-\subsubsection{Why the \texttt{tidyverse}?}
+\subsubsection{Why the tidyverse?}
 
 \noindent Considering much of \texttt{R}'s language has not changed over the 
 last 20 years, and the usage of \R~for scientific research has multiplied, there
 existed a desire for a ``smoother, more efficient, and more readable pipeline
 for modern \texttt{R} workflows'' (Ross, Wickham, \& Robinson, 
 \citeyear{tidytools}, p.\ 19). The suite of \texttt{R} packages developed by 
-Wickham and colleagues, universally known as the ``\texttt{tidyverse},'' has 
+Wickham and colleagues, universally known as the ``tidyverse,'' has 
 created user friendly \texttt{R} tools which ``share an underlying design
 philosophy, grammar, and data structures'' \citep{tidyverse}. Inspired by how
 cumbersome it can be to remember the different base \texttt{R} functions to
 wrangle and visualize your data, each with its own unique syntax, the workshops
-in this series make use of many \texttt{tidyverse} packages, including 
-\texttt{dplyr} (\citeyear{dplyr}), \texttt{tidyr} (\citeyear{tidyr}), and 
-\texttt{ggplot2} (\citeyear{ggplot}). The common syntax of these packages lessen
+in this series make use of many tidyverse packages, including 
+\textbf{dplyr} (\citeyear{dplyr}), \textbf{tidyr} (\citeyear{tidyr}), and 
+\textbf{ggplot2} (\citeyear{ggplot}). The common syntax of these packages lessen
 learner's cognitive load, allowing for participants to leave each workshop with
 more tools in their data science toolbox. 
 
 
 \subsubsection{Why R Markdown Documents?}
 
-\noindent  R Markdown documents provide an easy-to-understand framework to combine
-statistical computing and written analysis in a single document, helping to
-break the copy-paste paradigm for generating statistical reports
+\noindent  R Markdown documents provide an easy-to-understand framework to
+combine statistical computing and written analysis in a single document, helping
+to break the copy-paste paradigm for generating statistical reports
 \citep{mine-rmarkdown}. R Markdown documents allow for attendees to keep their
 code organized and their workspace clean during the workshop, a task that is 
 often unnatural for new learners. For additional
 information on R Markdown documents, see \citeauthor{mine-rmarkdown} 
 (\citeyear{mine-rmarkdown}). 
-
-% Each workshop's master R Markdown document
-% contains blocks of code and descriptions for every topic covered, allowing for
-% participants' exploratory work to be saved within a topic.
-
-
 
 \subsection{Workshop Content}
 
@@ -784,8 +778,7 @@ visualizations of the data.
 \noindent This second workshop covers coding skills to modularize \texttt{R} code. 
 The content in this workshop, excluding relational statements, was not
 included in Data Carpentry's \emph{Data Analysis and Visualization in \texttt{R}
-for Ecologists} lesson.
-Yet, conditional statements, looping, and user-defined
+for Ecologists} lesson. Yet, conditional statements, looping, and user-defined
 functions are skills that many faculty asserted were necessary for graduate
 students to possess as they perform independent research. Many of these
 concepts, however, are included in Software Carpentry's 
@@ -794,15 +787,18 @@ concepts, however, are included in Software Carpentry's
 \quad The workshop first progresses through the use of relational
 statements and linking these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
-the use of conditional statements, stepping from \texttt{if}, to \texttt{if
-else}, to \texttt{else if} statements. The use of the \texttt{ifelse()} function 
-is motivated by the need to vectorize conditional operations. The second half of
-the workshop covers methods to iterate or replicate a set of instructions many
-times. Looping, specifically \texttt{for()} loops, are introduced as a popular
-way to iterate or replicate the same set of instructions. Working through
-exercises which repeat operations on a dataset using both a \texttt{for()} loop
-and a recursive \texttt{for()} loop, motivates a discussion of why vectorization
-is recommended for non-recursive \texttt{for()} loops.
+the use of conditional statements, stepping from \texttt{if()\{\}}, to 
+\texttt{if()\{\}else\{\}}, to \texttt{else if()\{\}} statements. Subsequently,
+the use of the \texttt{ifelse()} function is motivated by the need to vectorize these
+types of conditional operations. The second half of the workshop covers methods
+to iterate or replicate a set of instructions many times. Looping, specifically
+\texttt{for()} loops, are introduced as a popular way to iterate or replicate 
+the same set of instructions. Working through exercises which repeat operations
+on a dataset using both a \texttt{for()} loop and a recursive \texttt{for()}
+loop, motivates a discussion of why vectorization is recommended for
+non-recursive \texttt{for()} loops.
+
+\todo{How to get the curly braces to not be larger than the parentheses?}
 
 \quad To conclude, functions are presented as an approach to replicate the same
 set of instructions throughout your code. Inspired by a script
@@ -818,8 +814,8 @@ implementing them in their own code.
 \label{sec:wrangle}
 
 \noindent The third workshop in the series introduces common data wrangling
-issues faced by environmental science researchers. Using the \texttt{dplyr} 
-package \citep{dplyr}, the workshop outlines six of the common ``verbs'' that
+issues faced by environmental science researchers. Using the dplyr package
+\citep{dplyr}, the workshop outlines six of the common ``verbs'' that
 handle common data wrangling challenges: \texttt{select()}, \texttt{filter()},
 \texttt{mutate()}, \texttt{group\_by()}, \texttt{summarise()}, and
 \texttt{arrange()}. Prompted by the need to perform a sequence of multiple data
@@ -836,7 +832,7 @@ Until now, participants have been presented with ``tidy'' data \citep{tidy}.
 % observation is one row, each variable has a column, and every value has one
 % cell. 
 This concept of tidy data is used to describe `long' and `wide' data
-formats. The \texttt{tidyr} package \citep{tidyr} is introduced to alleviate the
+formats. The tidyr package \citep{tidyr} is introduced to alleviate the
 burden of data reorganizations, when transforming data from one layout to
 another. In groups, participants work through a final exercise connecting the
 concepts of variable mutation, grouped data summaries, and `long` and `wide` 
@@ -845,19 +841,18 @@ data.
 \subsubsection{Data Visualization with \texttt{ggplot2}}
 \label{sec:vizual} 
 
-\noindent The final workshop in the series dives into creating data visualizations
-using the \texttt{ggplot2} package \citep{ggplot}. Using the joined data from
-the close of the previous workshop, a scatterplot is used to
+\noindent The final workshop in the series dives into creating data
+visualizations using the ggplot2 package \citep{ggplot}. Using the joined data
+from the close of the previous workshop, a scatterplot is used to
 illuminate a discussion of the \texttt{ggplot()} syntax. Participants learn
-about the \texttt{mapping} argument
-for specifying aesthetics (\texttt{aes}) for the plot and the \texttt{geom}
-functions which define the type of plot you produce. By making
-explicit connections between the addition operator (\texttt{+}) and the pipe
-operator, participants understand addition to be an intuitive metaphor for
-adding layers to a plot. Next, the workshop examines how to modify the
-\texttt{ggplot()} aesthetics and geoms to create violin plots, density plots, 
-bar charts, and line plots, allowing for participants to explore the 
-\texttt{geom} functions and aesthetics that pair with each plot. A conversation
+about the \texttt{mapping} argument for specifying aesthetics (\texttt{aes()}) 
+for the plot and the different geom functions which define the type of plot you
+produce. By making explicit connections between the addition operator 
+(\texttt{+}) and the pipe operator, participants understand addition to be an
+intuitive metaphor for adding layers to a plot. Next, the workshop examines how
+to modify the \texttt{ggplot()} aesthetics and geoms to create violin plots,
+density plots, bar charts, and line plots, allowing for participants to explore
+the geom functions and aesthetics that pair with each plot. A conversation
 is had about the importance of plotting raw data rather than simply aggregate
 measures of the data, and the difficulties that might arise. Adding a
 \texttt{geom\_point()} or \texttt{geom\_jitter()} layer to a visualization
@@ -870,7 +865,7 @@ facilitate multivariate comparisons \citep[p.\ 261]{nolan-viz}.
 \quad By this point in the workshop, participants have posed many questions on
 how to modify aspects of a plot that don't depend on the geom. For the final 
 section of the workshop, the group walks through different customizations one 
-can make to each \texttt{ggplot} object to add clarity and information to the 
+can make to each \texttt{ggplot()} to add clarity and information to the 
 plot. Participants learn how to flip a plot's coordinates, and how to make
 customizations of the labels, the size of the points, the thickness of
 lines, the appearance of the plotting window, and the colors. Each of
@@ -987,8 +982,8 @@ science research \citep{Rpopular, mislan}, over half of the master's, doctoral,
 and post-doc workshop participants attended the workshop for research
 assistance. Other attendees were seeking assistance with learning the \R~skills
 necessary for their coursework, refreshing or updating their \texttt{R}
-skills to include new tools with which they were unfamiliar (e.g. \texttt{ggplot}, 
-\texttt{dplyr}), or undergraduates preparing for graduate school. As echoed by
+skills to include new tools with which they were unfamiliar (e.g. the ggplot and 
+dplyr packages), or undergraduates preparing for graduate school. As echoed by
 previous studies of environmental science graduate students \citep{carpentry,
 theobold}, attendees overwhelmingly stated that they primarily use the internet
 (27\%), their peers (21\%), or their lab mates (15\%) when learning \texttt{R}.
