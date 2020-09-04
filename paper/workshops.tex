@@ -23,13 +23,14 @@
 \newcommand{\blind}{0}
 \newcommand{\todo}[1]{{\color{blue}[[\textbf{TODO: }#1]]}}
 \newcommand{\stacey}[1]{{\color{purple}[[\textbf{Stacey says: }#1]]}}
+\newcommand{\allison}[1]{{\color{purple}[[\textbf{Allison says: }#1]]}}
 \newcommand{\R}{\texttt{R}}
 
 \renewcommand\footnotelayout{\fontsize{10}{12}\selectfont}
 \interfootnotelinepenalty = 10000  % Keep footnotes from breaking across pages
 \raggedbottom
 
-\date{August 31, 2020}
+\date{September , 2020}
 
 \begin{document}
 
@@ -137,14 +138,24 @@ computing in the statistics classroom, graduate-level statistics service courses
 have largely been overlooked. Unlike courses designed for an undergraduate or
 graduate program in Statistics, these service courses often act as the sole
 exposure to computing with data prior to the start of a student's independent
-research. A ``symptom of the current curriculum's shortcomings'' 
-\citep[p.\ 547]{hampton} is the emergence of a variety of extracurricular
-opportunities for acquiring critical data science skills, such as Data Carpentry
-(\citeyear{data-carpentry}). While Data Carpentry's workshops teach
-domain-specific lessons covering the ``fundamental data skills'' needed for the
-``full lifecycle of data-driven research,'' the possibility of further tailoring
-these workshops to populations of graduate student researchers has yet to be
-investigated.
+research. \allison{NEW} Thus, although more traditional statistics coursework has been 
+incorporated into environmental science programs, often these fail to arm 
+students with the data science skills necessary for research. A ``symptom of the
+current curriculum's shortcomings'' \citep[p.\ 547]{hampton} is the emergence of
+a variety of extracurricular opportunities for acquiring critical data science
+skills, such as Data Carpentry (\citeyear{data-carpentry}). While Data
+Carpentry's workshops teach domain-specific lessons covering the ``fundamental
+data skills'' needed for the ``full lifecycle of data-driven research,'' the
+possibility of further tailoring these workshops to populations of graduate
+student researchers has yet to be investigated.
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width = \textwidth, height = 2in]{images/cycle.png}
+    \caption{Data Analysis Cycle, Wickham, H. \& Grolemund, G. (2017) \emph{R 
+    for Data Science}. Sebastopol, California: O'Reilly.}
+\label{fig:cycle}
+\end{figure} 
 
 \quad The intention of this research is to (1) describe the computing skills 
 necessary for graduate-level environmental science research, (2)
@@ -161,19 +172,18 @@ required or highly recommended to complete graduate-level statistics coursework
 for a master's or doctoral degree. In this paper, the ``data analysis cycle''
 consists of all stages in the data analysis process, from data importation to
 data exploration to the communication of results (Figure \ref{fig:cycle}), where
-data modeling is but one component. The ``data science skills'' necessary to
-engage in this cycle may include general programming concepts such as looping,
-user-defined functions, or conditional statements. However, the cornerstone of
-data science skills differs fundamentally from general programming skills, with
-a focus on data rather than computer architecture, design, and applications. 
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width = \textwidth, height = 2in]{images/cycle.png}
-    \caption{Data Analysis Cycle, Wickham, H. \& Grolemund, G. (2017) \emph{R 
-    for Data Science}. Sebastopol, California: O'Reilly.}
-\label{fig:cycle}
-\end{figure} 
+data modeling is but one component. \allison{NEW} We focus on the ``data science skills'' 
+necessary to engage in the entire data analysis cycle rather than focusing
+solely on the ``analysis'' portion of the cycle, due to the firm grounding of 
+statistical preparation environmental science students experiences during their
+degrees. These statistics courses, however, often do not expose students to data
+science skills that may be necessary for them to carry out an analysis they had
+learned in the classroom in the context of real data. The skills necessary for
+students to engage in this cycle may include general programming concepts such
+as looping, user-defined functions, or conditional statements. However, the
+cornerstone of data science skills differs fundamentally from general
+programming skills, with a focus on data rather than computer architecture,
+design, and applications. 
 
 \section{The Current Climate of Statistics and Computing in the Environmental 
 Sciences}
@@ -789,14 +799,16 @@ statements and linking these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
 the use of conditional statements, stepping from \texttt{if()\{\}}, to 
 \texttt{if()\{\}else\{\}}, to \texttt{else if()\{\}} statements. Subsequently,
-the use of the \texttt{ifelse()} function is motivated by the need to vectorize these
-types of conditional operations. The second half of the workshop covers methods
-to iterate or replicate a set of instructions many times. Looping, specifically
-\texttt{for()} loops, are introduced as a popular way to iterate or replicate 
-the same set of instructions. Working through exercises which repeat operations
-on a dataset using both a \texttt{for()} loop and a recursive \texttt{for()}
-loop, motivates a discussion of why vectorization is recommended for
-non-recursive \texttt{for()} loops.
+the use of the \texttt{ifelse()} function is motivated by the need to vectorize
+these types of conditional operations. The second half of the workshop covers
+methods to iterate or replicate a set of instructions many times. Looping,
+specifically \texttt{for()} loops, are introduced as a popular way to iterate or
+replicate the same set of instructions. Working through exercises which repeat
+operations on a dataset using both a \texttt{for()} loop and a recursive
+\texttt{for()} loop, motivates a discussion of why vectorization is recommended
+for non-recursive \texttt{for()} loops. \allison{NEW} In the interest of time, participants
+are provided with resources to continue learning about vectorized operations
+using the \texttt{purr} package. 
 
 \todo{How to get the curly braces to not be larger than the parentheses?}
 
