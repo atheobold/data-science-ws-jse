@@ -90,10 +90,10 @@ environmental science graduate students, providing students with the skills
 necessary to retrieve, view, wrangle, visualize, and analyze their data using 
 reproducible tools. These workshops help to bridge the gap between the computing
 skills necessary for scientific research and the computing skills with which
-students leave their statistics service courses. Open to faculty, staff, and the 
-larger community, these workshops promote continued learning of the
-computational tools necessary for working with data and provide additional
-resources for incorporating data science into the classroom.
+students leave their statistics service courses. \allison{NEW} Moreover, data science 
+workshops, such as these, open to the larger academic community promote the
+continued learning of the computational tools necessary for working with data,
+and provide resources for incorporating data science into the classroom.
 
 \end{abstract}
 
@@ -139,15 +139,15 @@ have largely been overlooked. Unlike courses designed for an undergraduate or
 graduate program in Statistics, these service courses often act as the sole
 exposure to computing with data prior to the start of a student's independent
 research. \allison{NEW} Thus, although more traditional statistics coursework has been 
-incorporated into environmental science programs, often these fail to arm 
-students with the data science skills necessary for research. A ``symptom of the
-current curriculum's shortcomings'' \citep[p.\ 547]{hampton} is the emergence of
-a variety of extracurricular opportunities for acquiring critical data science
-skills, such as Data Carpentry (\citeyear{data-carpentry}). While Data
-Carpentry's workshops teach domain-specific lessons covering the ``fundamental
-data skills'' needed for the ``full lifecycle of data-driven research,'' the
-possibility of further tailoring these workshops to populations of graduate
-student researchers has yet to be investigated.
+incorporated into environmental science programs, often these courses fail to
+arm students with the data science skills necessary for research. A ``symptom of
+the current curriculum's shortcomings'' \citep[p.\ 547]{hampton} is the
+emergence of a variety of extracurricular opportunities for acquiring critical
+data science skills, such as Data Carpentry (\citeyear{data-carpentry}). While
+Data Carpentry's workshops teach domain-specific lessons covering the
+``fundamental data skills'' needed for the ``full lifecycle of data-driven
+research,'' the possibility of further tailoring these workshops to populations
+of graduate student researchers has yet to be investigated.
 
 \begin{figure}[t!]
     \centering
@@ -414,7 +414,7 @@ of the lessons, the Data Carpentry Ecology curriculum represents the ``best''
 theory for the teaching and learning of data science skills this field
 possesses. Notably, The Carpentries does not require training for instructors
 to use their content, as their materials are publicly available for use and
-adaptation (with acknowledgement). However, because the primary author is a
+adaptation (with acknowledgment). However, because the primary author is a
 Carpentries certified instructor, we chose to offer ``self-organized,''
 ``non-standard'' Carpentries workshops\footnote{Additional information on
 organizing Carpentries workshops can be found here 
@@ -611,10 +611,11 @@ students are being self-taught and are often computationally ahead of them.''
 Students}
 \label{sec:workshops}
 
-suite of data science workshops targeted to graduate students in the 
-environmental sciences. The skills identified through faculty interviews were
-incorporated into Data Carpentry's \emph{Data Analysis and Visualization in 
-\texttt{R} for Ecologists} lesson \citep{ecology_curriculum}\footnote{This
+The second phase of this research attended to the development of a suite of data
+science workshops targeted to graduate students in the environmental sciences.
+The skills identified through faculty interviews were incorporated into Data
+Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for Ecologists}
+lesson \citep{ecology_curriculum}\footnote{This
 work is a derivative of the \href{https://datacarpentry.org/R-ecology-lesson}{``Data 
 Analysis and Visualization in R for Ecologists"} lesson by Data Carpentry, used
 under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License}.}.
@@ -669,12 +670,12 @@ application of data science to a domain requires knowledge of that domain''
 (\citeyear[p.\ 29]{nas}). Hence, data science instruction ought to be grounded
 in ``substantive contextual examples,'' to ``ensure that data scientists develop
 the capacity to pose and answer questions'' with data relevant to them
-(\citeyear{nas}, p.\ 30). Therefore, ecological data are used for these
+(\citeyear{nas}, p.\ 30). Therefore, ecological data were used for these
 workshops, originating from a resource management agency and the
 Portal Project Teaching Database \citep{portal_data}.  
 %Montana Fish, Wildlife, and Parks
-These data highlight a variety of aspects that
-commonly occur in ecological data, including missing data, multiple sampling instances,
+These data highlighted a variety of aspects that commonly occur in ecological
+data, including missing data, multiple sampling instances,
 mark-recapture, and meta- and micro-level data. 
 
 \subsection{Computing Tools for Environmental Science Research}  
@@ -748,7 +749,7 @@ cumbersome it can be to remember the different base \texttt{R} functions to
 wrangle and visualize your data, each with its own unique syntax, the workshops
 in this series make use of many tidyverse packages, including 
 \textbf{dplyr} (\citeyear{dplyr}), \textbf{tidyr} (\citeyear{tidyr}), and 
-\textbf{ggplot2} (\citeyear{ggplot}). The common syntax of these packages lessen
+ggplot2 (\citeyear{ggplot}). The common syntax of these packages lessen
 learner's cognitive load, allowing for participants to leave each workshop with
 more tools in their data science toolbox. 
 
@@ -797,20 +798,25 @@ concepts, however, are included in Software Carpentry's
 \quad The workshop first progresses through the use of relational
 statements and linking these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
-the use of conditional statements, stepping from \texttt{if()\{\}}, to 
-\texttt{if()\{\}else\{\}}, to \texttt{else if()\{\}} statements. Subsequently,
-the use of the \texttt{ifelse()} function is motivated by the need to vectorize
-these types of conditional operations. The second half of the workshop covers
-methods to iterate or replicate a set of instructions many times. Looping,
-specifically \texttt{for()} loops, are introduced as a popular way to iterate or
-replicate the same set of instructions. Working through exercises which repeat
-operations on a dataset using both a \texttt{for()} loop and a recursive
-\texttt{for()} loop, motivates a discussion of why vectorization is recommended
-for non-recursive \texttt{for()} loops. \allison{NEW} In the interest of time, participants
-are provided with resources to continue learning about vectorized operations
-using the \texttt{purr} package. 
+the use of conditional statements, stepping from 
+\texttt{$\text{if}\mathbf{\small(} \small) \small\{ \small\}$}, to 
+\texttt{$\text{if}\small( \small) \small\{ \small\}\text{else}\small\{\small\}$},
+to \texttt{$\text{else if}\small( \small) \small\{ \small\}$} statements.
+Subsequently, the use of the \texttt{ifelse()} function is motivated by the need
+to vectorize these types of conditional operations. The second half of the
+workshop covers methods to iterate or replicate a set of instructions many
+times. Looping, specifically
+\texttt{$\text{for}\small(\small) \small\{ \small\}$} loops, are introduced as a
+popular way to iterate or replicate the same set of instructions. Working
+through exercises which repeat operations on a dataset using both a 
+\texttt{$\text{for}\small(\small) \small\{ \small\}$} loop and a recursive
+\texttt{$\text{for}\small(\small) \small\{ \small\}$} loop, motivates a
+discussion of why vectorization is recommended for non-recursive
+\texttt{$\text{for}\small(\small) \small\{ \small\}$} loops. \allison{NEW} In
+the interest of time, participants are provided with resources to continue
+learning about vectorized operations using the \textbf{purr} package. 
 
-\todo{How to get the curly braces to not be larger than the parentheses?}
+\todo{How to get the text of if(){} to be the same as ifelse()?}
 
 \quad To conclude, functions are presented as an approach to replicate the same
 set of instructions throughout your code. Inspired by a script
@@ -822,7 +828,7 @@ pasted your code multiple times, participants leave with a foundational
 understanding of why functions are useful, and practical approaches for
 implementing them in their own code.
 
-\subsubsection{Data Wrangling with \texttt{dplyr} and \texttt{tidyr}}
+\subsubsection{Data Wrangling with dplyr and tidyr}
 \label{sec:wrangle}
 
 \noindent The third workshop in the series introduces common data wrangling
@@ -850,7 +856,7 @@ another. In groups, participants work through a final exercise connecting the
 concepts of variable mutation, grouped data summaries, and `long` and `wide` 
 data. 
 
-\subsubsection{Data Visualization with \texttt{ggplot2}}
+\subsubsection{Data Visualization with ggplot2}
 \label{sec:vizual} 
 
 \noindent The final workshop in the series dives into creating data
