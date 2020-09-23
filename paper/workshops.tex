@@ -51,7 +51,7 @@
     San Luis Obispo, CA \\
     atheobol@calpoly.edu \\
     and \\
-    Stacey Hancock \\
+    Stacey A. Hancock \\
     Department of Mathematical Sciences, Montana State University \\
     stacey.hancock@montana.edu \\
     and \\
@@ -467,9 +467,9 @@ interview regarding (1) the computational skills they believe are necessary for
 master's and doctoral students to implement statistics for research in their
 field, and (2) how they believe graduate students acquire these necessary
 skills. The full interview protocol is available as supplementary 
-material\footnote{Materials associated with this manuscript are available at: 
+material\footnote{Materials associated with this manuscript are available at:
 Anonymous GitHub link.}.
-% \href{https://github.com/atheobold/data-science-ws-jse}{https://github.com/atheobold/data-science-ws-jse}.}. 
+% \href{https://github.com/atheobold/data-science-ws-jse}{https://github.com/atheobold/data-science-ws-jse}.}.
 
 % \subsection{Data Analysis} 
 
@@ -714,7 +714,11 @@ worrying about software installation, package installation, or data transfers.
 Workshop participants interact with the workshop's materials in the same manner
 as a locally installed version of RStudio, as seen in Figure \ref{fig:cloud},
 and are exposed to best practices for reproducible project construction through 
-the use of RStudio projects. 
+the use of RStudio projects. \footnote{It should be noted that after the 
+2019-2020 academic year, RStudio chose to make the Cloud a paid service.
+Although there still exists a free service, the way in which the materials
+for these workshops were distributed would require for workshops to be
+administered under an RStudio Cloud Instructor subscription.}
 
 \begin{figure}[t!]
     \centering
@@ -790,20 +794,18 @@ concepts, however, are included in Software Carpentry's
 statements and linking these statements using and (\texttt{\&}), or
 (\texttt{|}), and not (\texttt{!}) conjunctions. Next, the workshop dives into
 the use of conditional statements, stepping from 
-\texttt{$\text{if}\mathbf{\small(} \small) \small\{ \small\}$}, to 
-\texttt{$\text{if}\small( \small) \small\{ \small\}\text{else}\small\{\small\}$},
-to \texttt{$\text{else if}\small( \small) \small\{ \small\}$} statements.
-Subsequently, the use of the \texttt{ifelse()} function is motivated by the need
-to vectorize these types of conditional operations. The second half of the
-workshop covers methods to iterate or replicate a set of instructions many
-times. Looping, specifically
+\texttt{if()}, to 
+\texttt{if}\texttt{()}\texttt{\small\{\small\}}\texttt{else}\texttt{\small\{\small\}},
+to \texttt{else if}\texttt{()}\texttt{\{\}} statements. Subsequently, the use of
+the \texttt{ifelse()} function is motivated by the need to vectorize these types
+of conditional operations. The second half of the workshop covers methods to
+iterate or replicate a set of instructions many times. Looping, specifically
 \texttt{$\text{for}\small(\small) \small\{ \small\}$} loops, are introduced as a
 popular way to iterate or replicate the same set of instructions. Working
 through exercises which repeat operations on a dataset using both a 
-\texttt{$\text{for}\small(\small) \small\{ \small\}$} loop and a recursive
-\texttt{$\text{for}\small(\small) \small\{ \small\}$} loop, motivates a
+\texttt{for()} loop and a recursive \texttt{for()} loop, motivates a
 discussion of why vectorization is recommended for non-recursive
-\texttt{$\text{for}\small(\small) \small\{ \small\}$} loops. In
+\texttt{for()} loops. In
 the interest of time, participants are provided with resources to continue
 learning about vectorized operations using the \textbf{purr} package. 
 
