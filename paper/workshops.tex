@@ -20,7 +20,7 @@
     urlcolor=blue,
 }
 
-\newcommand{\blind}{0}
+\newcommand{\blind}{1}
 \newcommand{\todo}[1]{{\color{blue}[[\textbf{TODO: }#1]]}}
 \newcommand{\stacey}[1]{{\color{purple}[[\textbf{Stacey says: }#1]]}}
 \newcommand{\allison}[1]{{\color{purple}[[\textbf{Allison says: }#1]]}}
@@ -30,7 +30,7 @@
 \interfootnotelinepenalty = 10000  % Keep footnotes from breaking across pages
 \raggedbottom
 
-\date{September 17, 2020}
+\date{November 13, 2020}
 
 \begin{document}
 
@@ -417,8 +417,8 @@ to use their content, as their materials are publicly available for use and
 adaptation (with acknowledgment). However, because the primary author is a
 Carpentries certified instructor, we chose to offer ``self-organized,''
 ``non-standard'' Carpentries workshops\footnote{Additional information on
-organizing Carpentries workshops can be found here 
-\href{https://bit.ly/carpentriesorganize}{(link)}.}. 
+organizing Carpentries workshops can be found here: 
+\url{https://bit.ly/carpentries_organize}.}. 
 
 \section{Outlining the Computing Skills Necessary for Data-Intensive 
 Environmental Science Research}
@@ -433,10 +433,6 @@ required of environmental science graduate students.
 \quad In the spring of 2017 and fall of 2018, every faculty member
 currently overseeing a graduate student in the ARS, Ecology, LRES, and PSPP
 departments was emailed requesting their participation in this research. 
-% While some faculty enthusiastically agreed to participate, others declined for
-% three main reasons---they hadn't directly overseen a graduate student recently,
-% they deemed themselves to be weak in statistics, or they were unavailable to
-% meet. 
 Table \ref{tab:faculty} outlines the number of faculty requested for
 participation and the number of faculty interviewed, by departmental
 affiliation. 
@@ -468,10 +464,7 @@ master's and doctoral students to implement statistics for research in their
 field, and (2) how they believe graduate students acquire these necessary
 skills. The full interview protocol is available as supplementary 
 material\footnote{Materials associated with this manuscript are available at:
-Anonymous GitHub link.}.
-% \href{https://github.com/atheobold/data-science-ws-jse}{https://github.com/atheobold/data-science-ws-jse}.}.
-
-% \subsection{Data Analysis} 
+\url{https://github.com/atheobold/data-science-ws-jse}.}.
 
 \quad The primary author led a three-stage data analysis process of the faculty
 interviews (Miles, Huberman, Salada$\tilde{\text{n}}$a, \citeyear{miles}). 
@@ -615,9 +608,10 @@ science workshops targeted to graduate students in the environmental sciences.
 The skills identified through faculty interviews were incorporated into Data
 Carpentry's \emph{Data Analysis and Visualization in \texttt{R} for Ecologists}
 lesson \citep{ecology_curriculum}\footnote{This
-work is a derivative of the \href{https://datacarpentry.org/R-ecology-lesson}{``Data 
-Analysis and Visualization in R for Ecologists"} lesson by Data Carpentry, used
-under \href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License}.}.
+work is a derivative of the ``Data Analysis and Visualization in R for
+Ecologists" (\url{https://datacarpentry.org/R-ecology-lesson})
+lesson by Data Carpentry, used under CC-BY License 
+(\url{https://creativecommons.org/licenses/by/4.0/}).}.
 The series of workshops consists of four 3-hour workshops covering (1)
 the basics of programming in \texttt{R}, (2) intermediate programming tasks in 
 \texttt{R}, (3) creating effective data visualizations, and (4) wrangling data.
@@ -626,8 +620,8 @@ experience working in \texttt{R}, and each workshop builds on the knowledge
 acquired at the previous workshop(s). The workshop materials developed for this
 research are available through GitHub, with video tutorials recorded and
 available through our institution's library\footnote{
-Anonymous link to YouTube videos}.
-% \href{http://bit.ly/ws_recordings}{MSU Library videos (link)}}.
+Montana State University Library videos can be accessed here: 
+\url{http://bit.ly/ws_recordings}}.
 
 \subsection{Pedagogy}
 
@@ -684,8 +678,6 @@ reproducibility throughout the entire data analysis cycle (\textbf{rmarkdown}).
 research community, a dramatic change over the last decade \citep{Rpopular}. 
 Furthermore, with the creation of the RStudio integrated development 
 environment (IDE) \citep{rstudio}, this user-ship continues to increase. 
-% as \texttt{R} includes over 100 packages frequently used in ecological data
-% analysis\footnote{\href{https://CRAN.R-project.org/view=Environmetrics}{https://CRAN.R-project.org/view=Environmetrics}}. 
 \texttt{R} is free and open source, so attendees learn a statistical
 programming language that will be accessible to them throughout their careers.
 Unlike frequently used environmental science software, such as MARK, VORTEX, or
@@ -722,7 +714,7 @@ administered under an RStudio Cloud Instructor subscription.}
 
 \begin{figure}[t!]
     \centering
-    \includegraphics[width = \textwidth]{images/intro_to_r_blind.png}
+    \includegraphics[width = \textwidth]{images/intro_to_r.png}
     \caption{RStudio Cloud workspace environment for \emph{Introduction to 
     \texttt{R}} workshop. Every workshop works in an RStudio project,
     containing a master R Markdown file, a data folder containing the
@@ -807,7 +799,7 @@ through exercises which repeat operations on a dataset using both a
 discussion of why vectorization is recommended for non-recursive
 \texttt{for()} loops. In
 the interest of time, participants are provided with resources to continue
-learning about vectorized operations using the \textbf{purr} package. 
+learning about vectorized operations using the \textbf{purrr} package. 
 
 \quad To conclude, functions are presented as an approach to replicate the same
 set of instructions throughout your code. Inspired by a script
@@ -837,13 +829,11 @@ join these additional data files.
 
 \quad The final topic of the workshop involves the issue of data reorganization.
 Until now, participants have been presented with ``tidy'' data \citep{tidy}. 
-% , where every
-% observation is one row, each variable has a column, and every value has one
-% cell. 
 This concept of tidy data is used to describe `long' and `wide' data
 formats. The tidyr package \citep{tidyr} is introduced to alleviate the
-burden of data reorganizations, when transforming data from one layout to
-another. In groups, participants work through a final exercise connecting the
+burden of data reorganizations when transforming data from one layout to
+another, using \texttt{pivot\_wider()} and \texttt{pivot\_longer()}. 
+In groups, participants work through a final exercise connecting the
 concepts of variable mutation, grouped data summaries, and `long` and `wide` 
 data. 
 
@@ -905,19 +895,17 @@ backgrounds prior to attending the workshop. Following each workshop, attendees
 were asked to complete a post-workshop survey, detailing their experiences in
 the workshop.  The content of these surveys was informed from the assessments 
 developed by The Carpentries\footnote{This work is a
-derivative of The Carpentries \href{https://carpentries.org/assessment/}{pre-
-and post-workshop survey materials}, used under 
-\href{https://creativecommons.org/licenses/by/4.0/}{CC-BY License}, with
-revisions to disciplines and occupations, and removal of questions regarding
+derivative of The Carpentries pre- and post-workshop survey materials 
+(\url{https://bit.ly/carpentries-assessment}),
+used under CC-BY License
+(\url{https://creativecommons.org/licenses/by/4.0/}), 
+with revisions to disciplines and occupations, and removal of questions regarding
 frequency of use of computing tools and the level of agreement with provided
 statements.}. Of the 202 students, faculty, and staff that attended these
 workshops, 121 (60\%) completed the pre-workshop survey and 56 (27\%) completed
 the post-workshop survey. The submission of these surveys required responses to
 every question. The pre- and post-workshop surveys are available through the 
 associated GitHub repository.  
-% \footnote{\href{https://github.com/atheobold/data-science-workshops-jse}{GitHub 
-% repository (link)}}
-
 
 \subsection{Backgrounds of Workshop Participants}
 
@@ -1056,7 +1044,7 @@ the remainder for the workshop.
 
 % \quad Currently, this design research is focusing on incorporating the content of these workshops into the \emph{Data Analysis and Visualization in \texttt{R}} lesson within Data Carpentry's Ecology curriculum. Infusing the skills outlined in this research into the \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson helps to create a Carpentries curriculum that best reflects the ``core data skills'' necessary for data-intensive environmental science research. For skills outlined by this research where there is no room in the current \emph{Data Analysis and Visualization in \texttt{R} for Ecologists} lesson, the Carpentries Incubator and Carpentries Lab provide potential avenues to produce additional lesson materials that are broadly available to The Carpentries community. These avenues allow for the continued discussion of the importance of integrating user-defined functions, conditional statements, and loops into the broader Data Carpentry Ecology curriculum.    
 
-\quad Similar to the ``explorations in statistics research'' workshop model
+\quad Similar to the ``Explorations in Statistics Research'' workshop model
 \citep{esr}, the ``standard'' Carpentries workshop format takes place over an
 intensive two days. Self-organized workshops, however, allow for this format to
 be tailored towards busy students, faculty, and staff---by offering one 3-hour
@@ -1162,27 +1150,13 @@ opportunity to learn well'' \citep[p.\ 106]{nolan}, and providing resources for
 instructors to meaningfully integrate discipline-specific computing skills into
 their classroom. 
 
-% Additionally, because workshops are able to thrive outside of university
-% curricula, they hold the ability to ``adapt materials rapidly and remain on the
-% leading edge of technological development'' \citep[p.\ 547]{hampton}.
-% Furthermore, workshops offer the opportunity for a wide variety of researchers,
-% not just students, to acquire the data science skills necessary for
-% data-intensive research, supporting the broader community of researchers. 
-
-% This collaboration 
-% is critical when developing resources for researchers in the broader scientific
-% community, as the discipline of Statistics was developed to support research in
-% other scientific disciplines to evaluate evidence obtained from data. 
-
 \section{Acknowledgements}
 
-% \noindent We would like to specially thank the participants of this study,
-% without whom this research would not have been possible. We would also like to
-% thank the workshop instructors and helpers for helping to grow the data
-% literacy across our campus. Finally, thanks to Jennifer Green, Mark Greenwood,
-% Johanna Hardin, and the reviewers for their insightful comments.
-
-Removed for anonymous submission.
+\noindent We would like to specially thank the participants of this study,
+without whom this research would not have been possible. We would also like to
+thank the workshop instructors and helpers for helping to grow the data
+literacy across our campus. Finally, thanks to Jennifer Green, Mark Greenwood,
+Johanna Hardin, and the reviewers for their insightful comments.
 
 \bibliography{ref}
 \bibliographystyle{apalike}

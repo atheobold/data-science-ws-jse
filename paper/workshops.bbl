@@ -14,6 +14,12 @@ Andelman, S.~J., Bowles, C.~M., Willig, M.~R., and Waide, R.~B. (2004).
   knowledge network.
 \newblock {\em BioScience}, 54(3):240--246.
 
+\bibitem[{ASA GAISE College Group}, 2016]{gaise}
+{ASA GAISE College Group} (2016).
+\newblock {\em Guidelines for Assessment and Instruction in Statistics
+  Education College Report 2016}.
+\newblock American Statistical Association, Alexandria, VA.
+
 \bibitem[Baumer, 2015]{baumer_datascience}
 Baumer, B. (2015).
 \newblock A data science course for undergraduates: Thinking with data.
@@ -240,12 +246,6 @@ O'Neill, D.~K. (2012).
 Powers, S.~M. and Hampton, S.~E. (2019).
 \newblock Open science, reproducibility, and transparency in ecology.
 \newblock {\em Ecological Applications}, 29(1).
-
-\bibitem[{R}evision {C}ommittee, 2016]{gaise}
-{R}evision {C}ommittee, A. (2016).
-\newblock {\em Guidelines for Assessment and Instruction in Statistics
-  Education College Report 2016}.
-\newblock American Statistical Association, Alexandria, VA.
 
 \bibitem[Ross et~al., 2017]{tidytools}
 Ross, Z., Wickham, H., and Robinson, D. (2017).
